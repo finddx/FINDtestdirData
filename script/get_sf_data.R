@@ -21,7 +21,7 @@ sf_data <- sf_run_report(covid_report_id)
 
 
 meta_cols <-
-  readr::read_csv("../shinytestdir/test_directory/data/meta_cols.csv", show_col_types = FALSE) |>
+  readr::read_csv("../shinytestdir/testdir/data/meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
@@ -40,12 +40,22 @@ country_map <-
   ) |>
   left_join(select(country_info, alpha3, country = name, continent), by = "alpha3")
 
+
+extract_link <- function(x) {
+  x <- gsub("^.+title=\"", "", x)
+  x <- gsub(" \\(New Window\\).+", "", x)
+  x
+}
+
+
 data <-
   data_raw |>
   mutate(across(everything(), ~ gsub("-", NA_character_, .))) |>
   rename(name = country) |>
   fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
   select(-name, -region, -alpha3) |>
-  rename(region = continent)
+  rename(region = continent) |>
+  mutate(permalink = extract_link(permalink))
 
-write_csv(data, "../shinytestdir/test_directory/data/data.csv")
+write_csv(data, "../shinytestdir/testdir/data/data.csv")
+
