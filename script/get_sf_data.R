@@ -38,7 +38,7 @@ country_map <-
   select(
     regex = country.name.en.regex, alpha3 = iso3c
   ) |>
-  left_join(select(country_info, alpha3, country = name, who_region), by = "alpha3")
+  left_join(select(country_info, alpha3, country = name, continent), by = "alpha3")
 
 data <-
   data_raw |>
@@ -46,6 +46,6 @@ data <-
   rename(name = country) |>
   fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
   select(-name, -region, -alpha3) |>
-  rename(region = who_region)
+  rename(region = continent)
 
 write_csv(data, "../shinytestdir/test_directory/data/data.csv")
