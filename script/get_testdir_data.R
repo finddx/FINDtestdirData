@@ -50,7 +50,7 @@ extract_link <- function(x) {
 
 data <-
   data_raw |>
-  mutate(across(everything(), ~ gsub("-", NA_character_, .))) |>
+  mutate(across(everything(), ~na_if(., "-"))) |>
   rename(name = country) |>
   fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
   select(-name, -region, -alpha3) |>
