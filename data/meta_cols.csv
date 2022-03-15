@@ -1,0 +1,25 @@
+id                          ,description                 ,filterable,salesforce_name
+manufacturer                ,Manufacturer                ,TRUE      ,Parent Submission: Company/Institution Name
+region                      ,Region                      ,TRUE      ,Parent Submission: Region
+country                     ,Country                     ,TRUE      ,Parent Submission: Country of Manufacturer
+type_of_technology          ,Type of technology          ,TRUE      ,Parent Submission: Type of Technology
+self_testing_self_collection,Self-testing/self-collection,TRUE      ,Parent Submission: Self-testing/Self-Collection
+assay_target                ,Assay target                ,TRUE      ,Parent Submission: Assay Target
+test_format                 ,Test format                 ,TRUE      ,Parent Submission: Test Format
+target_analyte              ,Target analyte              ,TRUE      ,Parent Submission: Target Analyte(s)
+validated_sample_types      ,Validated sample types      ,TRUE      ,Parent Submission: Validated Sample Types
+instrument_requirement      ,Instrument requirement      ,TRUE      ,Parent Submission: Instrument requirement
+level_of_automation         ,Level of automation         ,TRUE      ,Parent Submission: Level of automation
+laboratory_point_of_care    ,Laboratory/point-of-care    ,TRUE      ,Parent Submission: Lab vs. POC
+time_to_result              ,Time to result              ,FALSE     ,Parent Submission: Time to results excl sample prep (mins)
+connectivity                ,Connectivity                ,TRUE      ,Parent Submission: Connectivity Solution
+sc2_alpha                   ,Sars-Cov-2 variant Alpha    ,TRUE      ,Parent Submission: Impact of Sars-Cov-2 Beta variant
+sc2_beta                    ,Sars-Cov-2 variant Beta     ,TRUE      ,Parent Submission: Impact of Sars-Cov-2 Alpha variant
+sc2_gamma                   ,Sars-Cov-2 variant Gamma    ,TRUE      ,Parent Submission: Impact of Sars-Cov-2 Gamma variant
+sc2_delta_plus              ,Sars-Cov-2 variant Delta+   ,TRUE      ,Parent Submission: Impact of Sars-Cov-2 Delta+ variant
+sc2_delta                   ,Sars-Cov-2 variant Delta    ,TRUE      ,Parent Submission: Impact of Sars-Cov-2 Delta variant
+sc2_omicron                 ,Sars-Cov-2 variant Omicron  ,TRUE      ,Parent Submission: Impact of Sars-Cov-2 Omicron variant
+regulatory_status           ,Regulatory status           ,TRUE      ,Parent Submission: Regulatory Approval
+clinical_sensitivity        ,Sensitivity                 ,FALSE     ,Clinical Sensitivity (%)
+clinical_specificity        ,Specificity                 ,FALSE     ,Clinical Specificity (%)
+permalink                   ,Permanent link              ,FALSE     ,"Parent Submission: Website"

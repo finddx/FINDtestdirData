@@ -1,3 +1,7 @@
+
+# fs::file_copy("../shinytestdir/testdir/data/meta_cols.csv", "data/meta_cols.csv")
+
+
 library(readr)
 library(tidyr)
 library(dplyr)
