@@ -16,13 +16,8 @@ sf_auth(username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
 # find a report in your org and run it
 # all_reports <- sf_query("SELECT Id, Name FROM Report")
 
-# all_reports |>
-#   filter(grepl("Cov", Name, ignore.case = TRUE))
-
 covid_report_id <- '00O6900000CRNLeEAP'
 sf_data <- sf_run_report(covid_report_id)
-# sf_data
-
 
 meta_cols <-
   readr::read_csv("../shinytestdir/testdir/data/meta_cols.csv", show_col_types = FALSE) |>
@@ -61,5 +56,5 @@ data <-
   rename(region = continent) |>
   mutate(permalink = extract_link(permalink))
 
-write_csv(data, "../shinytestdir/testdir/data/data.csv")
+write_csv(data, "out/testdir.csv")
 
