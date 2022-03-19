@@ -56,5 +56,5 @@ data <-
   rename(region = continent) |>
   mutate(permalink = extract_link(permalink))
 
-write_csv(data, "out/testdir.csv")
+write_csv(data, "data/testdir.csv")
 
