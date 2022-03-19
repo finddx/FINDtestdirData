@@ -27,17 +27,6 @@ jobs:
           source("script/update-testdir.R")
         shell: Rscript {0}
 
-      # - name: Commit and force push to preview branch
-      #   run: |
-      #     git config --local user.name "$GITHUB_ACTOR"
-      #     git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-      #     git add data/testdir.csv
-      #     git commit -m "Update testdir.csv" || echo "No changes to commit"
-      #     git pull --ff-only
-      #     git branch preview
-      #     # ignore history in preview branch
-      #     git push -f origin preview
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
