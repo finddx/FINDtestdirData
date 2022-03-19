@@ -8,10 +8,11 @@ library(dplyr)
 library(salesforcer)
 library(fuzzyjoin)
 
-# Authenticate using username, password, and security token ...
-sf_auth(username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
-        password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
-        security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN"))
+sf_auth(
+  username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
+  password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
+  security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
+)
 
 covid_report_id <- '00O6900000CRNLeEAP'
 sf_data <- sf_run_report(covid_report_id)
