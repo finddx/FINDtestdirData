@@ -1,0 +1,48 @@
+on:
+  push:
+    branches: [main, dev]
+
+  # schedule:
+  #   - cron: "*/5 * * * *"
+
+name: update-testdir
+
+jobs:
+  update-testdir:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install dependencies (as stated in DESCRIPTION)
+        uses: r-lib/actions/setup-r-dependencies@v2
+
+      - name: Run update-iris.R
+        run: |
+          library(tempdisagg)
+          source("script/update-iris.R")
+        shell: Rscript {0}
+
+      # - name: Commit and force push to preview branch
+      #   run: |
+      #     git config --local user.name "$GITHUB_ACTOR"
+      #     git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      #     git add data/iris.csv
+      #     git commit -m "Update iris.csv" || echo "No changes to commit"
+      #     git pull --ff-only
+      #     git branch preview
+      #     # ignore history in preview branch
+      #     git push -f origin preview
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          add-paths: data/iris.csv
+          commit-message: "[GHA] update from salesforce"
+          reviewers: christophsax
+          delete-branch: true
