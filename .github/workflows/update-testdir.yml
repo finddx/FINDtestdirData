@@ -24,7 +24,6 @@ jobs:
 
       - name: Run update-iris.R
         run: |
-          library(tempdisagg)
           source("script/update-iris.R")
         shell: Rscript {0}
 
