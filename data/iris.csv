@@ -1,0 +1,11 @@
+Sepal.Length,Sepal.Width,Petal.Length,Petal.Width,Species
+6.5,2.8,4.6,1.5,versicolor
+4.9,3.1,1.5,0.1,setosa
+4.8,3.1,1.6,0.2,setosa
+5.4,3.4,1.5,0.4,setosa
+6.3,2.9,5.6,1.8,virginica
+7.7,2.8,6.7,2,virginica
+5.5,4.2,1.4,0.2,setosa
+5.6,2.8,4.9,2,virginica
+6,3.4,4.5,1.6,versicolor
+4.8,3.4,1.9,0.2,setosa
