@@ -12,12 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: preview
-      # Make changes to pull request here
-
+          ref: main
+      - name: Reset main branch
+        run: |
+          git fetch origin preview:preview
+          git reset --hard preview
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          commit-message: "[GHA] update from salesforce"
-          reviewers: christophsax
-          delete-branch: true
+          branch: production-promotion
