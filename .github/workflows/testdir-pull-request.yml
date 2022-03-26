@@ -1,0 +1,18 @@
+on:
+  push:
+    branches: [preview]
+
+name: update-testdir
+
+jobs:
+  update-testdir:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: "[GHA] update from salesforce"
+          reviewers: christophsax
+          delete-branch: true
