@@ -1,0 +1,36 @@
+on:
+  push:
+    branches: [main, dev]
+
+  # schedule:
+  #   - cron: "*/5 * * * *"
+
+name: update-testdir
+
+jobs:
+  update-testdir:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install dependencies (as stated in DESCRIPTION)
+        uses: r-lib/actions/setup-r-dependencies@v2
+
+      - name: Run update-testdir.R
+        run: |
+          source("script/update-testdir.R")
+        shell: Rscript {0}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          add-paths: data/testdir.csv
+          commit-message: "[GHA] update from salesforce"
+          reviewers: christophsax
+          delete-branch: true
