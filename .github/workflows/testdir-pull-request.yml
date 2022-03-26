@@ -12,4 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: main
+          ref: preview
+      # Make changes to pull request here
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "[GHA] update from salesforce"
+          reviewers: christophsax
+          delete-branch: true
