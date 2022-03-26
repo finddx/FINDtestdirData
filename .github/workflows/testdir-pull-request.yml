@@ -14,8 +14,8 @@ jobs:
 
       - name: Fetch preview branch
         run: |
-          git fetch origin preview:preview
-          git reset --hard preview
+          git fetch origin preview:main
+          git reset --hard main
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
