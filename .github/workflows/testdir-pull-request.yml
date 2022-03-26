@@ -11,9 +11,10 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
-        with:
-          ref: preview
-      # Make changes to pull request here
+
+      - name: Fetch preview branch
+        run: |
+          git fetch origin preview
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
