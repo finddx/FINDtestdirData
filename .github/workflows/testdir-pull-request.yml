@@ -10,8 +10,13 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: preview
+      # Make changes to pull request here
+
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           commit-message: "[GHA] update from salesforce"
           reviewers: christophsax
