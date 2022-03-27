@@ -1,17 +1,37 @@
 # locally run and force push to preview branch
 
-source("script/update-testdir.R")
 
+library(glue)
 library(gert)
 
-# start with fresh branch 'preview', based on 'main'
 
-git_branch_create("preview-testdir")
+process_dataset <- function(dataset = "testdir") {
 
-# add file and force-push, so no history is left by frequent updates
-git_add('data/testdir.csv')
-git_commit("[local user] update from salesforce")
-git_push(force = TRUE)
+  # start with fresh branch 'preview', based on 'main'
 
-git_branch_checkout("main")
-git_branch_delete("preview-testdir")
+  branch <- paste0("preview-", dataset)
+
+  # start with a fresh preview branch
+  git_branch_checkout("main")
+  if (git_branch_exists(branch)) {
+    git_branch_delete(branch)
+  }
+  git_branch_create(branch)
+
+  # update data
+  source(paste0("script/update-", dataset, ".R"))
+
+  # add file and force-push, so no history is left by frequent updates
+  git_add(paste0("data/", dataset, ".csv"))
+  if (any(git_status()$staged)) {
+    git_commit(paste0("[local user] update '", dataset, "' from salesforce"))
+    git_push(force = TRUE)
+  } else {
+    message(dataset, ": no changes, doing nothing.")
+  }
+
+}
+
+
+process_dataset("testdir")
+process_dataset("selftests")
