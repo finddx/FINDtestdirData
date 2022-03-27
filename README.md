@@ -55,17 +55,20 @@ shinyfind::get_data("selftests", "preview")
 ```
 
 
-### Regular Updates
+### Updates
 
-The plan is to do regular updates via GHA. Authentication problems keep us from using them.
-
-Instead, all data can be update locally by running:
+Data is updated locally by running:
 
 ```r
 source("script/update-all.R")
 ```
 
 This processes all downloads and pushes the data to the `preview` branch. GHA will automatically open an PR afterwards.
+
+
+### Review
+
+If the updated data (on the `preview-` branch) differs from main, an automated pull request is generated. This PR can be assigned to any colaborator of this repo.
 
 
 ### How to add a new data set `myname`
