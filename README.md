@@ -31,11 +31,18 @@ With latest shinyfind, the 'main' set can read into R, using:
 shinyfind::get_data("testdir")
 ```
 
-The 'preview' dataset
+The 'preview' dataset:
 
 
 ```r
 shinyfind::get_data("testdir", version = "preview")
+```
+
+Alternatively, use `options()` to set the version. This is useful in shiny apps, if you want to maintain a main and a preview version of an app.
+
+```r
+options(find.data.version = "preview")
+shinyfind::get_data("testdir")
 ```
 
 These functions are memoised. By default, they download the data once a day, at 7am UTC.
