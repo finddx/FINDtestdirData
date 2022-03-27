@@ -47,6 +47,11 @@ shinyfind::get_data("testdir")
 
 These functions are memoised. By default, they download the data once a day, at 7am UTC.
 
+Same use for other dataset:
+
+```r
+shinyfind::get_data("selftests")
+```
 
 
 ### Regular Updates
