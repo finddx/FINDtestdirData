@@ -3,8 +3,8 @@
 
 ### Available Datasets
 
-- `testdir`
-
+- `testdir`: test directory
+- `selftests`: directory of selftsts
 
 
 ### Preview and Main Data
