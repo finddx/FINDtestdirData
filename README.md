@@ -19,8 +19,26 @@ There are two versions of each data set: A regularly refreshed 'preview' version
 
 #### Preview
 
-[https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/**preview**/data/**testdir**.csv](https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/main/data/testdir.csv)
+[https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/**preview-testdir**/data/**testdir**.csv](https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/preview-testdir/data/testdir.csv)
 
+
+
+### Use in R
+
+With latest shinyfind, the 'main' set can read into R, using:
+
+```r
+shinyfind::get_data("testdir")
+```
+
+The 'preview' dataset
+
+
+```r
+shinyfind::get_data("testdir", branch = "preview-testdir")
+```
+
+These functions are memoised. By default, they download the data once a day, at 7am UTC.
 
 
 
