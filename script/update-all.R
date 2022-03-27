@@ -30,6 +30,9 @@ process_dataset <- function(dataset = "testdir") {
     message(dataset, ": no changes, doing nothing.")
   }
 
+  git_branch_checkout("main")
+  git_branch_delete(branch)
+
 }
 
 
