@@ -53,7 +53,12 @@ These functions are memoised. By default, they download the data once a day, at 
 
 The plan is to do regular updates via GHA. Authentication problems keep us from using them.
 
-Instead, all data can be update locally by running `script/update-all.R`.
+Instead, all data can be update locally by running:
+
+```r
+source("script/update-all.R")
+```
+
 This processes all downloads and pushes the data to the `preview` branch. GHA will automatically open an PR afterwards.
 
 
