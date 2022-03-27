@@ -1,0 +1,23 @@
+name: Create production promotion pull request
+on:
+  push:
+    branches:
+      - preview-selftests
+jobs:
+  productionPromotion:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+      - name: Reset promotion branch
+        run: |
+          git fetch origin preview-selftests:preview-selftests
+          git reset --hard preview-selftests
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "[GHA] update from salesforce"
+          assignees: christophsax
+          delete-branch: true
+          branch: production-promotion-selftests
