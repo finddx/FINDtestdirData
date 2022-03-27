@@ -4,8 +4,12 @@
 library(glue)
 library(gert)
 
+cli::cli_h1("Update Datasets")
 
 process_dataset <- function(dataset = "testdir") {
+
+  cli::cli_h3(dataset)
+
 
   # start with fresh branch 'preview', based on 'main'
 
@@ -27,7 +31,7 @@ process_dataset <- function(dataset = "testdir") {
     git_commit(paste0("[local user] update '", dataset, "' from salesforce"))
     git_push(force = TRUE)
   } else {
-    message(dataset, ": no changes, doing nothing.")
+    cli::cli_inform(paste0(dataset, ": no changes, doing nothing"))
   }
 
   git_branch_checkout("main")
