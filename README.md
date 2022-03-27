@@ -51,6 +51,7 @@ Same use for other dataset:
 
 ```r
 shinyfind::get_data("selftests")
+shinyfind::get_data("selftests", "preview")
 ```
 
 

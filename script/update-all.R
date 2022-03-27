@@ -29,10 +29,11 @@ process_dataset <- function(dataset = "testdir") {
   git_add(paste0("data/", dataset, ".csv"))
   if (any(git_status()$staged)) {
     git_commit(paste0("[local user] update '", dataset, "' from salesforce"))
-    git_push(force = TRUE)
   } else {
-    cli::cli_inform(paste0(dataset, ": no changes, doing nothing"))
+    cli::cli_inform(paste0(dataset, ": no changes added"))
   }
+
+  git_push(force = TRUE)
 
   git_branch_checkout("main")
   git_branch_delete(branch)
