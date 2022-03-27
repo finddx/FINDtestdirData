@@ -35,7 +35,7 @@ The 'preview' dataset
 
 
 ```r
-shinyfind::get_data("testdir", branch = "preview-testdir")
+shinyfind::get_data("testdir", version = "preview")
 ```
 
 These functions are memoised. By default, they download the data once a day, at 7am UTC.
