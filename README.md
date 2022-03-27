@@ -65,3 +65,10 @@ This processes all downloads and pushes the data to the `preview` branch. GHA wi
 
 3. Update `update-all.R`
 
+
+
+
+### TODO
+
+`data/testdir_data.csv` is there because a production app is using it. Remove once the app switches to using `shinyfind::get_data("testdir")`.
+
