@@ -1,0 +1,15 @@
+id                          ,description                 ,filterable,salesforce_name
+submission_id              ,ID                           ,FALSE     ,Performance Detail Submission: ID
+company                    ,Company                      ,FALSE      ,Parent Submission: Company/Institution Name
+test_name                 ,Test name                     ,FALSE     ,Parent Submission: Submission Title
+country                   ,Country                       ,FALSE      ,Parent Submission: Country of Manufacturer
+prof_self                 ,Professional-use/Self-testing ,FALSE      ,Parent Submission: Self-testing/Self-Collection
+target                    ,Target                        ,FALSE      ,Parent Submission: Assay Target
+time                      ,Time                          ,FALSE     ,Parent Submission: Time to results excl sample prep (mins),
+australia                   ,Australia TGA               ,TRUE      ,Australia TGA
+canada                      ,Health Canada               ,TRUE      ,Health Canada
+fda                         ,US FDA EUA                  ,TRUE      ,US FDA EUA
+eu                          ,CE-IVD                      ,TRUE      ,CE-IVD
+japan                       ,Japan MHLW                  ,TRUE      ,Japan MHLW
+sum                         ,By number of approvals      ,TRUE      ,NA      
+
