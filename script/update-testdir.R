@@ -18,7 +18,7 @@ covid_report_id <- '00O6900000CRNLeEAP'
 sf_data <- sf_run_report(covid_report_id)
 
 meta_cols <-
-  readr::read_csv("data/meta_cols.csv", show_col_types = FALSE) |>
+  readr::read_csv("data/testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
