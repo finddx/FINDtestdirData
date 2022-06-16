@@ -1,0 +1,44 @@
+id,description,filterable,salesforce_name
+submission_id,ID,FALSE,Submission ID
+performance_detail_submission_id,Performance ID,FALSE,Performance Detail Submission ID
+date_of_submission,Date,FALSE,Date of Submission
+manufacturer,Manufacturer,TRUE,Organisation Name
+submission_title,Assay name,TRUE,Submission Title
+disease_target,Disease target,FALSE,Disease Target
+stage_of_development,Stage of development,FALSE,Stage of Development
+country,Country,TRUE,Country of Manufacturer
+region,Region,TRUE,Region
+permalink,Permanent link,FALSE,Website
+regulatory_status,Regulatory status,TRUE,Regulatory Approval
+clinical_sensitivity,Sensitivity,FALSE,Clinical Sensitivity (%)
+clinical_specificity,Specificity,FALSE,Clinical Specificity (%)
+type_of_technology,Type of technology,TRUE,Type of Technology
+assay_target,Assay target,TRUE,Assay Target
+target_analyte,Target analyte,TRUE,Target Analyte(s)
+technology_principle,Technology principle,TRUE,Technology principle
+test_format,Test format,TRUE,Test Format
+instrument_requirement,Instrument requirement,TRUE,Instrument requirement
+level_of_automation,Level of automation,TRUE,Level of automation
+lab_vs_poc,Laboratory/point of care,TRUE,Lab vs. POC
+self_testing_self_collection,Self-testing/self-collection,TRUE,Self-testing/Self-Collection
+validated_sample_types,Validated sample types,TRUE,Validated Sample Types
+time_to_results_excl_prep,Time to result excl sample prep,FALSE,Time to results excl sample prep (mins)
+time_to_results_incl_prep,Time to result incl sample prep,FALSE,Time to results incl sample prep (mins)
+connectivity_solution,Connectivity,TRUE,Connectivity Solution
+find_evaluation,FIND evaluation,FALSE,FIND Evaluation
+sc2_alpha,SARS-CoV-2 variant Alpha,TRUE,Impact of SARS-COV-2 Alpha variant
+sc2_beta,SARS-CoV-2 variant Beta,TRUE,Impact of SARS-COV-2 Beta variant
+sc2_gamma,SARS-CoV-2 variant Gamma,TRUE,Impact of SARS-COV-2 Gamma variant
+sc2_delta,SARS-CoV-2 variant Delta,TRUE,Impact of SARS-COV-2 Delta variant
+sc2_delta_plus,SARS-CoV-2 variant Delta+,TRUE,Impact of SARS-COV-2 Delta+ variant
+sc2_omicron,SARS-CoV-2 variant Omicron,TRUE,Impact of SARS-COV-2 Omicron variant
+s_gene_dropout,S gene dropout,TRUE,S gene dropout
+sc2_variants,Variant detection,TRUE,SARS-CoV-2 variant(s)
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,Test to be listed on FIND's web page?
+data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page
+is_this_a_variant_detection_test,Variant detection test,FALSE,Is this a variant detection test?
+revoked_not_approved_by,Not approved,FALSE,Revoked/Not Approved By
+study_type,Study type,FALSE,Study Type
+number_of_positive_samples_clinical,Number of positive samples,FALSE,Number of positive samples (clinical)
+number_of_negative_samples_clinical,Number of negative samples,FALSE,Number of negative samples (clinical)
+total_number_of_samples_clinical,Total number of samples,FALSE,Total number of samples (clinical)
