@@ -1,0 +1,13 @@
+id,description,filterable,salesforce_name
+submission_title,Assay name,TRUE,Assay name
+manufacturer,Manufacturer,TRUE,Manufacturer
+permalink,Permalink,FALSE,Website
+country,Country,TRUE,Country
+region,Region,TRUE,NA
+stage_of_development,Stage of development,TRUE,Stage of development
+regulatory_status,Regulatory status,TRUE,Regulatory status
+type_of_technology,Type of technology,TRUE,Type of technology
+test_format,Test Format,TRUE,Test Format
+target_analyte,Target analyte,TRUE,Target analyte
+lab_vs_poc,Lab vs POC,TRUE,Lab vs. POC
+validated_sample_types,Validated sample types,TRUE,Validated sample types
