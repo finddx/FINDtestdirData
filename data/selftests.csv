@@ -5,13 +5,13 @@ Abbott Diagnostics Korea Inc.,Panbio COVID-19 Ag Rapid Test Device (Nasal),Unite
 Quidel,Sofia SARS Antigen FIA,United States,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,0,1,1,1,1,1,0,4
 "Access Bio, Inc.",CareStart COVID-19 Antigen test,United States,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,10,1,1,1,1,0,0,3
 LumiraDx,LumiraDx SARS-CoV-2 Ag Test,United Kingdom,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,12,0,0,1,1,1,1,3
-SD Biosensor INC,STANDARD Q COVID-19 Ag test,"Korea, Republic of",Nasopharyngeal swab,Intended for professional use only,Antigen,20,1,1,0,1,0,1,3
 Siemens Healthineers,CLINITEST Rapid COVID-19 Antigen Self-Test,United States,Nasal swab,Intended for self-testing (version available),Antigen,15,0,1,1,1,1,0,3
 Abbott,BinaxNOW COVID-19 Antigen Self Test,United States,Nasal swab,Intended for self-testing (version available),Antigen,15,0,1,1,0,0,0,2
 Abbott Diagnostics Korea Inc.,BinaxNOW COVID-19 Ag Card,United States,Nasal swab,Intended for professional use only,Antigen,15,0,1,1,0,0,0,2
 Abbott Diagnostics Korea Inc.,Panbio COVID-19 Antigen self-test,United States,Nasal swab,Intended for self-testing (version available),Antigen,15,1,1,0,0,0,0,2
 "Access Bio, Inc.",CareStart COVID-19 Antigen Home Test,United States,Nasal swab,Intended for self-testing (version available),Antigen,10,1,0,1,0,0,0,2
 "Acon Biotech (Hangzhou) Co., ltd.",Flowflex SARS-CoV-2 Antigen Rapid Test,China,Nasal swab,Intended for professional use only,Antigen,15,0,1,0,1,0,1,2
+"Acon Biotech (Hangzhou) Co., ltd.",Flowflex SARS-CoV-2 Antigen Rapid Test (Self-Testing),China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,1,0,1,0,0,2
 "Assure Tech. (Hangzhou) Co., ltd.",COVID-19 Antigen Rapid Test Device,China,Nasopharyngeal swab; Oropharyngeal swab,Intended for professional use only,Antigen,15,1,1,0,1,0,0,2
 "Becton, Dickinson and Company (BD)",BD Veritor At-Home COVID-19 Test,United States,Nasal swab,Intended for self-testing (version available),Antigen,NA,0,1,1,0,0,0,2
 "Becton, Dickinson and Company (BD)",BD Veritor System for Rapid Detection of SARS-CoV-2 & Flu A+B,United States,Nasal swab,Intended for professional use only,Antigen,15,0,1,1,0,0,0,2
@@ -26,15 +26,14 @@ PCL inc,PCL Covid-19 Ag Rapid FIA,Australia,Unknown,Intended for professional us
 Quidel,Sofia 2 Flu + SARS Antigen FIA,United States,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,0,1,1,0,0,0,2
 Quidel,QuickVue At-Home OTC COVID-19 Test,United States,Nasal swab,Intended for self-testing (version available),Antigen,10,0,1,1,0,0,0,2
 Quidel,QuickVue SARS Antigen Test,United States,Nasal swab,Intended for professional use only,Antigen,NA,0,1,1,0,0,0,2
-SD Biosensor INC,SARS-CoV-2 Rapid Antigen Test,"Korea, Republic of",Nasal swab,Intended for professional use only,Antigen,20,1,1,0,0,0,0,2
-SD Biosensor INC,SARS-CoV-2 Rapid Antigen Test Nasal,"Korea, Republic of",Nasal swab,Intended for professional use only,Antigen,15,1,1,0,1,0,0,2
-SD Biosensor INC,SARS-CoV-2 Antigen Self Test Nasal,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,1,1,0,1,0,0,2
+SD BIOSENSOR INC,STANDARD Q COVID-19 Ag test,"Korea, Republic of",Nasopharyngeal swab,Intended for professional use only,Antigen,20,1,0,0,1,0,1,2
+SD BIOSENSOR INC,SARS-CoV-2 Rapid Antigen Test,"Korea, Republic of",Nasal swab,Intended for professional use only,Antigen,20,1,1,0,0,0,0,2
+SD BIOSENSOR INC,SARS-CoV-2 Rapid Antigen Test Nasal,"Korea, Republic of",Nasal swab,Intended for professional use only,Antigen,15,1,1,0,1,0,0,2
+SD BIOSENSOR INC,SARS-CoV-2 Antigen Self Test Nasal,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,1,1,0,1,0,0,2
 "Xiamen Boson Biotech Co., ltd.",Rapid SARS-CoV-2 Antigen Test Card,China,Nasopharyngeal swab; Oropharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,0,1,1,1,0,0,2
 Abbott,BinaxNOW COVID-19 Ag Card Home Test,United States,Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,0,0,0,1
 Abbott,BinaxNOW COVID-19 Ag 2 Card,United States,Nasal swab,Intended for professional use only,Antigen,15,0,0,1,0,0,0,1
-Abbott Diagnostics Korea Inc.,Panbio COVID-19 Ag Rapid Test Device (Nasal),United States,Nasal swab,Intended for self-testing (version available),Antigen,15,0,1,0,1,0,0,1
 "Access Bio, Inc.",Atomo Covid-19 Antigen Test,Australia,Nasal swab,Intended for professional use only,Antigen,15,1,0,0,0,0,0,1
-"Acon Biotech (Hangzhou) Co., ltd.",Flowflex SARS-CoV-2 Antigen Rapid Test (Self-Testing),China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,1,0,0,1
 "Acon Laboratories, Inc.",Flowflex COVID-19 Antigen Home Test,United States,Nasal swab,Intended for self-testing (version available),Antigen,NA,0,0,1,0,0,0,1
 Alfresa Pharma Corporation,ALSONIC COVID-19 Ag,Japan,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,0,0,0,0,1,0,1
 "ANP Technologies, Inc",NIDS COVID-19 Antigen Rapid Test Kit 09/24/2021,United States,Nasal swab,Intended for professional use only,Antigen,NA,0,0,1,0,0,0,1
@@ -43,7 +42,6 @@ Artron Laboratories Inc.,Artron COVID-19 Antigen Test,Canada,Nasopharyngeal swab
 Artron Laboratories Inc.,Artron COVID-19 Antigen Test (Nasal),Canada,Nasal swab,Intended for professional use only,Antigen,15,0,1,0,0,0,0,1
 Artron Laboratories Inc.,Artron COVID-19 Antigen Test (Nasopharyngeal),Canada,Nasopharyngeal swab,Intended for professional use only,Antigen,15,0,1,0,0,0,0,1
 "Assure Tech. (Hangzhou) Co., ltd.",Ecotest COVID-19 Antigen Saliva Test kit,China,Saliva,Intended for self-testing (version available),Antigen,NA,1,0,0,1,0,0,1
-"Assure Tech. (Hangzhou) Co., ltd.",Ecotest COVID-19 Antigen Saliva Test kit,China,Saliva,Intended for professional use only,Antigen,NA,1,0,0,1,0,0,1
 "Assure Tech. (Hangzhou) Co., ltd.",Ecotest COVID-19 Antigen Nasal Test Self Test,China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,1,0,0,1
 "Assure Tech. (Hangzhou) Co., ltd.",Ecotest COVID-19 Antigen Nasal Test Kit,China,Nasal swab,Intended for professional use only,Antigen,NA,1,0,0,1,0,0,1
 "Becton, Dickinson and Company (BD)",BD Kit for Rapid Detection of SARS-CoV-2,United States,Nasal swab,Intended for professional use only,Antigen,15,0,1,0,1,0,0,1
@@ -53,10 +51,10 @@ Artron Laboratories Inc.,Artron COVID-19 Antigen Test (Nasopharyngeal),Canada,Na
 "Biohit Healthcare (Hefei) Co., ltd.",Hough COVID-19 Home Test,China,Unknown,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
 bioLytical Laboratories Inc.,Istatis COVID-19 Antigen Test (self-testing),Canada,Nasal swab,Intended for self-testing (version available),Antigen,15,0,1,0,0,0,0,1
 bioLytical Laboratories Inc.,Istatis COVID-19 Antigen Test,Canada,Nasal swab,Intended for professional use only,Antigen,15,0,1,0,0,0,0,1
-bioLytical Laboratories Inc.,Istatis COVID-19 Antigen Test,Canada,Nasal swab,Intended for professional use only,Antigen,15,0,1,0,0,0,0,1
 "BioNote, Inc.",NowCheck COVID-19 Ag Test,"Korea, Republic of",Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,1,0,0,1,0,0,1
 Boditech Med.,AFIAS COVID-19 Ag Test,"Korea, Republic of",Nasopharyngeal swab,Intended for professional use only,Antigen,NA,0,0,0,1,1,0,1
 BTNX Inc.,COVID-19 Antigen Test Cassette,United Kingdom,Nasopharyngeal swab; Oropharyngeal swab; Saliva,Intended for professional use only,Antigen,15,1,0,0,1,0,0,1
+BTNX Inc.,Rapid Response COVID-19 Antigen Rapid Test Cassette - At Home,Canada,Nasal swab,Intended for self-testing (version available),Antigen,15,0,1,0,0,0,0,1
 BTNX Inc.,COVID-19 Antigen Test Cassette,United Kingdom,Nasopharyngeal swab; Oropharyngeal swab; Saliva,Intended for professional use only,Antigen,15,1,0,0,1,0,0,1
 Canon Medical Systems,Rapiim SARS-CoV-2-N,Japan,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,0,0,0,0,1,0,1
 Cellspect,Quampas COVID-19 Antigen Test Kit,Japan,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,0,0,0,0,1,0,1
@@ -73,11 +71,15 @@ Fujifilm Corporation,FUJI DRI-CHEM IMMUNO AG CARTRIDGE COVID-19 Ag,Japan,Nasopha
 FUJIREBIO Inc.,ESPLINE SARS-CoV-2,Japan,Nasopharyngeal swab,Intended for professional use only,Antigen,15,0,0,0,1,1,0,1
 FUJIREBIO Inc.,ESPLINE SARS-CoV-2 & FLU A + B,Japan,Nasopharyngeal swab,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
 FUJIREBIO Inc.,Lumipulse SARS-CoV-2 Ag,Japan,Nasopharyngeal swab; Saliva,Intended for professional use only,Antigen,35,0,0,0,1,1,0,1
+Genalyte,Maverick SARS-CoV-2 Multi-Antigen Serology Panel v2,United States,Serum; Plasma,Intended for professional use only,Antigen,NA,0,0,1,0,0,0,1
 GenBody Inc.,Covid-19 Ag Home Test,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
 "Guangzhou Darui Biotechnology Co.,ltd.",2019-nCoV Ag saliva rapid Test Card,China,Saliva,Intended for professional use only,Antigen,10,1,0,0,1,0,0,1
 "Guangzhou Darui Biotechnology Co.,ltd.",V-Chek COVID-19 Antigen Saliva Test (self testing),China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,1,0,0,1
 "Guangzhou Decheng Biotechnology Co., LTD","V-CHEK, 2019-nCoV Ag Rapid Test Kit (Immunochromatography for self-testing)",China,Nasopharyngeal swab,Intended for professional use only,Antigen,15,1,0,0,0,0,0,1
 "Guangzhou Wondfo Biotech Co., ltd.",Wondfo 2019-nCoV Antigen Test (Lateral Flow Method),China,Nasopharyngeal swab; Oropharyngeal swab,Intended for professional use only,Antigen,15,1,0,0,1,0,0,1
+"Guangzhou Wondfo Biotech Co., ltd.",Wondfo 2019-nCoV Antigen Test (Lateral Flow Method)-Self-test,China,Nasopharyngeal swab; Oropharyngeal swab,Intended for self-testing (version available),Antigen,15,1,0,0,1,0,0,1
+"Hangzhou AllTest Biotech Co.,ltd.",All Test SARS-CoV-2 Antigen Rapid Test INCP-502- N,China,Nasal swab,Intended for professional use only,Antigen,15,1,0,0,0,0,0,1
+"Hangzhou AllTest Biotech Co.,ltd.",JusChek SARS-CoV-2 Antigen Rapid Test INCP-502-N,China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
 "Hangzhou AllTest Biotech Co.,ltd.",Juschek COVID-19 Antigen Rapid Test (Oral Fluid) Self Testing,China,Saliva,Intended for self-testing (version available),Antigen,15,1,0,0,1,0,0,1
 "Hangzhou AllTest Biotech Co.,ltd.",COVID-19 Antigen Rapid Test ( Oral Fluid),China,Saliva,Intended for professional use only,Antigen,20,1,0,0,1,0,0,1
 "Hangzhou AllTest Biotech Co.,ltd.",SARS-CoV-2 Antigen Rapid Test,China,Nasal swab,Intended for professional use only,Antigen,NA,1,0,0,1,0,0,1
@@ -92,8 +94,8 @@ GenBody Inc.,Covid-19 Ag Home Test,"Korea, Republic of",Nasal swab,Intended for 
 "Hangzhou AllTest Biotech Co.,ltd.",All Test COVID-19 Antigen Rapid Test (Oral fluid),China,Saliva,Intended for professional use only,Antigen,NA,1,0,0,0,0,0,1
 "Hangzhou AllTest Biotech Co.,ltd.",GSD NovaGen SARS CoV-2 Rapid Test,China,Nasal swab,Intended for professional use only,Antigen,20,1,0,0,1,0,0,1
 "Hangzhou Biotest Biotech Co., ltd.",COVID-19 Antigen Rapid Test Cassette(Nasal Swab),China,Unknown,Intended for professional use only,Antigen,NA,1,0,0,1,0,0,1
-"Hangzhou Biotest Biotech Co., ltd.",GSD SARS-CoV-2 Antigen Rapid Test (Nasal swab) for self testing,China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
-"Hangzhou Clongene Biotech Co., ltd.",Clongene COVID-19 Antigen Rapid Test,China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
+"Hangzhou Biotest Biotech Co., ltd.",COVID-19 Antigen Rapid Test Cassette(Nasal Swab) Self-testing,China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,1,0,0,1
+"Hangzhou Clongene Biotech Co., ltd.",Clongene COVID-19 Antigen Rapid Test,China,Nasal swab,Intended for professional use only,Antigen,15,1,0,0,0,0,0,1
 "Hangzhou Clongene Biotech Co., ltd.",COVID-19 Antigen Rapid Test,China,Nasal swab,Intended for professional use only,Antigen,NA,1,0,0,1,0,0,1
 "Hangzhou Clongene Biotech Co., ltd.",Clongene COVID-19 Antigen Rapid Test (For Self-testing),China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
 Hangzhou Laihe Biotech,LYHER Novel Coronavirus (Covid-19) Antigen Test Kit (colloidal Gold) Self-Test,China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,1,0,0,1
@@ -115,16 +117,17 @@ Healgen Scientific llc,Healgen Rapid COVID-19 Antigen Test - self test,United St
 InBios International,SCoV-2 Ag Detect Rapid Test,United States,Unknown,Intended for professional use only,Antigen,NA,0,0,1,0,0,0,1
 InBios International,SCoV-2 Ag Detect Rapid Self-Test,United States,Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,0,0,0,1
 Innovation Scientific Pty ltd.,Innoscreen COVID-19 Antigen Test (Self-Test),Australia,Nasal swab,Intended for self-testing (version available),Antigen,16,1,0,0,0,0,0,1
-Innovation Scientific Pty ltd.,InnoScreen COVID-19 Antigen Rapid Test Device,Australia,Nasal swab,Intended for professional use only,Antigen,15,1,0,0,0,0,0,1
+Innovation Scientific Pty ltd.,InnoScreen COVID-19 Antigen Rapid Test Device,Australia,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
 "INNOVITA (Tangshan) Biological Technology Co., ltd.",2019-nCoV Ag Test (Latex Chromatography Assay),China,Nasopharyngeal swab,Intended for professional use only,Antigen,NA,1,0,0,1,0,0,1
 "INNOVITA (Tangshan) Biological Technology Co., ltd.",2019 nCoV Ag Test (Latex Chromatography Assay) – Self- test,China,Nasopharyngeal swab,Intended for professional use only,Antigen,15,1,0,0,0,0,0,1
 "iXensor Co., ltd.",PixoTest COVID-19 Antigen Test,"Taiwan, Republic of China",Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,1,0,0,1,0,0,1
+Jiangsu Medomics Medical Technology,Jamach COVID-19 Antigen Test Cassette,China,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
 Jiangsu Medomics Medical Technology,SARS-CoV-2 Antigen Test Kit (LFIA),United States,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,20,1,0,0,1,0,0,1
+Jiangsu Medomics Medical Technology,Gardian T3 COVID-19-SARS-CoV-2 Antigen Saliva Self Test,China,Saliva,Intended for self-testing (version available),Antigen,10,1,0,0,0,0,0,1
 "Jiangsu Well Biotech Co.,ltd.",Orawell COVID-19 Ag Rapid saliva test device (Self-test),China,Saliva,Intended for self-testing (version available),Antigen,NA,1,0,0,1,0,0,1
-"Jiangsu Well Biotech Co.,ltd.",Gardian T3 COVID-19-SARS-CoV-2 Antigen Saliva Self Test,China,Saliva,Intended for self-testing (version available),Antigen,10,1,0,0,0,0,0,1
 "KOHJIN BIO CO., ltd.",KBM LineCheck nCoV/Flu,Japan,Unknown,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
 "KOHJIN BIO CO., ltd.",KBM LineCheck nCoV (Stick Type),Japan,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
-"Labnovation Technologies, Inc.",SARS-CoV-2 Antigen Rapid Test Kit,China,Nasopharyngeal swab; Oropharyngeal swab; Nasal swab; Mid-turbinate swab,Intended for professional use only,Antigen,20,1,0,0,1,0,0,1
+"Labnovation Technologies, Inc.",SARS-CoV-2 Antigen Rapid Test Kit,China,Nasopharyngeal swab; Oropharyngeal swab; Nasal swab; Mid-turbinate swab,Intended for self-testing (version available),Antigen,20,1,0,0,1,0,0,1
 LSI Medience Corporation,PRORAST SARS-CoV-2 Ag,Japan,Unknown,Intended for professional use only,Antigen,15,0,0,0,0,1,0,1
 Luminostics,Clip COVID Rapid Antigen Test,United States,Nasal swab,Intended for professional use only,Antigen,30,0,0,1,0,0,0,1
 Lumos Diagnostics,Covidx SARS-CoV-2 Rapid Antigen Test Kit,United States,Nasal swab; Saliva,Intended for professional use only,Antigen,NA,0,1,0,0,0,0,1
@@ -137,6 +140,7 @@ Meril Diagnostics Pvt ltd.,COVIFIND COVID-19 Antigen Self Test,India,Nasal swab,
 MP Biomedicals,Rapid SARS-CoV-2 Antigen Test Card,Germany,Nasopharyngeal swab; Oropharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,1,0,0,1,0,0,1
 MP Biomedicals,Rapid SARS-COV-2 Antigen Test Card Self-test,Singapore,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,1,0,0,1
 Nano-Ditech Corporation,Nano-Check COVID-19 Antigen Test,United States,Nasopharyngeal swab,Intended for professional use only,Antigen,15,0,0,1,1,0,0,1
+Nichirei Biosciences Inc.,COVID-19 Antigen Test (NichireiBio),Japan,Unknown,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
 Oceanit Foundry,ASSURE-100 Rapid COVID-19 Test Kit,United States,Nasal swab,Intended for professional use only,Antigen,20,0,0,1,0,0,0,1
 OraSure Technologies Inc.,InteliSwab COVID-19 Rapid Test Rx,United States,Nasal swab,Intended for self-testing (version available),Antigen,30,0,0,1,0,0,0,1
 "OSANG Healthcare Co., ltd.",OHC COVID-19 Antigen Self Test,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,0,0,0,1
@@ -157,20 +161,19 @@ Quidel,QuickVue At-Home COVID-19 Test,United States,Nasal swab,Intended for self
 Roche Diagnostics GmbH,SARS-CoV-2 Rapid Antigen Test,Switzerland,Nasopharyngeal swab,Intended for professional use only,Antigen,15,0,0,0,1,1,0,1
 "ROHTO Pharmaceutical Co., ltd.",Check MR-COV19,Japan,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,20,0,0,0,0,1,0,1
 Salofa Oy,Sienna-Clarity COVID-19 Antigen Rapid Test Cassette,Finland,Nasopharyngeal swab,Intended for professional use only,Antigen,NA,0,0,1,1,0,0,1
-SD Biosensor INC,Pilot COVID-19 At-Home Test,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,0,0,0,1
-SD Biosensor INC,STANDARD i-Q COVID-19 Ag Home Test,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,NA,0,1,0,0,0,0,1
-SD Biosensor INC,COVID-19 At-Home Test,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,0,0,0,1
-SD Biosensor INC,SARS-CoV-2 Rapid Antigen Test Nasal (STANDARD Q - COVID-19 At-Home Test),"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,1,0,0,1
-SD Biosensor INC,SARS-CoV-2 Rapid Antigen Test Nasal With Control,"Korea, Republic of",Nasal swab,Intended for professional use only,Antigen,15,0,1,0,0,0,0,1
-SD Biosensor INC,Standard Q COVID-19 AG Nasal Test,"Korea, Republic of",Nasopharyngeal swab,Intended for professional use only,Antigen,20,0,1,0,1,0,0,1
-SD Biosensor INC,Standard Q COVID-19 AG Nasal Test With Control,"Korea, Republic of",Nasopharyngeal swab,Intended for professional use only,Antigen,20,0,1,0,0,0,0,1
+SD BIOSENSOR INC,Pilot COVID-19 At-Home Test,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,0,0,0,1
+SD BIOSENSOR INC,STANDARD i-Q COVID-19 Ag Home Test,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,NA,0,1,0,0,0,0,1
+SD BIOSENSOR INC,COVID-19 At-Home Test,"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,0,0,0,1
+SD BIOSENSOR INC,SARS-CoV-2 Rapid Antigen Test Nasal (STANDARD Q - COVID-19 At-Home Test),"Korea, Republic of",Nasal swab,Intended for self-testing (version available),Antigen,15,0,0,1,1,0,0,1
+SD BIOSENSOR INC,Standard Q COVID-19 AG Nasal Test With Control,"Korea, Republic of",Nasopharyngeal swab,Intended for professional use only,Antigen,20,0,1,0,0,0,0,1
+"Shanghai Kehua Bio-engineering Co., ltd.",Diagnostic Kit for COVID-19 Antigen Test (Colloidal Gold),China,Nasopharyngeal swab,Intended for professional use only,Antigen,NA,0,0,0,0,0,1,1
 "Sugentech, Inc.",SGTi-flex COVID-19 Ag,"Korea, Republic of",Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,0,1,0,1,0,0,1
 Sure Screen Diagnostics,Diagnostics SARS-CoV-2 Antigen Rapid Test Cassette with RhinoSwab Junior,United Kingdom,Nasal swab,Intended for self-testing (version available),Antigen,15,1,0,0,0,0,0,1
 TAUNS Laboratories Co.,ImunoAce SARS-CoV-2 II,Japan,Unknown,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
 TAUNS Laboratories Co.,Capilia SARS-CoV-2,Japan,Unknown,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
-TAUNS Laboratories Co.,Capilia SARS-CoV-2 II,Japan,Unknown,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
+TAUNS Laboratories Co.,Capilia SARS-CoV-2 II,Japan,Saliva,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
 Toyobo,ImmunoArrow SARS-CoV-2,Japan,Unknown,Intended for professional use only,Antigen,NA,0,0,0,0,1,0,1
 "VivaChek Biotech (Hangzhou) Co., ltd.",VivaDiag SARS-CoV-2 Ag Rapid Test,China,Nasopharyngeal swab; Nasal swab,Intended for professional use only,Antigen,NA,1,0,0,1,0,0,1
-"VivaChek Biotech (Hangzhou) Co., ltd.",VivaDiag Pro SARS-CoV-2 Ag Rapid Test,China,Nasopharyngeal swab; Oropharyngeal swab; Nasal swab,Intended for professional use only,Antigen,15,1,0,0,1,0,0,1
 "VivaChek Biotech (Hangzhou) Co., ltd.",VivaDiag Pro SARS CoV 2 Ag Rapid Test (self test),China,Nasal swab,Intended for self-testing (version available),Antigen,NA,1,0,0,1,0,0,1
+"Xiamen Boson Biotech Co., ltd.",Rapid SARS-CoV-2 Antigen Test Card (self test),China,Nasopharyngeal swab; Oropharyngeal swab; Nasal swab,Intended for self-testing (version available),Antigen,15,0,1,0,1,0,0,1
 Xtrava Inc,SPERA COVID-19 Ag Test,United States,Nasal swab,Intended for professional use only,Antigen,NA,0,0,1,0,0,0,1
