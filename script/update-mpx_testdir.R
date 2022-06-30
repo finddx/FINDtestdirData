@@ -7,9 +7,10 @@ library(fuzzyjoin)
 
 sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/main/data/raw/mpx_testdir_data.csv")
 
+colnames(sf_data) <- gsub("Parent Submission: ", "", colnames(sf_data))
 
 meta_cols <-
-  readr::read_csv("data/mpx_testdir_meta_cols.csv", show_col_types = FALSE) |>
+  readr::read_csv("data/monkeypox/mpx_testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
@@ -47,4 +48,4 @@ data <-
   relocate(submission_id, .before = submission_title)
 
 
-write_csv(data, "data/mpx_testdir.csv")
+write_csv(data, "data/monkeypox/mpx_testdir.csv")
