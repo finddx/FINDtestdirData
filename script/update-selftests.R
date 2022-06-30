@@ -94,7 +94,7 @@ data <- reg_status %>%
   dplyr::filter(sum > 0)
 
 
-write_csv(data, "data/selftests.csv")
+write_csv(data, "data/covid19/selftests.csv")
 
 
 
