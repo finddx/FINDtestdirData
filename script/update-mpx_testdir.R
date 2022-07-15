@@ -3,6 +3,8 @@ library(readr)
 library(tidyr)
 library(dplyr)
 library(fuzzyjoin)
+library(stringr)
+library(glue)
 
 
 sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/main/data/raw/mpx_testdir_data.csv")
@@ -33,8 +35,12 @@ country_map <-
 extract_link <- function(x) {
   x <- gsub("[^[|^]+]" ,"", x)
   x <- gsub("[[()]" ,"", x)
+  x <- str_replace_all(str_extract_all(x, ">https?\\:.*<", simplify = TRUE), pattern = ">|<", replacement = "")
+  #x <- ifelse(x != "", glue("[{x}]({x})"), "")
   x
 }
+
+
 
 data <-
   data_raw |>
