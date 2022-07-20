@@ -1,5 +1,6 @@
 id                          ,description                 ,filterable,salesforce_name
 submission_id              ,ID                          ,FALSE     ,Performance Detail Submission: ID
+disease_target,Disease target,TRUE      ,Parent Submission: Disease Target
 manufacturer                ,Manufacturer                ,TRUE      ,Parent Submission: Company/Institution Name
 submission_title            ,Assay name                  ,FALSE     ,Parent Submission: Submission Title
 region                      ,Region                      ,TRUE      ,Parent Submission: Region
@@ -20,7 +21,6 @@ clinical_sensitivity        ,Sensitivity                 ,FALSE     ,Clinical Se
 clinical_specificity        ,Specificity                 ,FALSE     ,Clinical Specificity (%)
 stage_of_development,Stage of development,TRUE      ,Parent Submission: Stage of Development
 technology_principle,Technology principle,TRUE      ,Parent Submission: Technology principle
-disease_target,Disease target,TRUE      ,Parent Submission: Disease Target
 permalink                   ,Permanent link,FALSE     ,Parent Submission: Product Website
 find_evaluation,FIND evaluation,TRUE      ,FIND Evaluation
 primary_use_case,Primary use case,TRUE      ,Parent Submission: Primary Use Case
