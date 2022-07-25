@@ -29,11 +29,13 @@ country_map <-
   left_join(select(country_info, alpha3, country = name, continent), by = "alpha3")
 
 
+
 extract_link <- function(x) {
-  x <- gsub("[^[|^]+]" ,"", x)
-  x <- gsub("[[()]" ,"", x)
+  x <- gsub("^.+title=\"", "", x)
+  x <- gsub(" \\(New Window\\).+", "", x)
   x
 }
+
 
 data <-
   data_raw |>
