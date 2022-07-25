@@ -4,7 +4,7 @@ disease_target,Disease target,TRUE      ,Parent Submission: Disease Target
 primary_use_case,Primary use case,TRUE      ,Parent Submission: Primary Use Case
 manufacturer                ,Manufacturer                ,TRUE      ,Parent Submission: Company/Institution Name
 submission_title            ,Assay name                  ,FALSE     ,Parent Submission: Submission Title
-region                      ,Region                      ,TRUE      ,Parent Submission: Region
+region                      ,Region of company headquarters                      ,TRUE      ,Parent Submission: Region
 country                     ,Country                     ,TRUE      ,Parent Submission: Country of Manufacturer
 type_of_technology          ,Type of technology          ,TRUE      ,Parent Submission: Type of Technology
 self_testing_self_collection,Self-testing/self-collection,TRUE      ,Parent Submission: Self-testing/Self-Collection
