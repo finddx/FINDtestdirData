@@ -24,4 +24,4 @@ sc2_omicron                 ,SARS-CoV-2 variant Omicron  ,TRUE      ,Parent Subm
 regulatory_status           ,Regulatory status           ,TRUE      ,Parent Submission: Regulatory Approval
 clinical_sensitivity        ,Sensitivity                 ,FALSE     ,Clinical Sensitivity (%)
 clinical_specificity        ,Specificity                 ,FALSE     ,Clinical Specificity (%)
-permalink                   ,Permanent link              ,FALSE     ,"Parent Submission: Website"
+permalink                   ,Permanent link              ,FALSE     ,"Parent Submission: Product Website"
