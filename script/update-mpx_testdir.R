@@ -1,11 +1,25 @@
-
 library(readr)
 library(tidyr)
 library(dplyr)
+library(salesforcer)
 library(fuzzyjoin)
+library(stringr)
+
+set.seed(5)
 
 
-sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/main/data/raw/mpx_testdir_data.csv")
+# Authenticate using username, password, and security token ...
+sf_auth(
+  username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
+  password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
+  security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
+)
+
+# find a report in your org and run it
+all_reports <- sf_query("SELECT Id, Name FROM Report")
+mpx_report_id <- '00O6900000CNadVEAT'
+sf_data <- sf_run_report(mpx_report_id)
+colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Parent Submission: ')
 
 
 meta_cols <-
@@ -50,3 +64,4 @@ data <-
 
 
 write_csv(data, "data/mpx_testdir.csv")
+

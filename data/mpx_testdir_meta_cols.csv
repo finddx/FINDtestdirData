@@ -11,3 +11,4 @@ test_format,Test format,TRUE,Test Format
 target_analyte,Target analyte,TRUE,Target Analyte(s)
 lab_vs_poc,Lab vs POC,TRUE,Lab vs. POC
 validated_sample_types,Validated sample types,TRUE,Validated Sample Types
+assay_target,Assay target,TRUE,Assay Target
