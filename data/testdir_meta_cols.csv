@@ -22,6 +22,6 @@ sc2_delta_plus              ,SARS-CoV-2 variant Delta+   ,TRUE      ,Parent Subm
 sc2_delta                   ,SARS-CoV-2 variant Delta    ,TRUE      ,Parent Submission: Impact of SARS-COV-2 Delta variant
 sc2_omicron                 ,SARS-CoV-2 variant Omicron  ,TRUE      ,Parent Submission: Impact of SARS-COV-2 Omicron variant
 regulatory_status           ,Regulatory status           ,TRUE      ,Parent Submission: Regulatory Approval
-clinical_sensitivity        ,Sensitivity                 ,FALSE     ,Clinical Sensitivity (%)
-clinical_specificity        ,Specificity                 ,FALSE     ,Clinical Specificity (%)
+clinical_sensitivity        ,Sensitivity                 ,FALSE     ,Sensitivity (%)
+clinical_specificity        ,Specificity                 ,FALSE     ,Specificity (%)
 permalink                   ,Permanent link              ,FALSE     ,"Parent Submission: Product Website"
