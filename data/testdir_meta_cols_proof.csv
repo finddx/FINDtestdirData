@@ -10,8 +10,8 @@ country,Country,TRUE,Country of Manufacturer
 region,Region,TRUE,Region
 permalink,Permanent link,FALSE,Website
 regulatory_status,Regulatory status,TRUE,Regulatory Approval
-clinical_sensitivity,Sensitivity,FALSE,Clinical Sensitivity (%)
-clinical_specificity,Specificity,FALSE,Clinical Specificity (%)
+sensitivity,Sensitivity,FALSE,Sensitivity (%)
+specificity,Specificity,FALSE,Specificity (%)
 type_of_technology,Type of technology,TRUE,Type of Technology
 assay_target,Assay target,TRUE,Assay Target
 target_analyte,Target analyte,TRUE,Target Analyte(s)
@@ -39,6 +39,6 @@ data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published
 is_this_a_variant_detection_test,Variant detection test,FALSE,Is this a variant detection test?
 revoked_not_approved_by,Not approved,FALSE,Revoked/Not Approved By
 study_type,Study type,FALSE,Study Type
-number_of_positive_samples_clinical,Number of positive samples,FALSE,Number of positive samples (clinical)
-number_of_negative_samples_clinical,Number of negative samples,FALSE,Number of negative samples (clinical)
-total_number_of_samples_clinical,Total number of samples,FALSE,Total number of samples (clinical)
+number_of_positive_samples,Number of positive samples,FALSE,Number of positive samples
+number_of_negative_samples,Number of negative samples,FALSE,Number of negative samples
+total_number_of_samples,Total number of samples,FALSE,Total number of samples
