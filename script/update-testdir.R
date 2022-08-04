@@ -8,14 +8,18 @@ library(dplyr)
 library(salesforcer)
 library(fuzzyjoin)
 
-sf_auth(
-  username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
-  password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
-  security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
-)
+# sf_auth(
+#   username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
+#   password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
+#   security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
+# )
 
-covid_report_id <- '00O6900000CRNLeEAP'
-sf_data <- sf_run_report(covid_report_id)
+# covid_report_id <- '00O6900000CRNLeEAP'
+# sf_data <- sf_run_report(covid_report_id)
+
+
+sf_data <- readr::read_csv("data/raw/testdir_data.csv")
+
 
 meta_cols <-
   readr::read_csv("data/testdir_meta_cols.csv", show_col_types = FALSE) |>
