@@ -1,0 +1,15 @@
+﻿salesforce_name,descritpion,include_in_table,filterable,id
+Submission ID,ID,FALSE,FALSE,submission_id
+Company/Institution Name: Organisation Name,Organization name,TRUE,FALSE,manufacturer
+Submission Title,EQA name,TRUE,FALSE,submission_title
+Region,Region of production,TRUE,FALSE,region
+Regions of test availability,Region of availability,TRUE,FALSE,region_availability
+Disease Target,Disease target,TRUE,TRUE,disease_target
+Type of Technology,Type of technology,TRUE,TRUE,type_of_technology
+Assay Target,Assay target,TRUE,TRUE,assay_target
+Target Analyte(s),Target analyte,TRUE,TRUE,target_analyte
+Is this a variant detection test?,Are multiple variants included?,TRUE,FALSE,is_this_a_variant_detection_test
+Format of Material Provided,Format of material provided,TRUE,FALSE,format_of_material_provided
+Qualitative or Quantitative,Qualitative/Quantitative,TRUE,TRUE,qual_or_quant
+Storage Temperature 1,Storage temperature,TRUE,FALSE,storage_temp
+Product Website,Permanent link,TRUE,FALSE,permalink
