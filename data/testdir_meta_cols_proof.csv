@@ -10,8 +10,8 @@ country,Country,TRUE,Country of Manufacturer
 region,Region,TRUE,Region
 permalink,Permanent link,FALSE,Website
 regulatory_status,Regulatory status,TRUE,Regulatory Approval
-sensitivity,Sensitivity,FALSE,Sensitivity (%)
-specificity,Specificity,FALSE,Specificity (%)
+clinical_sensitivity,Sensitivity,FALSE,Sensitivity (%)
+clinical_specificity,Specificity,FALSE,Specificity (%)
 type_of_technology,Type of technology,TRUE,Type of Technology
 assay_target,Assay target,TRUE,Assay Target
 target_analyte,Target analyte,TRUE,Target Analyte(s)
