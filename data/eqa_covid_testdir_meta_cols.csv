@@ -1,4 +1,4 @@
-﻿salesforce_name,descritpion,include_in_table,filterable,id
+salesforce_name,description,include_in_table,filterable,id
 Submission ID,ID,FALSE,FALSE,submission_id
 Company/Institution Name: Organisation Name,Organization name,TRUE,FALSE,manufacturer
 Submission Title,EQA name,TRUE,FALSE,submission_title
