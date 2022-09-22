@@ -65,8 +65,28 @@ reg_status <- dplyr::left_join(sf_data[,c("Company/Institution Name", "Submissio
 
 # Create the table_data df used from the app ------------------------------
 
+
+
+authorities <- c("Australia TGA", "Brazil ANVISA", "CE-IVD",
+                 "China NMPA", "Germany BfArM", "Health Canada", "India CDSCO",
+                 "Japan MHLW", "Korea MFDS", "MHRA UK", "Other", "Philippines FDA",
+                 "Singapore HSA", "South Africa SAHPRA", "Taiwan FDA", "Ukraine SMDC",
+                 "Unknown", "US FDA EUA", "WHO EUL", "WHO EUL Under Assessment")
+
+
 data <- reg_status %>%
-  select(
+  dplyr::mutate(across(all_of(authorities),  ~ replace(., !is.na(.), '1'))) %>%
+  dplyr::mutate(across(all_of(authorities),  ~replace_na(., '0'))) %>%
+  dplyr::mutate(across(all_of(authorities), as.numeric)) %>%
+  # dplyr::mutate(australia = recode(australia,  `Australia TGA` = '1'),
+  #               canada = recode(canada, `Health Canada` = '1'),
+  #               fda = recode(fda,  `US FDA EUA` = '1'),
+  #               eu = recode(eu, `CE-IVD` = '1'),
+  #               japan = recode(japan, `Japan MHLW` = '1'),
+  #               who = recode(who, `WHO EUL` = '1')) %>%
+  # dplyr::mutate_at(vars(australia, canada, fda, eu, japan, who), ~replace_na(., '0'))%>%
+  # dplyr::mutate(across(c(australia, canada, fda, eu, japan, who), as.numeric)) %>%
+  dplyr::rename(
     company = `Company/Institution Name`,
     test_name = `Submission Title`,
     country = `Country of Manufacturer`,
@@ -79,19 +99,45 @@ data <- reg_status %>%
     fda = `US FDA EUA`,
     eu = `CE-IVD`,
     japan = `Japan MHLW`,
-    who = `WHO EUL`
+    who = `WHO EUL`,
+    brazil = `Brazil ANVISA`,
+    china = `China NMPA`,
+    germany = `Germany BfArM`,
+    india = `India CDSCO`,
+    korea = `Korea MFDS`,
+    uk = `MHRA UK`,
+    philippines = `Philippines FDA`,
+    singapore = `Singapore HSA`,
+    south_africa = `South Africa SAHPRA`,
+    taiwan = `Taiwan FDA`,
+    ukraine = `Ukraine SMDC`,
+    who_eul = `WHO EUL Under Assessment`,
+    other = `Other`,
+    unknown = `Unknown`
   ) %>%
-  dplyr::mutate(australia = recode(australia,  `Australia TGA` = '1'),
-                canada = recode(canada, `Health Canada` = '1'),
-                fda = recode(fda,  `US FDA EUA` = '1'),
-                eu = recode(eu, `CE-IVD` = '1'),
-                japan = recode(japan, `Japan MHLW` = '1'),
-                who = recode(who, `WHO EUL` = '1')) %>%
-  dplyr::mutate_at(vars(australia, canada, fda, eu, japan, who), ~replace_na(., '0'))%>%
-  dplyr::mutate(across(c(australia, canada, fda, eu, japan, who), as.numeric)) %>%
   dplyr::mutate(sum = rowSums(across(c(australia, canada, fda, japan, who)))) %>%
   dplyr::arrange(-sum) %>%
   dplyr::filter(sum > 0)
+
+
+
+
+
+select(
+  company = `Company/Institution Name`,
+  test_name = `Submission Title`,
+  country = `Country of Manufacturer`,
+  sample = `Validated Sample Types`,
+  prof_self = `Self-testing/Self-Collection`,
+  target = `Assay Target`,
+  time = `Time to results excl sample prep (mins)`,
+  australia = `Australia TGA`,
+  canada = `Health Canada`,
+  fda = `US FDA EUA`,
+  eu = `CE-IVD`,
+  japan = `Japan MHLW`,
+  who = `WHO EUL`
+)
 
 
 write_csv(data, "data/selftests.csv")
