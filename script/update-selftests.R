@@ -121,25 +121,6 @@ data <- reg_status %>%
 
 
 
-
-
-select(
-  company = `Company/Institution Name`,
-  test_name = `Submission Title`,
-  country = `Country of Manufacturer`,
-  sample = `Validated Sample Types`,
-  prof_self = `Self-testing/Self-Collection`,
-  target = `Assay Target`,
-  time = `Time to results excl sample prep (mins)`,
-  australia = `Australia TGA`,
-  canada = `Health Canada`,
-  fda = `US FDA EUA`,
-  eu = `CE-IVD`,
-  japan = `Japan MHLW`,
-  who = `WHO EUL`
-)
-
-
 write_csv(data, "data/selftests.csv")
 
 
