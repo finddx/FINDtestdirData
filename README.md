@@ -1,10 +1,20 @@
 # FINDtestdirData
 
+Data in the `data/` directory is organized by the [apps](https://github.com/finddx/shinytestdir) that use them.
+
 
 ### Available Datasets
 
-- `testdir`: test directory
-- `selftests`: directory of selftsts
+**covid19**
+- `testdir.csv`: test directory
+- `selftests.csv`: directory of selftests
+- `eqa_covid_testdir`: EQA test directory
+
+**moneypox**
+- `mpx_testdir.csv`: monkeypox test directory
+
+**ntd**
+- `chagas_testdir.csv`: Chagas test directory
 
 
 ### Preview and Main Data
@@ -14,12 +24,12 @@ There are two versions of each data set: A regularly refreshed 'preview' version
 
 #### Main (Production)
 
-[https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/**main**/data/**testdir**.csv](https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/main/data/testdir.csv)
+[https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/**main**/data/covid19/**testdir**.csv](https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/main/data/covid19/testdir.csv)
 
 
 #### Preview
 
-[https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/**preview-testdir**/data/**testdir**.csv](https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/preview-testdir/data/testdir.csv)
+[https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/**preview-testdir**/data/covid19/**testdir**.csv](https://raw.githubusercontent.com/dsbbfinddx/FINDtestdirData/preview-testdir/data/covid19/testdir.csv)
 
 
 
@@ -28,21 +38,24 @@ There are two versions of each data set: A regularly refreshed 'preview' version
 With latest shinyfind, the 'main' set can read into R, using:
 
 ```r
-shinyfind::get_data("testdir")
+shinyfind::get_data("testdir", app = "covid19")
+shinyfind::get_data("mpx_testdir", app = "monkeypox")
 ```
 
 The 'preview' dataset:
 
 
 ```r
-shinyfind::get_data("testdir", version = "preview")
+shinyfind::get_data("testdir", app = "covid19", version = "preview")
 ```
+
+where `covid19` is the name of the folder in this repo and also the [name of the app's folder in shinytestdir](https://github.com/finddx/shinytestdir)
 
 Alternatively, use `options()` to set the version. This is useful in shiny apps, if you want to maintain a main and a preview version of an app.
 
 ```r
 options(find.data.version = "preview")
-shinyfind::get_data("testdir")
+shinyfind::get_data("testdir", "covid19")
 ```
 
 These functions are memoised. By default, they download the data once a day, at 7am UTC.
@@ -50,8 +63,8 @@ These functions are memoised. By default, they download the data once a day, at 
 Same use for other dataset:
 
 ```r
-shinyfind::get_data("selftests")
-shinyfind::get_data("selftests", "preview")
+shinyfind::get_data("selftests", "covid19")
+shinyfind::get_data("selftests", "covid19", "preview")
 ```
 
 
