@@ -9,21 +9,23 @@ set.seed(5)
 
 
 # Authenticate using username, password, and security token ...
-sf_auth(
-  username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
-  password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
-  security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
-)
+# sf_auth(
+#   username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
+#   password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
+#   security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
+# )
+# 
+# # find a report in your org and run it
+# all_reports <- sf_query("SELECT Id, Name FROM Report")
+# mpx_report_id <- '00O6900000CNadVEAT'
+# sf_data <- sf_run_report(mpx_report_id)
+sf_data <- readr::read_csv("data/raw/mpx_testdir.csv")
 
-# find a report in your org and run it
-all_reports <- sf_query("SELECT Id, Name FROM Report")
-mpx_report_id <- '00O6900000CNadVEAT'
-sf_data <- sf_run_report(mpx_report_id)
 colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Parent Submission: ')
 
 
 meta_cols <-
-  readr::read_csv("data/mpx_testdir_meta_cols.csv", show_col_types = FALSE) |>
+  readr::read_csv("data/monkeypox//mpx_testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
@@ -63,5 +65,5 @@ data <-
   relocate(submission_id, .before = submission_title)
 
 
-write_csv(data, "data/mpx_testdir.csv")
+write_csv(data, "data/monkeypox/mpx_testdir.csv")
 

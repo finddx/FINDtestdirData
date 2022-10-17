@@ -18,11 +18,11 @@ library(fuzzyjoin)
 # sf_data <- sf_run_report(covid_report_id)
 
 
-sf_data <- readr::read_csv("data/raw/testdir_data.csv")
+sf_data <- readr::read_csv("data/raw/testdir.csv")
 
 
 meta_cols <-
-  readr::read_csv("data/testdir_meta_cols.csv", show_col_types = FALSE) |>
+  readr::read_csv("data/covid19/testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
@@ -58,5 +58,5 @@ data <-
   rename(region = continent) |>
   mutate(permalink = extract_link(permalink))
 
-write_csv(data, "data/testdir.csv")
+write_csv(data, "data/covid19/testdir.csv")
 
