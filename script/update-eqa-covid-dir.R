@@ -47,6 +47,7 @@ extract_link <- function(x) {
 data <-
   data_raw |>
   mutate(across(everything(), ~na_if(., "-"))) |>
-  mutate(permalink = extract_link(permalink))
+  mutate(permalink = extract_link(permalink)) |>
+  mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
 write_csv(data, "data/eqa_covid_testdir.csv")

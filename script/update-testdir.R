@@ -56,7 +56,8 @@ data <-
   fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
   select(-name, -region, -alpha3) |>
   rename(region = continent) |>
-  mutate(permalink = extract_link(permalink))
+  mutate(permalink = extract_link(permalink)) |>
+  mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
 write_csv(data, "data/covid19/testdir.csv")
 
