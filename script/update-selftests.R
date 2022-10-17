@@ -29,7 +29,7 @@ sf_data <- sf_data_raw
 colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Parent Submission: ')
 
 cols_toKeep <- c("Performance Detail Submission: ID", "Company/Institution Name",
-                "Submission Title", "Country of Manufacturer",
+                "Submission Title", 
                 "Regulatory Approval", "Clinical Sensitivity (%)",
                 "95% CI for Clinical Sensitivity (Lower)", "95% CI for Clinical Sensitivity (Upper)",
                 "Clinical Specificity (%)","95% CI for Clinical Specificity (Lower)",
@@ -58,7 +58,7 @@ tmp_cast <- tmp_cast[,colnames(tmp_cast) %in% cols_toKeep]
 tmp_cast[tmp_cast == ""] <- NA
 
 reg_status <- tmp_cast
-reg_status <- dplyr::left_join(sf_data[,c("Company/Institution Name", "Submission Title", "Country of Manufacturer", "Assay Target",
+reg_status <- dplyr::left_join(sf_data[,c("Company/Institution Name", "Submission Title",  "Assay Target",
                                           "Target Analyte(s)", "Self-testing/Self-Collection", "Validated Sample Types", "Time to results excl sample prep (mins)",
                                           "submission_id" )],
                                reg_status, by = 'submission_id')
@@ -89,7 +89,6 @@ data <- reg_status %>%
   dplyr::rename(
     company = `Company/Institution Name`,
     test_name = `Submission Title`,
-    country = `Country of Manufacturer`,
     sample = `Validated Sample Types`,
     prof_self = `Self-testing/Self-Collection`,
     target = `Assay Target`,
@@ -121,7 +120,7 @@ data <- reg_status %>%
 
 
 
-write_csv(data, "data/selftests.csv")
+write_csv(data, "data/covid19/selftests.csv")
 
 
 
