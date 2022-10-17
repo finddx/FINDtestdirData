@@ -4,20 +4,21 @@ library(dplyr)
 library(salesforcer)
 library(fuzzyjoin)
 
-sf_auth(
-  username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
-  password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
-  security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
-)
+# sf_auth(
+#   username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
+#   password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
+#   security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
+# )
+# 
+# 
+# all_reports <- sf_query("SELECT Id, Name FROM Report")
+# chagas_report_id <- '00O6900000BnnB0EAJ'
+# 
+# sf_data <- sf_run_report(chagas_report_id)
 
-
-all_reports <- sf_query("SELECT Id, Name FROM Report")
-chagas_report_id <- '00O6900000BnnB0EAJ'
-
-sf_data <- sf_run_report(chagas_report_id)
-
+sf_data <- readr::read_csv("data/raw/chagas_testdir.csv")
 meta_cols <-
-  readr::read_csv("data/chagas_testdir_meta_cols.csv", show_col_types = FALSE) |>
+  readr::read_csv("data/ntd/chagas_testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
@@ -53,5 +54,5 @@ data <-
   rename(region = continent) |>
   mutate(permalink = extract_link(permalink))
 
-write_csv(data, "data/chagas_testdir.csv")
+write_csv(data, "data/ntd/chagas_testdir.csv")
 
