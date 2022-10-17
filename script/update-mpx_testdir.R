@@ -65,5 +65,5 @@ data <-
   relocate(submission_id, .before = submission_title)
 
 
-write_csv(data, "data/mpx_testdir.csv")
+write_csv(data, "data/monkeypox/mpx_testdir.csv")
 
