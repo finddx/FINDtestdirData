@@ -9,11 +9,11 @@ library(fuzzyjoin)
 #   password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
 #   security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
 # )
-# 
-# 
+#
+#
 # all_reports <- sf_query("SELECT Id, Name FROM Report")
 # chagas_report_id <- '00O6900000BnnB0EAJ'
-# 
+#
 # sf_data <- sf_run_report(chagas_report_id)
 
 sf_data <- readr::read_csv("data/raw/chagas_testdir.csv")
@@ -52,7 +52,8 @@ data <-
   fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
   select(-name, -region, -alpha3) |>
   rename(region = continent) |>
-  mutate(permalink = extract_link(permalink))
+  mutate(permalink = extract_link(permalink)) |>
+  mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
 write_csv(data, "data/ntd/chagas_testdir.csv")
 
