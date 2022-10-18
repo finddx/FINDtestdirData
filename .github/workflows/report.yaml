@@ -1,0 +1,34 @@
+name: Sales force report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 2 * * 0'
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    env:
+      SF_USER: ${{ secrets.SF_USER }}
+      SF_PASS: ${{ secrets.SF_PASS }}
+      SF_TOKEN: ${{ secrets.SF_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Get report
+        run: |
+          pip install pyOpenSSL --upgrade
+          pip install simple_salesforce
+          python3 salesforce_report.py 00O6900000CNcZQEA1 00O6900000BnnB0EAJ 00O6900000CGGvtEAH 00O6900000CGJeXEAX
+
+      - name: Add file to branch
+        run: |
+          rm -rf .github salesforce_report.py README.md
+
+          git log -n 1 --pretty=format:"git config --global user.name '%an' && git config --global user.email '%ae'"| sh
+          git checkout --orphan report
+          git add .
+          git commit -m "auto commit"
+          git push -f origin report
