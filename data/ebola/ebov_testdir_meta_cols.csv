@@ -1,7 +1,7 @@
-id,description,filterable,salesforce_name
+﻿id,description,filterable,salesforce_name
 submission_title,Assay name,TRUE,Submission Title
-manufacturer,Manufacturer,TRUE,Organisation Name
-permalink,Website,FALSE,Website
+manufacturer,Manufacturer,TRUE,Company/Institution Name
+permalink,Website,FALSE,Product Website
 country,Country,TRUE,Country of Manufacturer
 region,Region,TRUE,NA
 stage_of_development,Stage of development,TRUE,Stage of Development
@@ -12,3 +12,4 @@ target_analyte,Target analyte,TRUE,Target Analyte(s)
 lab_vs_poc,Lab vs POC,TRUE,Lab vs. POC
 validated_sample_types,Validated sample types,TRUE,Validated Sample Types
 assay_target,Assay target,TRUE,Assay Target
+serovar_subtype,Serovar Subtype, TRUE, Serovar Subtype
