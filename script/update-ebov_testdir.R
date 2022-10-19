@@ -20,7 +20,7 @@ set.seed(5)
 # ebov_report_id <- '00O6900000CGJeXEAX'
 # sf_data <- sf_run_report(ebov_report_id)
 
-sf_data <- readr::read_csv("data/raw/ebov_testdir.csv")
+sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/ebov_testdir.csv")
 colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Parent Submission: ')
 
 
