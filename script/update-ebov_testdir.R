@@ -62,7 +62,6 @@ data <-
   rename(region = continent) |>
   mutate(permalink = extract_link(permalink))|>
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink))) |>
-  mutate(submission_id = row_number()) |>
   relocate(submission_id, .before = submission_title)
 
 
