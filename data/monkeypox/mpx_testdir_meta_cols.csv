@@ -1,7 +1,8 @@
 id,description,filterable,salesforce_name
+submission_id,ID,FALSE,Submission ID
 submission_title,Assay name,TRUE,Submission Title
-manufacturer,Manufacturer,TRUE,Company/Institution Name
-permalink,Website,FALSE,Product Website
+manufacturer,Manufacturer,TRUE,Organisation Name
+permalink,Website,FALSE,Website
 country,Country,TRUE,Country of Manufacturer
 region,Region,TRUE,NA
 stage_of_development,Stage of development,TRUE,Stage of Development

@@ -1,7 +1,7 @@
 library(readr)
 library(tidyr)
 library(dplyr)
-library(salesforcer)
+#library(salesforcer)
 library(fuzzyjoin)
 library(stringr)
 
@@ -19,7 +19,7 @@ set.seed(5)
 # all_reports <- sf_query("SELECT Id, Name FROM Report")
 # mpx_report_id <- '00O6900000CNadVEAT'
 # sf_data <- sf_run_report(mpx_report_id)
-sf_data <- readr::read_csv("data/raw/mpx_testdir.csv")
+sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/mpx_testdir.csv")
 
 colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Parent Submission: ')
 
@@ -62,7 +62,7 @@ data <-
   rename(region = continent) |>
   mutate(permalink = extract_link(permalink)) |>
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink))) |>
-  mutate(submission_id = row_number()) |>
+  #mutate(submission_id = row_number()) |>
   relocate(submission_id, .before = submission_title)
 
 
