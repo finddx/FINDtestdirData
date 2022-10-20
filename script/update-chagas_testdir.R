@@ -1,7 +1,6 @@
 library(readr)
 library(tidyr)
 library(dplyr)
-library(salesforcer)
 library(fuzzyjoin)
 
 # sf_auth(
