@@ -25,7 +25,7 @@ colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', '
 
 
 meta_cols <-
-  readr::read_csv("data/monkeypox//mpx_testdir_meta_cols.csv", show_col_types = FALSE) |>
+  readr::read_csv("data/monkeypox/mpx_testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
