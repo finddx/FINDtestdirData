@@ -58,7 +58,7 @@ jobs:
           
       - name: Running update scripts
         run: |
-         Rscript -e "source('script/update-ebola_testdir.R')"
+         Rscript -e "source('script/update-ebov_testdir.R')"
          
       - name: Commit files
         run: |
