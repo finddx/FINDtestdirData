@@ -66,7 +66,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git pull origin main
           git add data/ebola/ebov_testdir.csv
-          git commit -m "update chagas report" || echo "Nothing to update"
+          git commit -m "update ebola report: ebov_testdir.csv" || echo "Nothing to update"
 
       - name: Reset preview branch
         run: |
@@ -78,6 +78,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: "[GHA] update from salesforce"
-          assignees: benubah
+          assignees: findanna
           delete-branch: true
           branch: preview-ebola
