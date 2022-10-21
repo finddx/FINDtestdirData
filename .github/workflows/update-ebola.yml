@@ -12,26 +12,23 @@ name: Update Ebola Test directory Data
 # Controls when the action will run.
 on:
   workflow_dispatch:
-  push:
-  # for now, CRON jobs only run on the default branch of the repo (i.e. usually on master)
   schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron: "0 21 * * *"
-    - cron: "0 6 * * *"
+    - cron:  '0 3 * * 0'
+
 env:
     GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-    
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "update-ebola"
   update-ebola:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
+
     env:
       # use GITHUB_TOKEN from GitHub to workaround rate limits in {remotes}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -46,20 +43,20 @@ jobs:
       # Run Script
       - name: Print Hello
         run: Rscript -e 'print("Hi..Workflow running")'
-        
+
       - name: "[Custom block] [Linux] Install required libraries"
         run: sudo apt install libcurl4-openssl-dev
-  
+
       - name: Installing packages
         run: |
           Rscript -e "install.packages('remotes', type = 'source')"
           Rscript -e "remotes::install_github('finddx/shinyfind')"
           Rscript -e 'install.packages(c("readr", "dplyr", "tidyr", "fuzzyjoin", "countrycode"), repos = "https://packagemanager.rstudio.com/cran/__linux__/focal/latest")'
-          
+
       - name: Running update scripts
         run: |
          Rscript -e "source('script/update-ebov_testdir.R')"
-         
+
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
@@ -73,7 +70,7 @@ jobs:
           git checkout main
           git checkout -b preview-ebola
           git checkout main
-          
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
