@@ -15,7 +15,7 @@ library(fuzzyjoin)
 #
 # sf_data <- sf_run_report(chagas_report_id)
 
-sf_data <- readr::read_csv("data/raw/chagas_testdir.csv")
+sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/chagas_testdir.csv")
 meta_cols <-
   readr::read_csv("data/ntd/chagas_testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
