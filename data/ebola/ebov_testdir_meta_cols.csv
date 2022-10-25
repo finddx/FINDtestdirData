@@ -13,5 +13,5 @@ target_analyte,Target analyte,TRUE,Target Analyte(s)
 lab_vs_poc,Lab vs POC,TRUE,Lab vs. POC
 validated_sample_types,Validated sample types,TRUE,Validated Sample Types
 assay_target,Assay target,TRUE,Assay Target
-serovar_subtype,Serovar Subtype, TRUE, Serovar subtype
+serovar_subtype,Species, TRUE, Serovar subtype
 
