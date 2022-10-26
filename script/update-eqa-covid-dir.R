@@ -17,7 +17,7 @@ eqa_report_id <- '00O6900000CGKWKEA5'
 sf_data <- sf_run_report(eqa_report_id)
 
 meta_cols <-
-  readr::read_csv("data/eqa_covid_testdir_meta_cols.csv", show_col_types = FALSE) |>
+  readr::read_csv("data/covid19/eqa_covid_testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
@@ -50,4 +50,4 @@ data <-
   mutate(permalink = extract_link(permalink)) |>
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
-write_csv(data, "data/eqa_covid_testdir.csv")
+write_csv(data, "data/covid19/eqa_covid_testdir.csv")
