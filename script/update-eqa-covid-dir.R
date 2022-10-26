@@ -12,7 +12,7 @@ sf_auth(
 
 
 all_reports <- sf_query("SELECT Id, Name FROM Report")
-eqa_report_id <- '00O6900000Bnq9WEAR'
+eqa_report_id <- '00O6900000CGKWKEA5'
 
 sf_data <- sf_run_report(eqa_report_id)
 
