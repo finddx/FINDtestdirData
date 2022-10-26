@@ -1,7 +1,7 @@
 salesforce_name,description,include_in_table,filterable,id
-Submission ID,ID,FALSE,FALSE,submission_id
-Company/Institution Name: Organisation Name,Organization name,TRUE,FALSE,manufacturer
-Submission Title,EQA name,TRUE,FALSE,submission_title
+Submission: ID,ID,FALSE,FALSE,submission_id
+Organisation Name,Organization name,TRUE,FALSE,manufacturer
+Submission: Submission Title,EQA name,TRUE,FALSE,submission_title
 Region,Region of production,TRUE,FALSE,region
 Regions of test availability,Region of availability,TRUE,FALSE,region_availability
 Disease Target,Disease target,TRUE,TRUE,disease_target
