@@ -21,7 +21,7 @@ jobs:
         run: |
           pip install pyOpenSSL --upgrade
           pip install simple_salesforce
-          python3 salesforce_report.py 00O6900000CNcZQEA1 00O6900000BnnB0EAJ 00O6900000CGGvtEAH 00O6900000CGJeXEAX
+          python3 salesforce_report.py 00O6900000CNcZQEA1 00O6900000BnnLZEAZ 00O6900000CGGvtEAH 00O6900000CGJeXEAX 00O6900000CGKWKEA5
 
       - name: Add file to branch
         run: |
