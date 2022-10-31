@@ -75,6 +75,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: "[GHA] update from salesforce"
-          assignees: benubah
+          assignees: findanna
           delete-branch: true
           branch: preview-covid19_testdir
