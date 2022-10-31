@@ -1,24 +1,8 @@
-
-# fs::file_copy("../shinytestdir/testdir/data/meta_cols.csv", "data/meta_cols.csv")
-
-
 library(readr)
 library(tidyr)
 library(dplyr)
-library(salesforcer)
 library(fuzzyjoin)
 
-# sf_auth(
-#   username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
-#   password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
-#   security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
-# )
-
-# covid_report_id <- '00O6900000CRNLeEAP'
-# sf_data <- sf_run_report(covid_report_id)
-
-
-sf_data <- readr::read_csv("data/raw/testdir.csv")
 sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/testdir.csv")
 
 
