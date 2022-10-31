@@ -1,20 +1,10 @@
 library(readr)
 library(tidyr)
 library(dplyr)
-library(salesforcer)
 library(fuzzyjoin)
 
-sf_auth(
-  username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
-  password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
-  security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
-)
 
-
-all_reports <- sf_query("SELECT Id, Name FROM Report")
-eqa_report_id <- '00O6900000CGKWKEA5'
-
-sf_data <- sf_run_report(eqa_report_id)
+sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/eqa_covid_testdir.csv")
 
 meta_cols <-
   readr::read_csv("data/covid19/eqa_covid_testdir_meta_cols.csv", show_col_types = FALSE) |>
