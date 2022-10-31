@@ -7,7 +7,7 @@
 # additional example workflows available for the R community.
 
 # This is a basic workflow to help you get started with Actions
-name: Update Chagas Test directory Data
+name: Update Monkeypox Test directory Data
 
 # Controls when the action will run.
 on:
@@ -21,7 +21,7 @@ env:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "write-csv"
-  update-chagas_testdir:
+  update-mpx_testdir:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -55,20 +55,20 @@ jobs:
 
       - name: Running update scripts
         run: |
-         Rscript -e "source('script/update-chagas_testdir.R')"
+         Rscript -e "source('script/update-mpx_testdir.R')"
 
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull origin main
-          git add data/ntd/chagas_testdir.csv
-          git commit -m "update chagas report" || echo "Nothing to update"
+          git add data/monkeypox/mpx_testdir.csv
+          git commit -m "update monkeypox report" || echo "Nothing to update"
 
       - name: Reset preview branch
         run: |
           git checkout main
-          git checkout -b preview-chagas
+          git checkout -b preview-monkeypox
           git checkout main
 
       - name: Create Pull Request
@@ -77,4 +77,4 @@ jobs:
           commit-message: "[GHA] update from salesforce"
           assignees: findanna
           delete-branch: true
-          branch: preview-chagas
+          branch: preview-monkeypox

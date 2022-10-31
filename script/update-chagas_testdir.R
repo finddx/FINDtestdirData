@@ -3,18 +3,6 @@ library(tidyr)
 library(dplyr)
 library(fuzzyjoin)
 
-# sf_auth(
-#   username = Sys.getenv("FIND_SALESFORCE_USERNAME"),
-#   password = Sys.getenv("FIND_SALESFORCE_PASSWORD"),
-#   security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
-# )
-#
-#
-# all_reports <- sf_query("SELECT Id, Name FROM Report")
-# chagas_report_id <- '00O6900000BnnB0EAJ'
-#
-# sf_data <- sf_run_report(chagas_report_id)
-
 sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/chagas_testdir.csv")
 meta_cols <-
   readr::read_csv("data/ntd/chagas_testdir_meta_cols.csv", show_col_types = FALSE) |>

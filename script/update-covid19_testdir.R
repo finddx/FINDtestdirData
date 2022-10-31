@@ -1,18 +1,13 @@
-
-# fs::file_copy("../shinytestdir/testdir/data/meta_cols.csv", "data/meta_cols.csv")
-
-
 library(readr)
 library(tidyr)
 library(dplyr)
-library(salesforcer)
 library(fuzzyjoin)
 
+sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/testdir.csv")
 
-sf_data <- readr::read_csv("data/raw/testdir_proof_data.csv")
 
 meta_cols <-
-  readr::read_csv("data/testdir_meta_cols_proof.csv", show_col_types = FALSE) |>
+  readr::read_csv("data/covid19/testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
 
 data_raw <-
@@ -46,7 +41,8 @@ data <-
   fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
   select(-name, -region, -alpha3) |>
   rename(region = continent) |>
-  mutate(permalink = extract_link(permalink))
+  mutate(permalink = extract_link(permalink)) |>
+  mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
-write_csv(data, "data/testdir_proof.csv")
+write_csv(data, "data/covid19/testdir.csv")
 
