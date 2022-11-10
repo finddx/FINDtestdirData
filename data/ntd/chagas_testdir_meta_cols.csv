@@ -19,8 +19,8 @@ laboratory_point_of_care    ,Laboratory/point-of-care    ,TRUE      ,Lab vs. POC
 time_to_result              ,Time to result              ,FALSE     ,Time to results excl sample prep (mins)
 connectivity                ,Connectivity                ,TRUE      ,Connectivity Solution
 regulatory_status           ,Regulatory status           ,TRUE      ,Regulatory Approval
-clinical_sensitivity        ,Sensitivity                 ,FALSE     ,Clinical Sensitivity (%)
-clinical_specificity        ,Specificity                 ,FALSE     ,Clinical Specificity (%)
+sensitivity        ,Sensitivity                 ,FALSE     ,Sensitivity (%)
+specificity        ,Specificity                 ,FALSE     ,Specificity (%)
 stage_of_development,Stage of development,TRUE      ,Stage of Development
 technology_principle,Technology principle,TRUE      ,Technology principle
 permalink                   ,Permanent link,FALSE     ,Website
