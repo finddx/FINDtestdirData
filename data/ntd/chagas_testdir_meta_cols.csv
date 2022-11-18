@@ -1,26 +1,27 @@
 id                          ,description                 ,filterable,salesforce_name
-submission_id              ,ID                          ,FALSE     ,Performance Detail Submission: ID
-disease_target,Disease target,TRUE      ,Parent Submission: Disease Target
-primary_use_case,Primary use case,TRUE      ,Parent Submission: Primary Use Case
-manufacturer                ,Manufacturer                ,TRUE      ,Parent Submission: Company/Institution Name
-submission_title            ,Assay name                  ,FALSE     ,Parent Submission: Submission Title
-region                      ,Region of company headquarters                      ,TRUE      ,Parent Submission: Region
-country                     ,Country                     ,TRUE      ,Parent Submission: Country of Manufacturer
-type_of_technology          ,Type of technology          ,TRUE      ,Parent Submission: Type of Technology
-self_testing_self_collection,Self-testing/self-collection,TRUE      ,Parent Submission: Self-testing/Self-Collection
-assay_target                ,Assay target                ,TRUE      ,Parent Submission: Assay Target
-test_format                 ,Test format                 ,TRUE      ,Parent Submission: Test Format
-target_analyte              ,Target analyte              ,TRUE      ,Parent Submission: Target Analyte(s)
-validated_sample_types      ,Validated sample types      ,TRUE      ,Parent Submission: Validated Sample Types
-instrument_requirement      ,Instrument requirement      ,TRUE      ,Parent Submission: Instrument requirement
-level_of_automation         ,Level of automation         ,TRUE      ,Parent Submission: Level of automation
-laboratory_point_of_care    ,Laboratory/point-of-care    ,TRUE      ,Parent Submission: Lab vs. POC
-time_to_result              ,Time to result              ,FALSE     ,Parent Submission: Time to results excl sample prep (mins)
-connectivity                ,Connectivity                ,TRUE      ,Parent Submission: Connectivity Solution
-regulatory_status           ,Regulatory status           ,TRUE      ,Parent Submission: Regulatory Approval
-clinical_sensitivity        ,Sensitivity                 ,FALSE     ,Clinical Sensitivity (%)
-clinical_specificity        ,Specificity                 ,FALSE     ,Clinical Specificity (%)
-stage_of_development,Stage of development,TRUE      ,Parent Submission: Stage of Development
-technology_principle,Technology principle,TRUE      ,Parent Submission: Technology principle
-permalink                   ,Permanent link,FALSE     ,Parent Submission: Product Website
+submission_id              ,ID                          ,FALSE     ,Submission ID
+performance_detail_submission_id              ,ID                          ,FALSE     ,Performance Detail Submission ID
+disease_target,Disease target,TRUE      ,Disease Target
+primary_use_case,Primary use case,TRUE      ,Primary Use Case
+manufacturer                ,Manufacturer                ,TRUE      ,Organisation Name
+submission_title            ,Assay name                  ,FALSE     ,Submission Title
+region                      ,Region of company headquarters                      ,TRUE      ,Region
+country                     ,Country                     ,TRUE      ,Country of Manufacturer
+type_of_technology          ,Type of technology          ,TRUE      ,Type of Technology
+self_testing_self_collection,Self-testing/self-collection,TRUE      ,Self-testing/Self-Collection
+assay_target                ,Assay target                ,TRUE      ,Assay Target
+test_format                 ,Test format                 ,TRUE      ,Test Format
+target_analyte              ,Target analyte              ,TRUE      ,Target Analyte(s)
+validated_sample_types      ,Validated sample types      ,TRUE      ,Validated Sample Types
+instrument_requirement      ,Instrument requirement      ,TRUE      ,Instrument requirement
+level_of_automation         ,Level of automation         ,TRUE      ,Level of automation
+laboratory_point_of_care    ,Laboratory/point-of-care    ,TRUE      ,Lab vs. POC
+time_to_result              ,Time to result              ,FALSE     ,Time to results excl sample prep (mins)
+connectivity                ,Connectivity                ,TRUE      ,Connectivity Solution
+regulatory_status           ,Regulatory status           ,TRUE      ,Regulatory Approval
+sensitivity        ,Sensitivity                 ,FALSE     ,Sensitivity (%)
+specificity        ,Specificity                 ,FALSE     ,Specificity (%)
+stage_of_development,Stage of development,TRUE      ,Stage of Development
+technology_principle,Technology principle,TRUE      ,Technology principle
+permalink                   ,Permanent link,FALSE     ,Website
 find_evaluation,FIND evaluation,TRUE      ,FIND Evaluation
