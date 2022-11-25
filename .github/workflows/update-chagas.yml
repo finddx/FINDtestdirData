@@ -49,7 +49,7 @@ jobs:
 
       - name: Installing packages
         run: |
-          Rscript -e "install.packages('remotes', type = 'source')"
+          Rscript -e "install.packages(c('remotes', 'stringi'), type = 'source')"
           Rscript -e "remotes::install_github('finddx/shinyfind')"
           Rscript -e 'install.packages(c("fuzzyjoin", "countrycode"), repos = "https://packagemanager.rstudio.com/cran/__linux__/focal/latest")'
 
