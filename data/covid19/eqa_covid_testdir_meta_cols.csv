@@ -4,7 +4,7 @@ Organisation Name,Organization name,TRUE,FALSE,manufacturer
 Submission: Submission Title,EQA name,TRUE,FALSE,submission_title
 Region,Region of production,TRUE,FALSE,region
 Regions of test availability,Region of availability,TRUE,FALSE,region_availability
-Disease Target,Disease target,TRUE,TRUE,disease_target
+Target Pathogen,Target pathogen,TRUE,TRUE,target_pathogen
 Type of Technology,Type of technology,TRUE,TRUE,type_of_technology
 Assay Target,Assay target,TRUE,TRUE,assay_target
 Target Analyte(s),Target analyte,TRUE,TRUE,target_analyte
