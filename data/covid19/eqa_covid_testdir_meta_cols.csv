@@ -11,5 +11,5 @@ Target Analyte(s),Target analyte,TRUE,TRUE,target_analyte
 Is this a variant detection test?,Are multiple variants included?,TRUE,FALSE,is_this_a_variant_detection_test
 Format of Material Provided,Format of material provided,TRUE,FALSE,format_of_material_provided
 Qualitative or Quantitative,Qualitative/Quantitative,TRUE,TRUE,qual_or_quant
-Storage Temperature 1,Storage temperature,TRUE,FALSE,storage_temp
+Storage Temperature,Storage temperature,TRUE,FALSE,storage_temp
 Product Website,Permanent link,TRUE,FALSE,permalink
