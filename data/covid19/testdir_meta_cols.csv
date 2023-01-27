@@ -4,7 +4,7 @@ performance_detail_submission_id,Performance ID,FALSE,Performance Detail Submiss
 date_of_submission,Date,FALSE,Date of Submission
 manufacturer,Manufacturer,TRUE,Organisation Name
 submission_title,Assay name,TRUE,Submission Title
-disease_target,Disease target,FALSE,Disease Target
+target_pathogen,Target Pathogen,FALSE,Target Pathogen
 stage_of_development,Stage of development,FALSE,Stage of Development
 country,Country,TRUE,Country of Manufacturer
 region,Region,TRUE,Region
