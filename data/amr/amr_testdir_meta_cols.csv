@@ -30,9 +30,9 @@ resistance_marker,Resistance marker,TRUE,Assay: Resistance Marker,TRUE
 other_resistance_marker,Other resistance marker,FALSE,Assay: Other Resistance Marker,FALSE
 antimicrobial_resistance_class,Antimicrobial resistance class,TRUE,Assay: Antimicrobial Resistance Class,TRUE
 other_antimicrobial_resistance_class,Other antimicrobial resistance class,FALSE,Assay: Other Antimicrobial Resistance Class,FALSE
-Drug resistance target,Antimicrobial agent,FALSE,Assay: Drug Resistance Target,TRUE
+Drug_resistance_target,Antimicrobial agent,FALSE,Assay: Drug Resistance Target,TRUE
 Other Drug resistance target,Other antimicrobial agent,FALSE,Assay: Other drug resistance target,FALSE
-AST output,AST output,FALSE,Assay: AST Output,FALSE
+AST_output,AST output,FALSE,Assay: AST Output,FALSE
 test_format,Test format,FALSE,Assay: Test Format,
 other_test_format,Other test format,FALSE,Assay: Other Test Format,
 instrument_requirement,Instrument requirement,FALSE,Assay: Instrument requirement,
