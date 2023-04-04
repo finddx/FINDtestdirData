@@ -3,16 +3,16 @@ submission_id,ID,FALSE,Assay: Assay ID,
 performance_detail_submission_id,Performance ID,FALSE,Performance Detail Submission ID,
 date_of_submission,Date,FALSE,Assay: Created Date,
 manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,TRUE
-submission_title,Assay Name,TRUE,Assay: Assay Name,TRUE
+submission_title,Assay name,TRUE,Assay: Assay Name,TRUE
 target_pathogen,Target pathogen,TRUE,Assay: Target Pathogen,TRUE
 other_target_pathogen,Other target pathogen,FALSE,Assay: Other target pathogen,FALSE
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development,FALSE
 country,Headquarter country,TRUE,Assay: Company/Institution Name: Country of Manufacturer,TRUE
-region,Headquarter region,TRUE,Assay: Company/Institution Name: Region,
-permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website,
+region,Headquarter region,TRUE,Assay: Company/Institution Name: Region,TRUE
+permalink,Website,FALSE,Assay: Company/Institution Name: Website,FALSE
 regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,TRUE
-planned_market_entry,Planned market entry,FALSE,Assay: Planned Market Entry,
-primary_use_case,Primary use case,FALSE,Assay: Primary Use Case,
+planned_market_entry,Planned market entry,FALSE,Assay: Planned Market Entry,FALSE
+primary_use_case,Primary use case,FALSE,Assay: Primary Use Case,FALSE
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology,TRUE
 syndromes,Syndrome,TRUE,Assay: Syndromes,TRUE
 assay_aim,Assay aim,TRUE,Assay: Assay Aim,TRUE
@@ -23,9 +23,9 @@ organism_classes,Organism Class,TRUE,Assay: Target Organism Classes,FALSE
 target_analyte,Target analyte,FALSE,Assay: Target Analyte(s),TRUE
 technology_principle,Technology principle,FALSE,Assay: Technology principle,FALSE
 other_technology_principle,Other technology principle,FALSE,Assay: Other Technology Principle,FALSE
-readout_technology,Readout technology,FALSE,Assay: Readout Technology,
-other_readout_technology,Other readout technology,FALSE,Assay: Other Readout Technology,
-qualitative_or_quantitative,Quantitative or qualitative,FALSE,Assay: Qualitative or Quantitative,
+readout_technology,Readout technology,FALSE,Assay: Readout Technology,FALSE
+other_readout_technology,Other readout technology,FALSE,Assay: Other Readout Technology,FALSE
+qualitative_or_quantitative,Quantitative or qualitative,FALSE,Assay: Qualitative or Quantitative,FALSE
 resistance_marker,Resistance marker,TRUE,Assay: Resistance Marker,TRUE
 other_resistance_marker,Other resistance marker,FALSE,Assay: Other Resistance Marker,FALSE
 antimicrobial_resistance_class,Antimicrobial resistance class,TRUE,Assay: Antimicrobial Resistance Class,TRUE
@@ -33,14 +33,14 @@ other_antimicrobial_resistance_class,Other antimicrobial resistance class,FALSE,
 Drug_resistance_target,Antimicrobial agent,FALSE,Assay: Drug Resistance Target,TRUE
 Other Drug resistance target,Other antimicrobial agent,FALSE,Assay: Other drug resistance target,FALSE
 AST_output,AST output,FALSE,Assay: AST Output,FALSE
-test_format,Test format,FALSE,Assay: Test Format,
-other_test_format,Other test format,FALSE,Assay: Other Test Format,
-instrument_requirement,Instrument requirement,FALSE,Assay: Instrument requirement,
-level_of_automation,Level of automation,FALSE,Assay: Level of automation,
+test_format,Test format,FALSE,Assay: Test Format,FALSE
+other_test_format,Other test format,FALSE,Assay: Other Test Format,FALSE
+instrument_requirement,Instrument requirement,FALSE,Assay: Instrument requirement,FALSE
+level_of_automation,Level of automation,FALSE,Assay: Level of automation,FALSE
 lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,TRUE
 self_testing_self_collection,Self-testing or professional use,FALSE,Assay: Self-testing/Self-Collection,FALSE
 validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,TRUE
 other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type,FALSE
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Assay: Time to results (mins),FALSE
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,
-data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,FALSE
+data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,FALSE
