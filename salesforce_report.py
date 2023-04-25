@@ -8,7 +8,8 @@ reports = {
 	"00O6900000BnnLZEAZ": "chagas_testdir",
 	"00O6900000CGGvtEAH": "mpx_testdir",
 	"00O6900000CGJeXEAX": "ebov_testdir",
-	"00O6900000CGKWKEA5": "eqa_covid_testdir"
+	"00O6900000CGKWKEA5": "eqa_covid_testdir",
+	"00O6900000CGaQTEA1": "amr_testdir"
 }
 
 if len(sys.argv) < 2:
