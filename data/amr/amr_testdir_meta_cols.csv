@@ -20,7 +20,7 @@ disease_target,Disease target,FALSE,Assay: Disease Target,FALSE
 assay_target,Assay target,FALSE,Assay: Assay Target,TRUE
 organism_classes,Organism class,TRUE,Assay: Target Organism Classes,FALSE
 target_pathogen,Target pathogen,TRUE,Assay: Target Pathogen,TRUE
-target_analyte,Target analyte,FALSE,Assay: Target Analyte(s),TRUE
+target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),TRUE
 technology_principle,Technology principle,FALSE,Assay: Technology principle,FALSE
 other_technology_principle,Other technology principle,FALSE,Assay: Other Technology Principle,FALSE
 readout_technology,Readout technology,FALSE,Assay: Readout Technology,FALSE
