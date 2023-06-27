@@ -1,5 +1,6 @@
 id,description,filterable,salesforce_name
 submission_id,ID,FALSE,Submission ID
+disease_target,Disease Target,TRUE,Disease target
 submission_title,Assay name,TRUE,Submission Title
 manufacturer,Manufacturer,TRUE,Organisation Name
 permalink,Website,FALSE,Website
@@ -7,7 +8,6 @@ country,Country,TRUE,Country of Manufacturer
 region,Region,TRUE,NA
 stage_of_development,Stage of development,TRUE,Stage of Development
 regulatory_status,Regulatory status,TRUE,Regulatory Approval
-disease_target,Disease Target,TRUE,Disease Target
 type_of_technology,Type of technology,TRUE,Type of Technology
 test_format,Test format,TRUE,Test Format
 target_analyte,Target analyte,TRUE,Target Analyte(s)
