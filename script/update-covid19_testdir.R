@@ -45,5 +45,47 @@ data <-
   mutate(permalink = extract_link(permalink)) |>
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
+
+#COVARIANTS#
+#Get all unique covariants per row in anew column
+data$impact_all <- apply(data[, c("no_expected_impact", "potential_impact", "no_impact", "impact")], 1, function(x) paste(unique(x), collapse = "; "))
+#create a vector listing all the covariants
+covariants <- data |>
+  select(impact_all) |>
+  separate_rows(impact_all, sep="; ") |>
+  unique() |>
+  pull()
+covariants <- setdiff(covariants, c("None","Not applicable"))
+#Compare  the unique covariants per row column against the list of covariants and assign in a new column the covariants not listed in the column
+data$impact_unk <- sapply(strsplit(data$impact_all, "; "), function(x) paste(setdiff(covariants, x), collapse = "; "))
+#Transform None and Not applicable to NA
+data <- data |>
+  select(-c(impact_all)) |>
+  mutate_at(c("no_expected_impact", "potential_impact", "no_impact", "impact"), ~ gsub("None|Not applicable", NA, .)) |>
+  mutate(impact_unk = ifelse(impact_unk=="", NA, impact_unk))
+#Transform impact data to long format
+data <- data |>
+  pivot_longer(cols=c(no_expected_impact, potential_impact, no_impact, impact, impact_unk),
+               names_to = "impact_type",
+               values_to = "impact_value") |>
+  separate_rows(impact_value, sep="; ") |>
+  arrange(submission_id, impact_value) |>
+  filter(!is.na(impact_value))
+#Re transform impact data to wide format
+data <- data |>
+  pivot_wider(names_from = impact_value,
+              values_from = impact_type)
+#Rename impact values
+data <- data |>
+  mutate_at(covariants, ~case_when(
+      .=="no_expected_impact" ~ "No expected impact",
+      .=="expected_impact" ~ "Expected impact",
+      .=="impact" ~ "Impact",
+      .=="no_impact" ~ "No impact",
+      .=="impact_unk" ~ "Unknown impact",
+      TRUE ~ .
+    )
+  )
+
 write_csv(data, "data/covid19/testdir.csv")
 
