@@ -42,7 +42,15 @@ study_type,Study type,FALSE,Study Type
 number_of_positive_samples,Number of positive samples,FALSE,Number of positive samples
 number_of_negative_samples,Number of negative samples,FALSE,Number of negative samples
 total_number_of_samples,Total number of samples,FALSE,Total number of samples
-no_expected_impact,No expected impact,TRUE,No expected impact (in silico analyses)
-potential_impact,Potential impact,TRUE,Potential impact (in silico analyses)
-no_impact,No impact,TRUE,No impact (analytical/clinical studies)
-impact,Impact,TRUE,Impact (analytical/clinical studies)
+no_expected_impact,No expected impact,FALSE,No expected impact (in silico analyses)
+potential_impact,Potential impact,FALSE,Potential impact (in silico analyses)
+no_impact,No impact,FALSE,No impact (analytical/clinical studies)
+impact,Impact,FALSE,Impact (analytical/clinical studies)
+impact_alpha,Alpha variant,TRUE,Alpha
+impact_beta,Beta variant,TRUE,Beta
+impact_delta,Delta variant,TRUE,Delta
+impact_delta_plus,Delta+ variant,TRUE,Delta+
+impact_gamma,Gamma variant,TRUE,Gamma
+impact_omicron,Omicron variant,TRUE,Omicron
+impact_omicron_ba4,Omicron (BA.4) variant,TRUE,Omicron (BA.4)
+impact_omicron_ba5,Omicron (BA.5) variant,TRUE,Omicron (BA.5)
