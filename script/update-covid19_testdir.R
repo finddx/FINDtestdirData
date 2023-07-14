@@ -73,10 +73,11 @@ data <- data |>
 #Re transform impact data to wide format
 data <- data |>
   pivot_wider(names_from = impact_value,
+              names_prefix = "sc2_impact_",
               values_from = impact_type)
 #Rename impact values
 data <- data |>
-  mutate_at(covariants, ~case_when(
+  mutate(across(starts_with("sc2_impact_"), ~case_when(
       .=="no_expected_impact" ~ "No expected impact",
       .=="expected_impact" ~ "Expected impact",
       .=="impact" ~ "Impact",
@@ -84,7 +85,7 @@ data <- data |>
       .=="impact_unk" ~ "Unknown impact",
       TRUE ~ .
     )
-  )
+  ))
 #Rename vars
 names(data) <- gsub("\\+", "_plus", names(data))
 names(data) <- gsub("\\.|\\(|\\)", "", names(data))

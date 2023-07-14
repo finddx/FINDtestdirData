@@ -46,11 +46,11 @@ no_expected_impact,No expected impact,FALSE,No expected impact (in silico analys
 potential_impact,Potential impact,FALSE,Potential impact (in silico analyses)
 no_impact,No impact,FALSE,No impact (analytical/clinical studies)
 impact,Impact,FALSE,Impact (analytical/clinical studies)
-alpha,Alpha variant,TRUE,Alpha
-beta,Beta variant,TRUE,Beta
-delta,Delta variant,TRUE,Delta
-delta_plus,Delta+ variant,TRUE,Delta+
-gamma,Gamma variant,TRUE,Gamma
-omicron,Omicron variant,TRUE,Omicron
-omicron_ba4,Omicron (BA.4) variant,TRUE,Omicron (BA.4)
-omicron_ba5,Omicron (BA.5) variant,TRUE,Omicron (BA.5)
+sc2_impact_alpha,Alpha variant,TRUE,Alpha
+sc2_impact_beta,Beta variant,TRUE,Beta
+sc2_impact_delta,Delta variant,TRUE,Delta
+sc2_impact_delta_plus,Delta+ variant,TRUE,Delta+
+sc2_impact_gamma,Gamma variant,TRUE,Gamma
+sc2_impact_omicron,Omicron variant,TRUE,Omicron
+sc2_impact_omicron_ba4,Omicron (BA.4) variant,TRUE,Omicron (BA.4)
+sc2_impact_omicron_ba5,Omicron (BA.5) variant,TRUE,Omicron (BA.5)
