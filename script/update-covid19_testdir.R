@@ -5,7 +5,6 @@ library(fuzzyjoin)
 
 sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/testdir.csv")
 
-
 meta_cols <-
   readr::read_csv("data/covid19/testdir_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% colnames(sf_data))
@@ -47,7 +46,7 @@ data <-
 
 
 #COVARIANTS#
-#Get all unique covariants per row in anew column
+#Get all unique covariants per row in a new column
 data$impact_all <- apply(data[, c("no_expected_impact", "potential_impact", "no_impact", "impact")], 1, function(x) paste(unique(x), collapse = "; "))
 #create a vector listing all the covariants
 covariants <- data |>
@@ -86,6 +85,11 @@ data <- data |>
       TRUE ~ .
     )
   )
+#Rename vars
+names(data) <- gsub("\\+", "_plus", names(data))
+names(data) <- gsub("\\.|\\(|\\)", "", names(data))
+names(data) <- gsub(" ", "_", names(data))
+names(data) <- tolower(names(data))
 
 write_csv(data, "data/covid19/testdir.csv")
 
