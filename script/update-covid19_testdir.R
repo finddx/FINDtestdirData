@@ -79,7 +79,7 @@ data <- data |>
 data <- data |>
   mutate(across(starts_with("sc2_impact_"), ~case_when(
       .=="no_expected_impact" ~ "No expected impact",
-      .=="expected_impact" ~ "Expected impact",
+      .=="potential_impact" ~ "Potential impact",
       .=="impact" ~ "Impact",
       .=="no_impact" ~ "No impact",
       .=="impact_unk" ~ "Unknown impact",
