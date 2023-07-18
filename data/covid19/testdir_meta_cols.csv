@@ -26,12 +26,12 @@ time_to_results_excl_prep,Time to result excl sample prep,FALSE,Time to results 
 time_to_results_incl_prep,Time to result incl sample prep,FALSE,Time to results incl sample prep (mins)
 connectivity_solution,Connectivity,TRUE,Connectivity Solution
 find_evaluation,FIND evaluation,FALSE,FIND Evaluation
-sc2_alpha,SARS-CoV-2 variant Alpha,TRUE,Impact of SARS-COV-2 Alpha variant
-sc2_beta,SARS-CoV-2 variant Beta,TRUE,Impact of SARS-COV-2 Beta variant
-sc2_gamma,SARS-CoV-2 variant Gamma,TRUE,Impact of SARS-COV-2 Gamma variant
-sc2_delta,SARS-CoV-2 variant Delta,TRUE,Impact of SARS-COV-2 Delta variant
-sc2_delta_plus,SARS-CoV-2 variant Delta+,TRUE,Impact of SARS-COV-2 Delta+ variant
-sc2_omicron,SARS-CoV-2 variant Omicron,TRUE,Impact of SARS-COV-2 Omicron variant
+sc2_alpha,SARS-CoV-2 variant Alpha,FALSE,Impact of SARS-COV-2 Alpha variant
+sc2_beta,SARS-CoV-2 variant Beta,FALSE,Impact of SARS-COV-2 Beta variant
+sc2_gamma,SARS-CoV-2 variant Gamma,FALSE,Impact of SARS-COV-2 Gamma variant
+sc2_delta,SARS-CoV-2 variant Delta,FALSE,Impact of SARS-COV-2 Delta variant
+sc2_delta_plus,SARS-CoV-2 variant Delta+,FALSE,Impact of SARS-COV-2 Delta+ variant
+sc2_omicron,SARS-CoV-2 variant Omicron,FALSE,Impact of SARS-COV-2 Omicron variant
 s_gene_dropout,S gene dropout,TRUE,S gene dropout
 scov2_variants,Variant detection,TRUE,SARS-CoV-2 variant(s)
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Test to be listed on FIND's web page?
@@ -42,3 +42,15 @@ study_type,Study type,FALSE,Study Type
 number_of_positive_samples,Number of positive samples,FALSE,Number of positive samples
 number_of_negative_samples,Number of negative samples,FALSE,Number of negative samples
 total_number_of_samples,Total number of samples,FALSE,Total number of samples
+no_expected_impact,No expected impact,FALSE,No expected impact (in silico analyses)
+potential_impact,Potential impact,FALSE,Potential impact (in silico analyses)
+no_impact,No impact,FALSE,No impact (analytical/clinical studies)
+impact,Impact,FALSE,Impact (analytical/clinical studies)
+sc2_impact_alpha,Alpha variant,TRUE,Alpha
+sc2_impact_beta,Beta variant,TRUE,Beta
+sc2_impact_delta,Delta variant,TRUE,Delta
+sc2_impact_delta_plus,Delta+ variant,TRUE,Delta+
+sc2_impact_gamma,Gamma variant,TRUE,Gamma
+sc2_impact_omicron,Omicron variant,TRUE,Omicron
+sc2_impact_omicron_ba4,Omicron (BA.4) variant,TRUE,Omicron (BA.4)
+sc2_impact_omicron_ba5,Omicron (BA.5) variant,TRUE,Omicron (BA.5)
