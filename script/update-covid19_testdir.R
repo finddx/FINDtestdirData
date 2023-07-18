@@ -93,4 +93,3 @@ names(data) <- gsub(" ", "_", names(data))
 names(data) <- tolower(names(data))
 
 write_csv(data, "data/covid19/testdir.csv")
-
