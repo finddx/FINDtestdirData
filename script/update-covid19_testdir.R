@@ -78,11 +78,11 @@ data <- data |>
 #Rename impact values
 data <- data |>
   mutate(across(starts_with("sc2_impact_"), ~case_when(
-      .=="no_expected_impact" ~ "No expected impact",
-      .=="potential_impact" ~ "Potential impact",
-      .=="impact" ~ "Impact",
-      .=="no_impact" ~ "No impact",
-      .=="impact_unk" ~ "Unknown impact",
+      .=="no_expected_impact" ~ "No expected impact (in silico analyses)",
+      .=="potential_impact" ~ "Potential impact (in silico analyses)",
+      .=="impact" ~ "Impact (analytical/clinical studies)",
+      .=="no_impact" ~ "No impact (analytical/clinical studies conducted)",
+      .=="impact_unk" ~ "Unknown",
       TRUE ~ .
     )
   ))
