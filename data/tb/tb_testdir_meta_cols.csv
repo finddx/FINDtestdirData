@@ -1,0 +1,39 @@
+﻿id,description,filterable,salesforce_name
+submission_id,ID,FALSE,Submission ID
+created_date,Date,FALSE,Created Date
+manufacturer,Manufacturer,TRUE,Company/Institution Name: Organisation Name
+submission_title,Assay Name,TRUE,Submission Title
+target_pathogen,Target pathogen,TRUE,Target pathogen
+other_target_pathogen,Other target pathogen,FALSE,Other target pathogen
+stage_of_development,Stage of development,TRUE,Stage of Development
+country,Headquarter country,TRUE,Company/Institution Name: Country of Manufacturer
+region,Headquarter region,FALSE,Company/Institution Name: Region
+permalink,Permanent link,FALSE,Company/Institution Name: Website
+regulatory_status,Regulatory status,TRUE,Regulatory Approval
+planned_market_entry,Planned market entry,FALSE,Planned Market Entry
+primary_use_case,Primary use case,FALSE,Primary Use Case
+type_of_technology,Type of technology,TRUE,Type of Technology
+syndromes,Syndrome,TRUE,Syndromes
+assay_aim,Assay aim,TRUE,Assay Aim
+disease_target,Disease target,TRUE,Disease Target
+assay_target,Assay target,TRUE,Assay Target
+target_analyte,Target analyte,TRUE,Target Analyte(s)
+technology_principle,Technology principle,FALSE,Technology principle
+other_technology_principle,Other technology principle,FALSE,Other Technology Principle
+readout_technology,Readout technology,FALSE,Readout Technology
+resistance_marker,Resistance marker,TRUE,Resistance Marker
+other_resistance_marker,Other resistance marker,FALSE,Other Resistance Marker
+test_format,Test format,FALSE,Test Format
+other_test_format,Other test format,FALSE,Other Test Format
+instrument_requirement,Instrument requirement,FALSE,Instrument requirement
+level_of_automation,Level of automation,FALSE,Level of automation
+lab_vs_poc,Laboratory/point of care,TRUE,Lab vs. POC
+self_testing_self_collection,Self-testing or professional use,TRUE,Self-testing/Self-Collection
+validated_sample_types,Validated sample types,TRUE,Validated Sample Types
+other_validated_sample_type,Other validated sample types,FALSE,Other Validated Sample Type
+time_to_results_excl_prep,Time to result excl sample prep,FALSE,Time to results (mins)
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,Test to be listed on FIND's web page?
+data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page
+country,Country Manufacturer,FALSE,Country of Manufacturer
+region,Region,TRUE,Region
+permalink,Website,FALSE,Website
