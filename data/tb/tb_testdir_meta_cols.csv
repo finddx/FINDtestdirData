@@ -1,7 +1,7 @@
 ﻿id,description,filterable,salesforce_name
 submission_id,ID,FALSE,Submission ID
 created_date,Date,FALSE,Created Date
-manufacturer,Manufacturer,TRUE,Company/Institution Name: Organisation Name
+manufacturer,Manufacturer,TRUE,Organisation Name
 submission_title,Assay Name,TRUE,Submission Title
 target_pathogen,Target pathogen,TRUE,Target pathogen
 other_target_pathogen,Other target pathogen,FALSE,Other target pathogen
@@ -37,3 +37,7 @@ data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published
 country,Country Manufacturer,FALSE,Country of Manufacturer
 region,Region,TRUE,Region
 permalink,Website,FALSE,Website
+drug_resistance_target,Drug Resistance Target,TRUE,Drug Resistance Target
+sensitivity,Sensitivity (%),FALSE,Sensitivity (%)
+specificity,Specificity (%),FALSE,Specificity (%)
+total_number_samples,Total number of samples,FALSE,Total number of samples
