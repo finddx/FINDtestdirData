@@ -3,8 +3,6 @@ submission_id,ID,FALSE,Submission ID
 created_date,Date,FALSE,Created Date
 manufacturer,Manufacturer,TRUE,Organisation Name
 submission_title,Assay Name,TRUE,Submission Title
-target_pathogen,Target pathogen,TRUE,Target pathogen
-other_target_pathogen,Other target pathogen,FALSE,Other target pathogen
 stage_of_development,Stage of development,TRUE,Stage of Development
 country,Country Manufacturer,FALSE,Country of Manufacturer
 region,Region,TRUE,Region
@@ -13,9 +11,7 @@ regulatory_status,Regulatory status,TRUE,Regulatory Approval
 planned_market_entry,Planned market entry,FALSE,Planned Market Entry
 primary_use_case,Primary use case,FALSE,Primary Use Case
 type_of_technology,Type of technology,TRUE,Type of Technology
-syndromes,Syndrome,TRUE,Syndromes
 assay_aim,Assay aim,TRUE,Assay Aim
-disease_target,Disease target,TRUE,Disease Target
 assay_target,Assay target,FALSE,Assay Target
 target_analyte,Target analyte,TRUE,Target Analyte(s)
 technology_principle,Technology principle,FALSE,Technology principle
@@ -25,7 +21,6 @@ resistance_marker,Resistance marker,TRUE,Resistance Marker
 other_resistance_marker,Other resistance marker,FALSE,Other Resistance Marker
 test_format,Test format,FALSE,Test Format
 other_test_format,Other test format,FALSE,Other Test Format
-instrument_requirement,Instrument requirement,FALSE,Instrument requirement
 level_of_automation,Level of automation,FALSE,Level of automation
 lab_vs_poc,Laboratory/point of care,TRUE,Lab vs. POC
 self_testing_self_collection,Self-testing or professional use,TRUE,Self-testing/Self-Collection
