@@ -16,7 +16,7 @@ type_of_technology,Type of technology,TRUE,Type of Technology
 syndromes,Syndrome,TRUE,Syndromes
 assay_aim,Assay aim,TRUE,Assay Aim
 disease_target,Disease target,TRUE,Disease Target
-assay_target,Assay target,TRUE,Assay Target
+assay_target,Assay target,FALSE,Assay Target
 target_analyte,Target analyte,TRUE,Target Analyte(s)
 technology_principle,Technology principle,FALSE,Technology principle
 other_technology_principle,Other technology principle,FALSE,Other Technology Principle
