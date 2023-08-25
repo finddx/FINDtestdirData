@@ -6,9 +6,9 @@ submission_title,Assay Name,TRUE,Submission Title
 target_pathogen,Target pathogen,TRUE,Target pathogen
 other_target_pathogen,Other target pathogen,FALSE,Other target pathogen
 stage_of_development,Stage of development,TRUE,Stage of Development
-country,Headquarter country,TRUE,Company/Institution Name: Country of Manufacturer
-region,Headquarter region,FALSE,Company/Institution Name: Region
-permalink,Permanent link,FALSE,Company/Institution Name: Website
+country,Country Manufacturer,FALSE,Country of Manufacturer
+region,Region,TRUE,Region
+permalink,Website,FALSE,Website
 regulatory_status,Regulatory status,TRUE,Regulatory Approval
 planned_market_entry,Planned market entry,FALSE,Planned Market Entry
 primary_use_case,Primary use case,FALSE,Primary Use Case
@@ -34,9 +34,6 @@ other_validated_sample_type,Other validated sample types,FALSE,Other Validated S
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Time to results (mins)
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Test to be listed on FIND's web page?
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page
-country,Country Manufacturer,FALSE,Country of Manufacturer
-region,Region,TRUE,Region
-permalink,Website,FALSE,Website
 drug_resistance_target,Drug Resistance Target,TRUE,Drug Resistance Target
 sensitivity,Sensitivity (%),FALSE,Sensitivity (%)
 specificity,Specificity (%),FALSE,Specificity (%)
