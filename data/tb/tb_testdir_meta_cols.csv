@@ -2,9 +2,9 @@
 submission_id,ID,FALSE,Submission ID
 created_date,Date,FALSE,Created Date
 manufacturer,Manufacturer,TRUE,Organisation Name
-submission_title,Assay Name,TRUE,Submission Title
+submission_title,Assay name,TRUE,Submission Title
 stage_of_development,Stage of development,TRUE,Stage of Development
-country,Country Manufacturer,FALSE,Country of Manufacturer
+country,Country manufacturer,FALSE,Country of Manufacturer
 region,Region,TRUE,Region
 permalink,Website,FALSE,Website
 regulatory_status,Regulatory status,TRUE,Regulatory Approval
@@ -12,24 +12,26 @@ planned_market_entry,Planned market entry,FALSE,Planned Market Entry
 primary_use_case,Primary use case,FALSE,Primary Use Case
 type_of_technology,Type of technology,TRUE,Type of Technology
 assay_aim,Assay aim,TRUE,Assay Aim
-assay_target,Assay target,FALSE,Assay Target
+assay_target,Assay target,TRUE,Assay Target
 target_analyte,Target analyte,TRUE,Target Analyte(s)
-technology_principle,Technology principle,FALSE,Technology principle
+technology_principle,Technology principle,TRUE,Technology principle
 other_technology_principle,Other technology principle,FALSE,Other Technology Principle
 readout_technology,Readout technology,FALSE,Readout Technology
-resistance_marker,Resistance marker,TRUE,Resistance Marker
+resistance_marker,Resistance marker,FALSE,Resistance Marker
 other_resistance_marker,Other resistance marker,FALSE,Other Resistance Marker
-test_format,Test format,FALSE,Test Format
+test_format,Test format,TRUE,Test Format
 other_test_format,Other test format,FALSE,Other Test Format
 level_of_automation,Level of automation,FALSE,Level of automation
 lab_vs_poc,Laboratory/point of care,TRUE,Lab vs. POC
-self_testing_self_collection,Self-testing or professional use,TRUE,Self-testing/Self-Collection
+self_testing_self_collection,Self-testing or professional use,FALSE,Self-testing/Self-Collection
 validated_sample_types,Validated sample types,TRUE,Validated Sample Types
 other_validated_sample_type,Other validated sample types,FALSE,Other Validated Sample Type
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Time to results (mins)
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Test to be listed on FIND's web page?
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page
-drug_resistance_target,Drug Resistance Target,TRUE,Drug Resistance Target
+drug_resistance_target,Drug resistance target,TRUE,Drug Resistance Target
 sensitivity,Sensitivity (%),FALSE,Sensitivity (%)
 specificity,Specificity (%),FALSE,Specificity (%)
 total_number_samples,Total number of samples,FALSE,Total number of samples
+instrument_requirement,Instrument requirement,TRUE,Instrument requirement
+target_pathogen,Target pathogen,FALSE,Target Pathogen
