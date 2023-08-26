@@ -35,3 +35,4 @@ specificity,Specificity (%),FALSE,Specificity (%)
 total_number_samples,Total number of samples,FALSE,Total number of samples
 instrument_requirement,Instrument requirement,TRUE,Instrument requirement
 target_pathogen,Target pathogen,FALSE,Target Pathogen
+who_technology_class,WHO technology class,TRUE,WHO Technology Class
