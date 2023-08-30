@@ -15,8 +15,7 @@ set.seed(5)
 #   security_token = Sys.getenv("FIND_SALESFORCE_SECURITY_TOKEN")
 # )
 # # find a report in your org and run it
-sf_data <- readr::read_csv("data/tb/tb_data_report.csv")
-#sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/tb_testdir.csv")
+sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/tb_testdir.csv")
 
 colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Parent Submission: ')
 
