@@ -5,7 +5,7 @@ submission_title,Assay name,TRUE,Submission Title
 manufacturer,Manufacturer,TRUE,Organisation Name
 permalink,Website,FALSE,Website
 country,Country,TRUE,Country of Manufacturer
-region,Region,TRUE,NA
+region,Region,TRUE,Region
 stage_of_development,Stage of development,TRUE,Stage of Development
 regulatory_status,Regulatory status,TRUE,Regulatory Approval
 type_of_technology,Type of technology,TRUE,Type of Technology

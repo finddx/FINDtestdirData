@@ -54,10 +54,10 @@ data <-
   data_raw |>
   mutate(across(everything(), ~as.character(.))) |>
   mutate(across(everything(), ~na_if(., "-"))) |>
-  rename(name = country) |>
-  fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
-  mutate(region=continent)|>
-  select(-name, -alpha3, -continent) |>#!rcontinent removed, not renamed as region already existed
+  #rename(name = country) |>
+  #fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
+  #mutate(region=continent)|>
+  #select(-name, -alpha3, -continent) |>#!rcontinent removed, not renamed as region already existed
   # rename(region = continent) |>
   mutate(permalink = extract_link(permalink)) |>
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink))) |>
