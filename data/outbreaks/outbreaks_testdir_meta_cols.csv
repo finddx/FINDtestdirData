@@ -1,11 +1,11 @@
 id,description,filterable,salesforce_name
-submission_id,ID,FALSE,Submission ID
+submission_id,ID,FALSE,Test Directory Package ID
 disease_target,Disease target,TRUE,Disease Target
-submission_title,Assay name,TRUE,Submission Title
+submission_title,Assay name,TRUE,Assay Name
 manufacturer,Manufacturer,TRUE,Organisation Name
 permalink,Website,FALSE,Website
-country,Country,TRUE,Country of Manufacturer
-region,Region,TRUE,Region
+country,Country,TRUE,Country
+region,Region,TRUE,WHO Region
 stage_of_development,Stage of development,TRUE,Stage of Development
 regulatory_status,Regulatory status,TRUE,Regulatory Approval
 type_of_technology,Type of technology,TRUE,Type of Technology

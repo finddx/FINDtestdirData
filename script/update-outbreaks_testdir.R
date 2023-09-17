@@ -16,9 +16,10 @@ set.seed(5)
 # )
 # # find a report in your org and run it
 
-sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/outbreaks_testdir.csv")
+sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/outbreaks_new.csv")
 
-colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Parent Submission: ')
+colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Assay: ')
+colnames(sf_data) <- str_replace(string = colnames(sf_data), replacement = '', 'Company/Institution Name: ')
 
 
 meta_cols <-
