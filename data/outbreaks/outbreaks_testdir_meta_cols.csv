@@ -1,18 +1,18 @@
 id,description,filterable,salesforce_name
 submission_id,ID,FALSE,Test Directory Package ID
-disease_target,Disease target,TRUE,Disease Target
-submission_title,Assay name,TRUE,Assay Name
-manufacturer,Manufacturer,TRUE,Organisation Name
-permalink,Website,FALSE,Website
-country,Country,TRUE,Country
-region,Region,TRUE,WHO Region
-stage_of_development,Stage of development,TRUE,Stage of Development
-regulatory_status,Regulatory status,TRUE,Regulatory Approval
-type_of_technology,Type of technology,TRUE,Type of Technology
-test_format,Test format,TRUE,Test Format
-target_analyte,Target analyte,TRUE,Target Analyte(s)
-lab_vs_poc,Lab vs POC,TRUE,Lab vs. POC
-validated_sample_types,Validated sample types,TRUE,Validated Sample Types
-assay_target,Assay target,TRUE,Assay Target
-serovar_subtype,Serovar subtype, TRUE,Serovar subtype
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,Test to be listed on FIND's web page?
+disease_target,Disease target,TRUE,Assay: Disease Target
+submission_title,Assay name,TRUE,Assay: Assay Name
+manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name
+permalink,Website,FALSE,Assay: Company/Institution Name: Website
+country,Country,TRUE,Assay: Company/Institution Name: Country
+region,Region,TRUE,Assay: Company/Institution Name: WHO Region
+stage_of_development,Stage of development,TRUE,Assay: Stage of Development
+regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
+type_of_technology,Type of technology,TRUE,Assay: Type of Technology
+test_format,Test format,TRUE,Assay: Test Format
+target_analyte,Target analyte,TRUE,Assay: Target Analyte(s)
+lab_vs_poc,Lab vs POC,TRUE,Assay: Lab vs. POC
+validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
+assay_target,Assay target,TRUE,Assay: Assay Target
+serovar_subtype,Serovar subtype, TRUE,Assay: Serovar subtype
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?
