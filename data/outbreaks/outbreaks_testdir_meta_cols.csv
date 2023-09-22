@@ -14,5 +14,6 @@ target_analyte,Target analyte,TRUE,Assay: Target Analyte(s)
 lab_vs_poc,Lab vs POC,TRUE,Assay: Lab vs. POC
 validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
 assay_target,Assay target,TRUE,Assay: Assay Target
-serovar_subtype,Serovar subtype, TRUE,Assay: Serovar subtype
+serovar_subtype,Serovar subtype,TRUE,Assay: Serovar subtype
+instrument_name,Instrument Name,FALSE,Instrument: Instrument Name
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?
