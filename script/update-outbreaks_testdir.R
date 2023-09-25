@@ -68,6 +68,16 @@ data <-
 data <- data |>
   filter(test_to_be_listed_on_finds_web_page=="Yes")
 
-write_csv(data, "data/outbreaks/outbreaks_testdir.csv")
+d <-
+  data |>
+  mutate(city = gsub("Unknown", NA, city)) |>
+  mutate(city2 = coalesce(city, country))
+
+geo_data <-
+  d |>
+  tidygeocoder::geocode(city2, method = 'osm', lat = lat , long = lng)
+
+
+write_csv(geo_data, "data/outbreaks/outbreaks_testdir.csv")
 
 
