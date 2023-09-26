@@ -1,6 +1,7 @@
 id,description,filterable,salesforce_name
 submission_id,ID,FALSE,Submission ID
 disease_target,Disease target,TRUE,Disease Target
+serovar_subtype,Serovar subtype, TRUE,Serovar subtype
 submission_title,Assay name,TRUE,Submission Title
 manufacturer,Manufacturer,TRUE,Organisation Name
 permalink,Website,FALSE,Website
@@ -14,5 +15,4 @@ target_analyte,Target analyte,TRUE,Target Analyte(s)
 lab_vs_poc,Lab vs POC,TRUE,Lab vs. POC
 validated_sample_types,Validated sample types,TRUE,Validated Sample Types
 assay_target,Assay target,TRUE,Assay Target
-serovar_subtype,Serovar subtype, TRUE,Serovar subtype
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Test to be listed on FIND's web page?
