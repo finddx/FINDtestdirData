@@ -71,7 +71,8 @@ data <- data |>
 d <-
   data |>
   mutate(city = gsub("Unknown", NA, city)) |>
-  mutate(city2 = coalesce(city, country))
+  mutate(city2 = coalesce(city, country)) |>
+  mutate(city2 = paste(city2, ",", country))
 
 geo_data <-
   d |>
