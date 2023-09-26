@@ -7,7 +7,7 @@ manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Nam
 permalink,Website,FALSE,Assay: Company/Institution Name: Website
 country,Country,TRUE,Assay: Company/Institution Name: Country
 city,City,TRUE,Assay: Company/Institution Name: City
-region,Region,TRUE,Assay: Company/Institution Name: WHO Region
+region,WHO Region,TRUE,Assay: Company/Institution Name: WHO Region
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development
 regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology
