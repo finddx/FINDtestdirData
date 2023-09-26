@@ -77,7 +77,7 @@ d <-
 
  geo_data <-
    d |>
-   tidygeocoder::geocode(city2, method = 'osm', lat = lat , long = lng)
+   tidygeocoder::geocode(city2, method = 'arcgis', lat = lat , long = lng)
 
 geo_data <-
    geo_data |>
