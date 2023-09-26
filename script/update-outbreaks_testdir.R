@@ -70,15 +70,18 @@ data <- data |>
 
 d <-
   data |>
+  mutate(country_tmp = gsub("Korea, Republic of", "South Korea", country)) |>
   mutate(city = gsub("Unknown", NA, city)) |>
-  mutate(city2 = coalesce(city, country)) |>
-  mutate(city2 = paste(city2, ",", country))
+  #mutate(city2 = coalesce(city, country)) |>
+  mutate(city2 = if_else(is.na(city), country_tmp, paste(city, ",", country_tmp)))
+
+ geo_data <-
+   d |>
+   tidygeocoder::geocode(city2, method = 'osm', lat = lat , long = lng)
 
 geo_data <-
-  d |>
-  tidygeocoder::geocode(city2, method = 'osm', lat = lat , long = lng)
+   geo_data |>
+   mutate(city2 = gsub("South Korea", "Korea, Republic of", city2))
 
 
 write_csv(geo_data, "data/outbreaks/outbreaks_testdir.csv")
-
-
