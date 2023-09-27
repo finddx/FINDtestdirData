@@ -73,7 +73,7 @@ d <-
   mutate(country_tmp = gsub("Korea, Republic of", "South Korea", country)) |>
   mutate(city = gsub("Unknown", NA, city)) |>
   #mutate(city2 = coalesce(city, country)) |>
-  mutate(city2 = if_else(is.na(city), country_tmp, paste(city, ",", country_tmp)))
+  mutate(city2 = if_else(is.na(city), country_tmp, paste0(city, ", ", country_tmp)))
 
  geo_data <-
    d |>
