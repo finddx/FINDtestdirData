@@ -3,7 +3,8 @@ library(tidyr)
 library(dplyr)
 library(fuzzyjoin)
 
-sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/testdir.csv")
+# sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/testdir.csv")
+sf_data <- readr::read_csv("https://raw.githubusercontent.com/finddx/FINDtestdirData/report/testdir_new.csv")
 
 meta_cols <-
   readr::read_csv("data/covid19/testdir_meta_cols.csv", show_col_types = FALSE) |>
@@ -14,16 +15,18 @@ data_raw <-
   select({ meta_cols$salesforce_name }) |>
   rename_with(~ meta_cols$id, meta_cols$salesforce_name)
 
-
-country_info <- shinyfind::get_country_info()
-
-country_map <-
-  countrycode::codelist %>%
-  as_tibble() %>%
-  select(
-    regex = country.name.en.regex, alpha3 = iso3c
-  ) |>
-  left_join(select(country_info, alpha3, country = name, continent), by = "alpha3")
+data_raw <-
+  data_raw  |>
+  distinct(submission_id, .keep_all = TRUE)
+# country_info <- shinyfind::get_country_info()
+#
+# country_map <-
+#   countrycode::codelist %>%
+#   as_tibble() %>%
+#   select(
+#     regex = country.name.en.regex, alpha3 = iso3c
+#   ) |>
+#   left_join(select(country_info, alpha3, country = name, continent), by = "alpha3")
 
 
 extract_link <- function(x) {
@@ -37,10 +40,10 @@ data <-
   data_raw |>
   mutate(across(everything(), ~as.character(.))) |>
   mutate(across(everything(), ~na_if(., "-"))) |>
-  rename(name = country) |>
-  fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
-  select(-name, -region, -alpha3) |>
-  rename(region = continent) |>
+  # rename(name = country) |>
+  # fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
+  # select(-name, -region, -alpha3) |>
+  # rename(region = continent) |>
   mutate(permalink = extract_link(permalink)) |>
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
@@ -77,7 +80,7 @@ data <- data |>
               values_from = impact_type)
 #Rename impact values
 data <- data |>
-  mutate(across(starts_with("sc2_impact_"), ~case_when(
+  mutate(across(starts_with("sc2_impact_"), ~ case_when(
       .=="no_expected_impact" ~ "No expected impact (in silico analyses)",
       .=="potential_impact" ~ "Potential impact (in silico analyses)",
       .=="impact" ~ "Impact (analytical/clinical studies)",
@@ -86,6 +89,7 @@ data <- data |>
       TRUE ~ .
     )
   ))
+
 #Rename vars
 names(data) <- gsub("\\+", "_plus", names(data))
 names(data) <- gsub("\\.|\\(|\\)", "", names(data))
