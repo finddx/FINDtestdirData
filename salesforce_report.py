@@ -11,7 +11,8 @@ reports = {
 	"00O6900000CGKWKEA5": "eqa_covid_testdir",
 	"00O6900000CGaQTEA1": "amr_testdir",
 	"00O6900000BrsNLEAZ": "outbreaks_testdir",
-	"00O6900000BweVREAZ": "outbreaks_new"
+	"00O6900000BweVREAZ": "outbreaks_new",
+	"00O6900000BwgQTEAZ": "testdir_new"
 }
 
 if len(sys.argv) < 2:
