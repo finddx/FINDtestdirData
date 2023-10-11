@@ -68,6 +68,20 @@ data <-
 data <- data |>
   filter(test_to_be_listed_on_finds_web_page=="Yes")
 
-write_csv(data, "data/outbreaks/outbreaks_testdir.csv")
+d <-
+  data |>
+  mutate(country_tmp = gsub("Korea, Republic of", "South Korea", country)) |>
+  mutate(city = gsub("Unknown", NA, city)) |>
+  #mutate(city2 = coalesce(city, country)) |>
+  mutate(city2 = if_else(is.na(city), country_tmp, paste0(city, ", ", country_tmp)))
+
+ geo_data <-
+   d |>
+   tidygeocoder::geocode(city2, method = 'arcgis', lat = lat , long = lng)
+
+geo_data <-
+   geo_data |>
+   mutate(city2 = gsub("South Korea", "Korea, Republic of", city2))
 
 
+write_csv(geo_data, "data/outbreaks/outbreaks_testdir.csv")
