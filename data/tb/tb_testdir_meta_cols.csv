@@ -34,9 +34,11 @@ other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Vali
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Assay: Time to results (mins)
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page
+target_patient_group,Target patient group,FALSE,Target Patient Group
+type_data_source,Type of data source,FALSE,Type of data source
+study_type,Study type,FALSE,Study Type
 drug_resistance_target,Drug resistance target,TRUE,Drug Resistance Target
 other_drug_resistance_target,Other drug resistance target,FALSE,Other drug resistance target
-target_patient_group,Target patient group,FALSE,Target Patient Group
 sensitivity,Sensitivity (%),FALSE,Sensitivity (%)
 sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE,95% CI for Clinical Sensitivity (Lower)
 sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,95% CI for Clinical Sensitivity (Upper)
@@ -44,3 +46,6 @@ specificity,Specificity (%),FALSE,Specificity (%)
 specificity_ci_low,95% CI Specificity (Lower),FALSE,95% CI for Clinical Specificity (Lower)
 specificity_ci_up,95% CI Specificity (Upper),FALSE,95% CI for Clinical Specificity (Upper)
 total_number_samples,Total number of samples,FALSE,Total number of samples
+sample_type,Sample Type,FALSE,Sample Type
+number_positive_samples,Number of positive samples,FALSE,Number of positive samples
+number_negative_samples,Number of negative samples,FALSE,Number of negative samples
