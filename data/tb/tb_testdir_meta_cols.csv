@@ -38,7 +38,7 @@ data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published
 target_patient_group,Target patient group,FALSE,Target Patient Group
 type_data_source,Type of data source,FALSE,Type of data source
 study_type,Study type,FALSE,Study Type
-performance_submission_title,Performance Submission Title,FALSE,Perf Submission Title
+performance_submission_title,Performance submission title,FALSE,Perf Submission Title
 sensitivity,Sensitivity (%),FALSE,Sensitivity (%)
 sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE,95% CI for Clinical Sensitivity (Lower)
 sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,95% CI for Clinical Sensitivity (Upper)
