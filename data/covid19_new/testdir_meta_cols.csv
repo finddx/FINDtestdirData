@@ -1,0 +1,50 @@
+id,description,filterable,salesforce_name
+submission_id,ID,FALSE,Assay: Assay ID
+performance_detail_submission_id,Performance ID,FALSE,Performance Detail Submission ID
+date_of_submission,Date,FALSE,Created Date
+manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name
+submission_title,Assay name,TRUE,Assay: Assay Name
+target_pathogen,Target Pathogen,FALSE,Assay: Target Pathogen
+stage_of_development,Stage of development,FALSE,Assay: Stage of Development
+country,Country,TRUE,Assay: Company/Institution Name: Country
+region,WHO region,TRUE,Assay: Company/Institution Name: WHO Region
+permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website
+regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
+sensitivity,Sensitivity,FALSE,Sensitivity (%)
+specificity,Specificity,FALSE,Specificity (%)
+type_of_technology,Type of technology,TRUE,Assay: Type of Technology
+assay_target,Assay target,TRUE,Assay Target
+target_analyte,Target analyte,TRUE,Assay: Target Analyte(s)
+technology_principle,Technology principle,TRUE,Assay: Technology principle
+test_format,Test format,TRUE,Assay: Test Format
+instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement
+level_of_automation,Level of automation,TRUE,Assay: Level of automation
+lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC
+self_testing_self_collection,Self-testing/self-collection,TRUE,Assay: Self-testing/Self-Collection
+validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
+time_to_results_excl_prep,Time to result excl sample prep,FALSE,Not found in new architecture
+time_to_results_incl_prep,Time to result incl sample prep,FALSE,Not found in new architecture
+connectivity_solution,Connectivity,TRUE,Instrument: Connectivity Solution
+find_evaluation,FIND evaluation,FALSE,FIND Evaluation
+s_gene_dropout,S gene dropout,TRUE,Assay: S gene dropout
+scov2_variants,Variant detection,TRUE,Assay: SARS-CoV-2 variant(s)
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?
+data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page
+is_this_a_variant_detection_test,Variant detection test,FALSE,Not found in new architecture
+revoked_not_approved_by,Not approved,FALSE,Not found in new architecture
+study_type,Study type,FALSE,Study Type
+number_of_positive_samples,Number of positive samples,FALSE,Number of positive samples
+number_of_negative_samples,Number of negative samples,FALSE,Number of negative samples
+total_number_of_samples,Total number of samples,FALSE,Total number of samples
+no_expected_impact,No expected impact,FALSE,Assay: No expected impact (in silico analyses)
+potential_impact,Potential impact,FALSE,Assay: Potential impact (in silico analyses)
+no_impact,No impact,FALSE,Assay: No impact (analytical/clinical studies)
+impact,Impact,FALSE,Assay: Impact (analytical/clinical studies)
+sc2_impact_alpha,Alpha variant,TRUE,Alpha
+sc2_impact_beta,Beta variant,TRUE,Beta
+sc2_impact_delta,Delta variant,TRUE,Delta
+sc2_impact_delta_plus,Delta+ variant,TRUE,Delta+
+sc2_impact_gamma,Gamma variant,TRUE,Gamma
+sc2_impact_omicron,Omicron variant,TRUE,Omicron
+sc2_impact_omicron_ba4,Omicron (BA.4) variant,TRUE,Omicron (BA.4)
+sc2_impact_omicron_ba5,Omicron (BA.5) variant,TRUE,Omicron (BA.5)
