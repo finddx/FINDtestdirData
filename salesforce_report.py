@@ -5,7 +5,7 @@ import sys
 
 reports = {
 	"00O6900000CNcZQEA1": "testdir",
-	"00O6900000BnnLZEAZ": "chagas_testdir",
+	"00O6900000Bwh4nEAB": "chagas_testdir",
 	"00O6900000CGGvtEAH": "mpx_testdir",
 	"00O6900000CGJeXEAX": "ebov_testdir",
 	"00O6900000CGKWKEA5": "eqa_covid_testdir",
