@@ -22,6 +22,6 @@ regulatory_status           ,Regulatory status           ,TRUE      ,Assay: Regu
 sensitivity        ,Sensitivity                 ,FALSE     ,Sensitivity (%)
 specificity        ,Specificity                 ,FALSE     ,Specificity (%)
 stage_of_development,Stage of development,TRUE      ,Assay: Stage of Development
-technology_principle,Technology principle,TRUE      ,Assay: Other Technology principle
+technology_principle,Technology principle,TRUE      ,Assay: Technology principle
 permalink                   ,Permanent link,FALSE     ,Assay: Company/Institution Name: Website
 find_evaluation,FIND evaluation,FALSE     ,FIND evaluation
