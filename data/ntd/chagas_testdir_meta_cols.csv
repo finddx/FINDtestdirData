@@ -1,27 +1,27 @@
 id                          ,description                 ,filterable,salesforce_name
-submission_id              ,ID                          ,FALSE     ,Submission ID
+submission_id              ,ID                          ,FALSE     ,Assay: Assay ID
 performance_detail_submission_id              ,ID                          ,FALSE     ,Performance Detail Submission ID
-disease_target,Disease target,TRUE      ,Disease Target
-primary_use_case,Primary use case,TRUE      ,Primary Use Case
-manufacturer                ,Manufacturer                ,TRUE      ,Organisation Name
-submission_title            ,Assay name                  ,FALSE     ,Submission Title
-region                      ,Region of company headquarters                      ,TRUE      ,WHO Region
-country                     ,Country                     ,TRUE      ,Country
-type_of_technology          ,Type of technology          ,TRUE      ,Type of Technology
-self_testing_self_collection,Self-testing/self-collection,TRUE      ,Self-testing/Self-Collection
+disease_target,Disease target,TRUE      ,Assay: Disease Target
+primary_use_case,Primary use case,TRUE      ,Assay: Primary Use Case
+manufacturer                ,Manufacturer                ,TRUE      ,Assay: Company/Institution Name: Organisation Name
+submission_title            ,Assay name                  ,FALSE     ,Assay: Assay Name
+region                      ,Region of company headquarters                      ,TRUE      ,Assay: Company/Institution Name: WHO Region
+country                     ,Country                     ,TRUE      ,Assay: Company/Institution Name: Country
+type_of_technology          ,Type of technology          ,TRUE      ,Assay: Type of Technology
+self_testing_self_collection,Self-testing/self-collection,TRUE      ,Assay: Self-testing/Self-Collection
 assay_target                ,Assay target                ,TRUE      ,Assay Target
-test_format                 ,Test format                 ,TRUE      ,Test Format
-target_analyte              ,Target analyte              ,TRUE      ,Target Analyte(s)
-validated_sample_types      ,Validated sample types      ,TRUE      ,Validated Sample Types
-instrument_requirement      ,Instrument requirement      ,TRUE      ,Instrument requirement
-level_of_automation         ,Level of automation         ,TRUE      ,Level of automation
-laboratory_point_of_care    ,Laboratory/point-of-care    ,TRUE      ,Lab vs. POC
-time_to_result              ,Time to result              ,FALSE     ,Time to results excl sample prep (mins)
-connectivity                ,Connectivity                ,TRUE      ,Connectivity Solution
-regulatory_status           ,Regulatory status           ,TRUE      ,Regulatory Approval
+test_format                 ,Test format                 ,TRUE      ,Assay: Test Format
+target_analyte              ,Target analyte              ,TRUE      ,Assay: Target Analyte(s)
+validated_sample_types      ,Validated sample types      ,TRUE      ,Assay: Validated Sample Types
+instrument_requirement      ,Instrument requirement      ,TRUE      ,Assay: Instrument requirement
+level_of_automation         ,Level of automation         ,TRUE      ,Assay: Level of automation
+laboratory_point_of_care    ,Laboratory/point-of-care    ,TRUE      ,Assay: Lab vs. POC
+time_to_result              ,Time to result              ,FALSE     ,Assay: Time to results (mins)
+connectivity                ,Connectivity,FALSE     ,Connectivity Solution
+regulatory_status           ,Regulatory status           ,TRUE      ,Assay: Regulatory Approval
 sensitivity        ,Sensitivity                 ,FALSE     ,Sensitivity (%)
 specificity        ,Specificity                 ,FALSE     ,Specificity (%)
-stage_of_development,Stage of development,TRUE      ,Stage of Development
-technology_principle,Technology principle,TRUE      ,Technology principle
-permalink                   ,Permanent link,FALSE     ,Website
-find_evaluation,FIND evaluation,TRUE      ,FIND Evaluation
+stage_of_development,Stage of development,TRUE      ,Assay: Stage of Development
+technology_principle,Technology principle,TRUE      ,Assay: Other Technology principle
+permalink                   ,Permanent link,FALSE     ,Assay: Company/Institution Name: Website
+find_evaluation,FIND evaluation,FALSE     ,FIND evaluation

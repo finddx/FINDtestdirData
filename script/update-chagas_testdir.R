@@ -43,5 +43,6 @@ data <-
   mutate(permalink = extract_link(permalink)) |>
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
+
 write_csv(data, "data/ntd/chagas_testdir.csv")
 
