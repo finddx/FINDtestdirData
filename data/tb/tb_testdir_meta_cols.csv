@@ -6,7 +6,7 @@ primary_use_case,Primary use case,TRUE,Assay: Primary Use Case
 assay_aim,Assay aim,TRUE,Assay: Assay Aim
 assay_target,Assay target,TRUE,Assay: Assay Target
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s)
-drug_resistance_target,Drug resistance target,TRUE,Drug Resistance Target
+drug_resistance_target,Drug resistance target,TRUE,Assay: Drug Resistance Target
 other_drug_resistance_target,Other drug resistance target,FALSE,Other drug resistance target
 validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
 other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type
