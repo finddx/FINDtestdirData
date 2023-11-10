@@ -9,7 +9,7 @@ region                      ,Region of company headquarters                     
 country                     ,Country                     ,TRUE      ,Assay: Company/Institution Name: Country
 type_of_technology          ,Type of technology          ,TRUE      ,Assay: Type of Technology
 self_testing_self_collection,Self-testing/self-collection,TRUE      ,Assay: Self-testing/Self-Collection
-assay_target                ,Assay target                ,TRUE      ,Assay Target
+assay_target                ,Assay target                ,TRUE      ,Assay: Assay Target
 test_format                 ,Test format                 ,TRUE      ,Assay: Test Format
 target_analyte              ,Target analyte              ,TRUE      ,Assay: Target Analyte(s)
 validated_sample_types      ,Validated sample types      ,TRUE      ,Assay: Validated Sample Types
@@ -24,4 +24,18 @@ specificity        ,Specificity                 ,FALSE     ,Specificity (%)
 stage_of_development,Stage of development,TRUE      ,Assay: Stage of Development
 technology_principle,Technology principle,TRUE      ,Assay: Technology principle
 permalink                   ,Permanent link,FALSE     ,Assay: Company/Institution Name: Website
-find_evaluation,FIND evaluation,FALSE     ,FIND evaluation
+find_evaluation,FIND evaluation,TRUE      ,FIND Evaluation
+performance_submission_title,Performance submission title,FALSE     ,Perf Submission Title
+study_type,Study type,FALSE     ,Study Type
+type_data_source,Type of data source,FALSE     ,Type of data source
+sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE     ,95% CI for Clinical Sensitivity (Lower)
+sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE     ,95% CI for Clinical Sensitivity (Upper)
+specificity_ci_low,95% CI Specificity (Lower),FALSE     ,95% CI for Clinical Specificity (Lower)
+specificity_ci_up,95% CI Specificity (Upper),FALSE     ,95% CI for Clinical Specificity (Upper)
+target_patient_group,Target patient group,FALSE     ,Target Patient Group
+sample_type,Sample type,FALSE     ,Sample Type
+total_number_samples,Total number of samples,FALSE     ,Total number of samples
+number_positive_samples,Number of positive samples,FALSE     ,Number of positive samples
+number_negative_samples,Number of negative samples,FALSE     ,Number of negative samples
+test_to_be_listed_on_finds_web_page,Test listed,FALSE     ,Assay: Test to be listed on FIND's web page?
+data_to_be_published_on_finds_web_page,Data published,FALSE     ,Data to be published on FIND's web page
