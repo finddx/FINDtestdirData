@@ -3,8 +3,8 @@ submission_id,ID,FALSE,Assay: Assay ID
 disease_target,Disease target,TRUE,Assay: Disease Target
 manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name
 submission_title,Assay name,TRUE,Assay: Assay Name
-country,Manufacturer HQ country,Assay: Company/Institution Name: Country
-region,Manufacturer HQ Region,Assay: Company/Institution Name: WHO Region
+country,Manufacturer HQ country,TRUE,Assay: Company/Institution Name: Country
+region,Manufacturer HQ Region,TRUE,Assay: Company/Institution Name: WHO Region
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development
 regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
