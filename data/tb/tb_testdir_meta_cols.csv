@@ -1,40 +1,44 @@
 ﻿id,description,filterable,salesforce_name
 submission_id,ID,FALSE,Assay: Assay ID
 created_date,Date,FALSE,Assay: Created Date
-manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name
-submission_title,Assay name,TRUE,Assay: Assay Name
-stage_of_development,Stage of development,TRUE,Assay: Stage of Development
-target_pathogen,Target pathogen,FALSE,Assay: Target Pathogen
-country,Headquarter country,TRUE,Assay: Company/Institution Name: Country
-region,Headquarter region,FALSE,Assay: Company/Institution Name: WHO Region
-permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
-other_regulatory_status,Other regulatory status,FALSE,Assay: Other Regulatory Approval
-planned_market_entry,Planned market entry,FALSE,Assay: Planned Market Entry
-primary_use_case,Primary use case,FALSE,Assay: Primary Use Case
-type_of_technology,Type of technology,TRUE,Assay: Type of Technology
+disease_target_phase,Disease spectrum,TRUE,Assay: Disease Target Phase
+primary_use_case,Primary use case,TRUE,Assay: Primary Use Case
 assay_aim,Assay aim,TRUE,Assay: Assay Aim
 assay_target,Assay target,TRUE,Assay: Assay Target
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s)
+drug_resistance_target,Drug resistance target,TRUE,Assay: Drug Resistance Target
+other_drug_resistance_target,Other drug resistance target,FALSE,Other drug resistance target
+validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
+other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type
+submission_title,Assay name,TRUE,Assay: Assay Name
+manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name
+country,Manufacturer HQ country,TRUE,Assay: Company/Institution Name: Country
+region,Manufacturer HQ region,TRUE,Assay: Company/Institution Name: WHO Region
+stage_of_development,Stage of development,TRUE,Assay: Stage of Development
+regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
+other_regulatory_status,Other regulatory status,FALSE,Assay: Other Regulatory Approval
+target_pathogen,Target pathogen,FALSE,Assay: Target Pathogen
+planned_market_entry,Planned market entry,FALSE,Assay: Planned Market Entry
+who_technology_class,WHO technology class,TRUE,WHO Technology Class
+type_of_technology,Type of technology,TRUE,Assay: Type of Technology
 technology_principle,Technology principle,TRUE,Assay: Technology principle
+test_format,Test format,TRUE,Assay: Test Format
+instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement
+lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC
 other_technology_principle,Other technology principle,FALSE,Assay: Other Technology Principle
 readout_technology,Readout technology,FALSE,Assay: Readout Technology
 resistance_marker,Resistance marker,FALSE,Assay: Resistance Marker
 other_resistance_marker,Other resistance marker,FALSE,Assay: Other Resistance Marker
-test_format,Test format,TRUE,Assay: Test Format
 other_test_format,Other test format,FALSE,Assay: Other Test Format
-instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement
 level_of_automation,Level of automation,FALSE,Assay: Level of automation
-lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC
 self_testing_self_collection,Self-testing or professional use,FALSE,Assay: Self-testing/Self-Collection
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
-other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Assay: Time to results (mins)
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page
-drug_resistance_target,Drug resistance target,TRUE,Drug Resistance Target
-other_drug_resistance_target,Other drug resistance target,FALSE,Other drug resistance target
 target_patient_group,Target patient group,FALSE,Target Patient Group
+type_data_source,Type of data source,FALSE,Type of data source
+study_type,Study type,FALSE,Study Type
+performance_submission_title,Performance submission title,FALSE,Perf Submission Title
 sensitivity,Sensitivity (%),FALSE,Sensitivity (%)
 sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE,95% CI for Clinical Sensitivity (Lower)
 sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,95% CI for Clinical Sensitivity (Upper)
@@ -42,4 +46,7 @@ specificity,Specificity (%),FALSE,Specificity (%)
 specificity_ci_low,95% CI Specificity (Lower),FALSE,95% CI for Clinical Specificity (Lower)
 specificity_ci_up,95% CI Specificity (Upper),FALSE,95% CI for Clinical Specificity (Upper)
 total_number_samples,Total number of samples,FALSE,Total number of samples
-who_technology_class,WHO technology class,TRUE,WHO Technology Class
+sample_type,Sample type,FALSE,Sample Type
+number_positive_samples,Number of positive samples,FALSE,Number of positive samples
+number_negative_samples,Number of negative samples,FALSE,Number of negative samples
+permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website

@@ -4,8 +4,8 @@ performance_detail_submission_id,Performance ID,FALSE,Performance Detail Submiss
 date_of_submission,Date,FALSE,Assay: Created Date,
 manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,TRUE
 submission_title,Assay name,TRUE,Assay: Assay Name,TRUE
-country,Headquarter country,TRUE,Assay: Company/Institution Name: Country of Manufacturer,TRUE
-region,Headquarter region,TRUE,Assay: Company/Institution Name: Region,TRUE
+country,Country of manufacturer HQ,TRUE,Assay: Company/Institution Name: Country,TRUE
+region,Region of manufacturer HQ,TRUE,Assay: Company/Institution Name: WHO Region,TRUE
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development,FALSE
 regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,TRUE
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology,TRUE

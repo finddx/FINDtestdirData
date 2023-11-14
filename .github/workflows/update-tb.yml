@@ -7,7 +7,7 @@
 # additional example workflows available for the R community.
 
 # This is a basic workflow to help you get started with Actions
-name: Update Outbreaks Test directory Data
+name: Update TB Test directory Data
 
 # Controls when the action will run.
 on:
@@ -20,15 +20,14 @@ env:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "update-outbreaks"
-  update-outbreaks:
+  # This workflow contains a single job called "update-tb"
+  update-tb:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     env:
       # use GITHUB_TOKEN from GitHub to workaround rate limits in {remotes}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      BINGMAPS_API_KEY: ${{ secrets.BINGMAPS_API_KEY }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -55,18 +54,18 @@ jobs:
           Rscript -e 'install.packages(c("fuzzyjoin", "countrycode"), repos = "https://packagemanager.rstudio.com/cran/__linux__/focal/latest")'
       - name: Running update scripts
         run: |
-         Rscript -e "source('script/update-outbreaks_testdir.R')"
+         Rscript -e "source('script/update-tb_testdir.R')"
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull origin main
-          git add data/outbreaks/outbreaks_testdir.csv
-          git commit -m "update outbreaks report: outbreaks_testdir.csv" || echo "Nothing to update"
+          git add data/tb/tb_testdir.csv
+          git commit -m "update tb report: tb_testdir.csv" || echo "Nothing to update"
       - name: Reset preview branch
         run: |
           git checkout main
-          git checkout -b preview-outbreaks
+          git checkout -b preview-tb
           git checkout main
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
@@ -74,4 +73,4 @@ jobs:
           commit-message: "[GHA] update from salesforce"
           assignees: findanna
           delete-branch: true
-          branch: preview-outbreaks
+          branch: preview-tb
