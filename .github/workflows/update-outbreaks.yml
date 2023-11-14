@@ -28,6 +28,7 @@ jobs:
     env:
       # use GITHUB_TOKEN from GitHub to workaround rate limits in {remotes}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      BINGMAPS_API_KEY: ${{ secrets.BINGMAPS_API_KEY }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
