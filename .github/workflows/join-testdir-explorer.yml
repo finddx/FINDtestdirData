@@ -53,23 +53,24 @@ jobs:
           Rscript -e "remotes::install_github('finddx/shinyfind')"
       - name: Running script to join all data and meta_cols files
         run: |
-         Rscript -e "source('script/')"
+         Rscript -e "source('script/join_all_testdir_data.R')"
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull origin main
-          git add data/tb/tb_testdir.csv
-          git commit -m "update tb report: tb_testdir.csv" || echo "Nothing to update"
+          git add data/testdir_explorer/all_meta_cols.csv
+          git add data/testdir_explorer/data_all_testdir.csv
+          git commit -m "join all data and meta_cols files for testdir_explorer" || echo "Nothing to update"
       - name: Reset preview branch
         run: |
           git checkout main
-          git checkout -b preview-tb
+          git checkout -b preview-testdir-explorer
           git checkout main
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          commit-message: "[GHA] update from salesforce"
+          commit-message: "[GHA] join all testdir data and meta_cols"
           assignees: findanna
           delete-branch: true
-          branch: preview-tb
+          branch: preview-testdir-explorer
