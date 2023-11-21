@@ -15,15 +15,15 @@ data_raw <-
   rename_with(~ meta_cols$id, meta_cols$salesforce_name)
 
 
-country_info <- shinyfind::get_country_info()
-
-country_map <-
-  countrycode::codelist %>%
-  as_tibble() %>%
-  select(
-    regex = country.name.en.regex, alpha3 = iso3c
-  ) |>
-  left_join(select(country_info, alpha3, country = name, continent), by = "alpha3")
+# country_info <- shinyfind::get_country_info()
+#
+# country_map <-
+#   countrycode::codelist %>%
+#   as_tibble() %>%
+#   select(
+#     regex = country.name.en.regex, alpha3 = iso3c
+#   ) |>
+#   left_join(select(country_info, alpha3, country = name, continent), by = "alpha3")
 
 
 extract_link <- function(x) {
@@ -37,10 +37,10 @@ data <-
   data_raw |>
   mutate(across(everything(), ~as.character(.))) |>
   mutate(across(everything(), ~na_if(., "-"))) |>
-  rename(name = country) |>
-  fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
-  select(-name, -region, -alpha3) |>
-  rename(region = continent) |>
+  # rename(name = country) |>
+  # fuzzyjoin::regex_left_join(country_map, by = c("name" = "regex"), ignore_case = TRUE) |>
+  # select(-name, -region, -alpha3) |>
+  # rename(region = continent) |>
   mutate(permalink = extract_link(permalink)) |>
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
@@ -62,6 +62,8 @@ data <- data |>
   select(-c(impact_all)) |>
   mutate_at(c("no_expected_impact", "potential_impact", "no_impact", "impact"), ~ gsub("None|Not applicable", NA, .)) |>
   mutate(impact_unk = ifelse(impact_unk=="", NA, impact_unk))
+data <- data |>
+  distinct()
 #Transform impact data to long format
 data <- data |>
   pivot_longer(cols=c(no_expected_impact, potential_impact, no_impact, impact, impact_unk),
