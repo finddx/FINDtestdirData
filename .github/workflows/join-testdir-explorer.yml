@@ -49,7 +49,7 @@ jobs:
 
       - name: Installing packages
         run: |
-          Rscript -e "install.packages(c('remotes', 'stringr', 'tidyr', 'readr', 'purrr', ), type = 'source')"
+          Rscript -e "install.packages(c('remotes', 'stringr', 'tidyr', 'readr', 'purrr', 'dplyr'), type = 'source')"
           Rscript -e "remotes::install_github('finddx/shinyfind')"
       - name: Running script to join all data and meta_cols files
         run: |
