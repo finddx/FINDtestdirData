@@ -13,7 +13,7 @@ regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
 sensitivity,Sensitivity,FALSE,Sensitivity (%)
 specificity,Specificity,FALSE,Specificity (%)
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology
-assay_target,Assay target,TRUE,Assay Target
+assay_target,Assay target,TRUE,Assay: Assay Target
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s)
 technology_principle,Technology principle,TRUE,Assay: Technology principle
 test_format,Test format,TRUE,Assay: Test Format
