@@ -2,11 +2,12 @@ library(readr)
 library(tidyr)
 library(stringr)
 library(purrr)
+library(dplyr)
 
 set.seed(5)
 
 
-test_dirs <- c('covid19_new', 'ntd','outbreaks', 'tb')
+test_dirs <- c('amr', 'covid19', 'ntd','outbreaks', 'tb')
 
 data <-
   list.files(path = paste0(here::here(), "/data/", test_dirs),
@@ -27,7 +28,8 @@ map(
   ~ read_csv(.x) |>
     mutate(name = str_remove(basename(.x), "\\.csv"))
 ) |>
-  reduce(bind_rows)
+  reduce(bind_rows) |>
+  filter(!name == "selftests_meta_cols")
 
 
 
