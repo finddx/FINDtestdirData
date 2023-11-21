@@ -7,7 +7,7 @@
 # additional example workflows available for the R community.
 
 # This is a basic workflow to help you get started with Actions
-name: Join all testdir data nad meta_cols for testdir explorer
+name: Join all testdir data and meta_cols for testdir explorer
 
 # Controls when the action will run.
 on:
@@ -49,7 +49,7 @@ jobs:
 
       - name: Installing packages
         run: |
-          Rscript -e "install.packages(c('remotes', 'stringr', 'tidyr', 'readr', 'purrr', 'dplyr'), type = 'source')"
+          Rscript -e "install.packages(c('remotes', 'stringr', 'tidyr', 'readr', 'purrr', 'dplyr', 'here'))"
           Rscript -e "remotes::install_github('finddx/shinyfind')"
       - name: Running script to join all data and meta_cols files
         run: |
