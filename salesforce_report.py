@@ -4,7 +4,7 @@ import os
 import sys
 
 reports = {
-	"00O6900000CNcZQEA1": "testdir",
+	"00O6900000BwgQTEAZ": "testdir",
 	"00O6900000Bwh4nEAB": "chagas_testdir",
 	"00O6900000CGGvtEAH": "mpx_testdir",
 	"00O6900000CGJeXEAX": "ebov_testdir",
@@ -12,7 +12,6 @@ reports = {
 	"00O6900000CGaQTEA1": "amr_testdir",
 	"00O6900000BrsNLEAZ": "outbreaks_testdir",
 	"00O6900000BweVREAZ": "outbreaks_new",
-	"00O6900000BwgQTEAZ": "testdir_new",
 	"00O6900000BwcuoEAB": "tb_testdir"
 }
 
