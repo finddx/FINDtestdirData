@@ -58,53 +58,47 @@ format_of_material_provided,Format of material provided,FALSE,Format of Material
 qual_or_quant,Qualitative/Quantitative,TRUE,Qualitative or Quantitative,TRUE,eqa_covid_testdir_meta_cols
 storage_temp,Storage temperature,FALSE,Storage Temperature,TRUE,eqa_covid_testdir_meta_cols
 permalink,Permanent link,FALSE,Product Website,TRUE,eqa_covid_testdir_meta_cols
-submission_id,ID,FALSE,Submission ID,NA,testdir_meta_cols
+submission_id,ID,FALSE,Assay: Assay ID,NA,testdir_meta_cols
 performance_detail_submission_id,Performance ID,FALSE,Performance Detail Submission ID,NA,testdir_meta_cols
-date_of_submission,Date,FALSE,Date of Submission,NA,testdir_meta_cols
-manufacturer,Manufacturer,TRUE,Organisation Name,NA,testdir_meta_cols
-submission_title,Assay name,TRUE,Submission Title,NA,testdir_meta_cols
-target_pathogen,Target Pathogen,FALSE,Target Pathogen,NA,testdir_meta_cols
-stage_of_development,Stage of development,FALSE,Stage of Development,NA,testdir_meta_cols
-country,Country,TRUE,Country of Manufacturer,NA,testdir_meta_cols
-region,Region,TRUE,Region,NA,testdir_meta_cols
-permalink,Permanent link,FALSE,Website,NA,testdir_meta_cols
-regulatory_status,Regulatory status,TRUE,Regulatory Approval,NA,testdir_meta_cols
+date_of_submission,Date,FALSE,Created Date,NA,testdir_meta_cols
+manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,NA,testdir_meta_cols
+submission_title,Assay name,TRUE,Assay: Assay Name,NA,testdir_meta_cols
+target_pathogen,Target Pathogen,FALSE,Assay: Target Pathogen,NA,testdir_meta_cols
+stage_of_development,Stage of development,FALSE,Assay: Stage of Development,NA,testdir_meta_cols
+country,Country,TRUE,Assay: Company/Institution Name: Country,NA,testdir_meta_cols
+region,WHO region,TRUE,Assay: Company/Institution Name: WHO Region,NA,testdir_meta_cols
+permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website,NA,testdir_meta_cols
+regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,NA,testdir_meta_cols
 sensitivity,Sensitivity,FALSE,Sensitivity (%),NA,testdir_meta_cols
 specificity,Specificity,FALSE,Specificity (%),NA,testdir_meta_cols
-type_of_technology,Type of technology,TRUE,Type of Technology,NA,testdir_meta_cols
-assay_target,Assay target,TRUE,Assay Target,NA,testdir_meta_cols
-target_analyte,Target analyte,TRUE,Target Analyte(s),NA,testdir_meta_cols
-technology_principle,Technology principle,TRUE,Technology principle,NA,testdir_meta_cols
-test_format,Test format,TRUE,Test Format,NA,testdir_meta_cols
-instrument_requirement,Instrument requirement,TRUE,Instrument requirement,NA,testdir_meta_cols
-level_of_automation,Level of automation,TRUE,Level of automation,NA,testdir_meta_cols
-lab_vs_poc,Laboratory/point of care,TRUE,Lab vs. POC,NA,testdir_meta_cols
-self_testing_self_collection,Self-testing/self-collection,TRUE,Self-testing/Self-Collection,NA,testdir_meta_cols
-validated_sample_types,Validated sample types,TRUE,Validated Sample Types,NA,testdir_meta_cols
-time_to_results_excl_prep,Time to result excl sample prep,FALSE,Time to results excl sample prep (mins),NA,testdir_meta_cols
-time_to_results_incl_prep,Time to result incl sample prep,FALSE,Time to results incl sample prep (mins),NA,testdir_meta_cols
-connectivity_solution,Connectivity,TRUE,Connectivity Solution,NA,testdir_meta_cols
+type_of_technology,Type of technology,TRUE,Assay: Type of Technology,NA,testdir_meta_cols
+assay_target,Assay target,TRUE,Assay: Assay Target,NA,testdir_meta_cols
+target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),NA,testdir_meta_cols
+technology_principle,Technology principle,TRUE,Assay: Technology principle,NA,testdir_meta_cols
+test_format,Test format,TRUE,Assay: Test Format,NA,testdir_meta_cols
+instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement,NA,testdir_meta_cols
+level_of_automation,Level of automation,TRUE,Assay: Level of automation,NA,testdir_meta_cols
+lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,NA,testdir_meta_cols
+self_testing_self_collection,Self-testing/self-collection,TRUE,Assay: Self-testing/Self-Collection,NA,testdir_meta_cols
+validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,NA,testdir_meta_cols
+time_to_results_excl_prep,Time to result excl sample prep,FALSE,Not found in new architecture,NA,testdir_meta_cols
+time_to_results_incl_prep,Time to result incl sample prep,FALSE,Not found in new architecture,NA,testdir_meta_cols
+connectivity_solution,Connectivity,TRUE,Instrument: Connectivity Solution,NA,testdir_meta_cols
 find_evaluation,FIND evaluation,FALSE,FIND Evaluation,NA,testdir_meta_cols
-sc2_alpha,SARS-CoV-2 variant Alpha,FALSE,Impact of SARS-COV-2 Alpha variant,NA,testdir_meta_cols
-sc2_beta,SARS-CoV-2 variant Beta,FALSE,Impact of SARS-COV-2 Beta variant,NA,testdir_meta_cols
-sc2_gamma,SARS-CoV-2 variant Gamma,FALSE,Impact of SARS-COV-2 Gamma variant,NA,testdir_meta_cols
-sc2_delta,SARS-CoV-2 variant Delta,FALSE,Impact of SARS-COV-2 Delta variant,NA,testdir_meta_cols
-sc2_delta_plus,SARS-CoV-2 variant Delta+,FALSE,Impact of SARS-COV-2 Delta+ variant,NA,testdir_meta_cols
-sc2_omicron,SARS-CoV-2 variant Omicron,FALSE,Impact of SARS-COV-2 Omicron variant,NA,testdir_meta_cols
-s_gene_dropout,S gene dropout,TRUE,S gene dropout,NA,testdir_meta_cols
-scov2_variants,Variant detection,TRUE,SARS-CoV-2 variant(s),NA,testdir_meta_cols
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,Test to be listed on FIND's web page?,NA,testdir_meta_cols
+s_gene_dropout,S gene dropout,TRUE,Assay: S gene dropout,NA,testdir_meta_cols
+scov2_variants,Variant detection,TRUE,Assay: SARS-CoV-2 variant(s),NA,testdir_meta_cols
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,NA,testdir_meta_cols
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,NA,testdir_meta_cols
-is_this_a_variant_detection_test,Variant detection test,FALSE,Is this a variant detection test?,NA,testdir_meta_cols
-revoked_not_approved_by,Not approved,FALSE,Revoked/Not Approved By,NA,testdir_meta_cols
+is_this_a_variant_detection_test,Variant detection test,FALSE,Not found in new architecture,NA,testdir_meta_cols
+revoked_not_approved_by,Not approved,FALSE,Not found in new architecture,NA,testdir_meta_cols
 study_type,Study type,FALSE,Study Type,NA,testdir_meta_cols
 number_of_positive_samples,Number of positive samples,FALSE,Number of positive samples,NA,testdir_meta_cols
 number_of_negative_samples,Number of negative samples,FALSE,Number of negative samples,NA,testdir_meta_cols
 total_number_of_samples,Total number of samples,FALSE,Total number of samples,NA,testdir_meta_cols
-no_expected_impact,No expected impact,FALSE,No expected impact (in silico analyses),NA,testdir_meta_cols
-potential_impact,Potential impact,FALSE,Potential impact (in silico analyses),NA,testdir_meta_cols
-no_impact,No impact,FALSE,No impact (analytical/clinical studies),NA,testdir_meta_cols
-impact,Impact,FALSE,Impact (analytical/clinical studies),NA,testdir_meta_cols
+no_expected_impact,No expected impact,FALSE,Assay: No expected impact (in silico analyses),NA,testdir_meta_cols
+potential_impact,Potential impact,FALSE,Assay: Potential impact (in silico analyses),NA,testdir_meta_cols
+no_impact,No impact,FALSE,Assay: No impact (analytical/clinical studies),NA,testdir_meta_cols
+impact,Impact,FALSE,Assay: Impact (analytical/clinical studies),NA,testdir_meta_cols
 sc2_impact_alpha,Alpha variant,TRUE,Alpha,NA,testdir_meta_cols
 sc2_impact_beta,Beta variant,TRUE,Beta,NA,testdir_meta_cols
 sc2_impact_delta,Delta variant,TRUE,Delta,NA,testdir_meta_cols
