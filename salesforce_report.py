@@ -12,7 +12,8 @@ reports = {
 	"00O6900000CGaQTEA1": "amr_testdir",
 	"00O6900000BrsNLEAZ": "outbreaks_testdir",
 	"00O6900000BweVREAZ": "outbreaks_new",
-	"00O6900000BwcuoEAB": "tb_testdir"
+	"00O6900000BwcuoEAB": "tb_testdir",
+	"00O6900000Cf2lrEAB": "mpoc_testdir"
 }
 
 if len(sys.argv) < 2:
