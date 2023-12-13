@@ -1,0 +1,21 @@
+id,description,filterable,salesforce_name
+submission_id,ID,FALSE,Instrument: Instrument ID
+lab_vs_poc,Laboratory/point of care,TRUE,Instrument: Lab vs. POC
+instrument_type,Instrument type,TRUE,Instrument: Type of instrument
+manufacturer,Manufacturer,TRUE,Instrument: Company/Institution Name: Organisation Name
+submission_title,Instrument name,TRUE,Instrument: Instrument Name
+country,Manufacturer HQ country,TRUE,Instrument: Company/Institution Name: Country
+region,Manufacturer HQ Region,TRUE,Instrument: Company/Institution Name: WHO Region
+stage_of_development,Stage of development,TRUE,Instrument: Stage of Development
+regulatory_status,Regulatory status,TRUE,Instrument: Regulatory Approval
+type_of_technology,Type of technology,TRUE,Instrument: Type of Technology
+technology_principle,Technology principle,TRUE,Instrument: Technology principle
+test_format,Test format,TRUE,Instrument: Test Format
+readout_technology,Readout Technology,TRUE,Instrument: Readout Technology
+multiplexing_capacity,Multiplexing capacity,TRUE,Instrument: Multiplexing capacity
+instrument_weight,Instrument weight (kg),TRUE,Instrument: Weight (in Kg)
+power_supply,Power supply,TRUE,Instrument: Instrument power supply
+connectivity_options,Connectivity options,TRUE,Instrument: Connectivity options
+instrument_size,Instrument size (cm),FALSE,Instrument: Size (LxWxH) in cm
+city,City,FALSE,Instrument: Company/Institution Name: City
+permalink,Website,FALSE,Instrument: Company/Institution Name: Website
