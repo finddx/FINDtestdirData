@@ -15,7 +15,7 @@ readout_technology,Readout Technology,TRUE,Instrument: Readout Technology
 multiplexing_capacity,Multiplexing capacity,TRUE,Instrument: Multiplexing capacity
 instrument_weight,Instrument weight (kg),TRUE,Instrument: Weight (in Kg)
 power_supply,Power supply,TRUE,Instrument: Instrument power supply
-other_power_supply,Power supply details,TRUE,Instrument: Other power supply
+other_power_supply,Power supply details,TRUE,Instrument: Other Power Supply
 min_operating_temp,Operating Temp. - Min (°C),TRUE,Instrument: Minimum Operating Temperature
 max_operating_temp,Operating Temp. - Max (°C),TRUE,Instrument: Maximum Operating Temperature
 connectivity_options,Connectivity options,TRUE,Instrument: Connectivity options
