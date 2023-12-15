@@ -13,6 +13,7 @@ technology_principle,Technology principle,TRUE,Instrument: Technology principle
 test_format,Test format,TRUE,Instrument: Test Format
 readout_technology,Readout Technology,TRUE,Instrument: Readout Technology
 multiplexing_capacity,Multiplexing capacity,TRUE,Instrument: Multiplexing capacity
+time_to_results,Time to results (mins),TRUE,Instrument: Time to results (mins)
 instrument_weight,Instrument weight (kg),TRUE,Instrument: Weight (in Kg)
 power_supply,Power supply,TRUE,Instrument: Instrument power supply
 other_power_supply,Power supply details,TRUE,Instrument: Other Power Supply
