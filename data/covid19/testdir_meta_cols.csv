@@ -28,6 +28,7 @@ connectivity_solution,Connectivity,TRUE,Instrument: Connectivity Solution
 find_evaluation,FIND evaluation,FALSE,FIND Evaluation
 s_gene_dropout,S gene dropout,TRUE,Assay: S gene dropout
 scov2_variants,Variant detection,TRUE,Assay: SARS-CoV-2 variant(s)
+city,City,FALSE,Assay: Company/Institution Name: City
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page
 is_this_a_variant_detection_test,Variant detection test,FALSE,Not found in new architecture

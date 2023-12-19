@@ -1,4 +1,4 @@
-﻿id,description,filterable,salesforce_name
+id,description,filterable,salesforce_name
 submission_id,ID,FALSE,Assay: Assay ID
 created_date,Date,FALSE,Assay: Created Date
 disease_target_phase,Disease spectrum,TRUE,Assay: Disease Target Phase
@@ -49,4 +49,5 @@ total_number_samples,Total number of samples,FALSE,Total number of samples
 sample_type,Sample type,FALSE,Sample Type
 number_positive_samples,Number of positive samples,FALSE,Number of positive samples
 number_negative_samples,Number of negative samples,FALSE,Number of negative samples
+city,City,FALSE,Assay: Company/Institution Name: City
 permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website
