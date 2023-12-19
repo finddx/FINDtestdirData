@@ -83,5 +83,23 @@ geo_data <-
    geo_data |>
    mutate(city2 = gsub("South Korea", "Korea, Republic of", city2))
 
+raw <-
+  geo_data |>
+  distinct() |>
+  filter(!is.na(manufacturer)) |>
+  mutate(target_analyte = replace_na(target_analyte, "Unknown")) |>
+  mutate(validated_sample_types = stringr::str_replace_all(validated_sample_types, c("Feces" = "Faeces"))) |>
 
-write_csv(geo_data, "data/outbreaks/outbreaks_testdir.csv")
+  mutate(disease_target = gsub("Ascaris", "Ascariasis", disease_target),
+         disease_target = gsub("Crimean Congo Hemorrhagic Fever", "Crimean-Congo Hemorrhagic Fever", disease_target),
+         disease_target = gsub("Dengue fever", "Dengue", disease_target),
+         disease_target = gsub("Ebola fever", "Ebola virus disease", disease_target),
+         disease_target = gsub("Hookworm", "Hookworm infection", disease_target),
+         disease_target = gsub("Marburg", "Marburg virus disease", disease_target),
+         disease_target = gsub("Nipah", "Nipah virus infection", disease_target),
+         disease_target = gsub("Whipworm", "Trichuriasis", disease_target),
+         disease_target = gsub("Zika fever", "Zika virus disease", disease_target),
+         disease_target = gsub("Lassa fever", "Lassa", disease_target)
+  )
+
+write_csv(raw, "data/outbreaks/outbreaks_testdir.csv")

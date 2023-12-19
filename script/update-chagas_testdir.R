@@ -44,5 +44,29 @@ data <-
   mutate(permalink = if_else(startsWith(permalink, "http"), permalink, paste0("https://", permalink)))
 
 
-write_csv(data, "data/ntd/chagas_testdir.csv")
+d <-
+  data |>
+  mutate(country_tmp = gsub("Korea, Republic of", "South Korea", country)) |>
+  mutate(city = gsub("Unknown", NA, city)) |>
+  #mutate(city2 = coalesce(city, country)) |>
+  mutate(city2 = if_else(is.na(city), country_tmp, paste0(city, ", ", country_tmp)))
+
+geo_data <-
+  d |>
+  tidygeocoder::geocode(city2, method = 'bing', lat = lat , long = lng)
+
+geo_data <-
+  geo_data |>
+  mutate(city2 = gsub("South Korea", "Korea, Republic of", city2))
+
+raw <-
+  geo_data |>
+  mutate(sensitivity = gsub("^0$", NA, sensitivity)) |>
+  mutate(specificity = gsub("^0$", NA, specificity)) |>
+  distinct() |>
+  filter(!is.na(manufacturer)) |>
+  mutate(target_analyte = replace_na(target_analyte, "Unknown")) |>
+  mutate(validated_sample_types = stringr::str_replace_all(validated_sample_types, c("Feces" = "Faeces")))
+
+write_csv(raw, "data/ntd/chagas_testdir.csv")
 
