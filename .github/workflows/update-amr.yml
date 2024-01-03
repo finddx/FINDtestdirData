@@ -51,7 +51,7 @@ jobs:
         run: |
           Rscript -e "install.packages(c('remotes', 'stringi'), type = 'source')"
           Rscript -e "remotes::install_github('finddx/shinyfind')"
-          Rscript -e 'install.packages(c("fuzzyjoin", "countrycode"), repos = "https://packagemanager.rstudio.com/cran/__linux__/focal/latest")'
+          Rscript -e 'install.packages(c("fuzzyjoin", "tidygeocoder", "countrycode"), repos = "https://packagemanager.rstudio.com/cran/__linux__/focal/latest")'
       - name: Running update scripts
         run: |
          Rscript -e "source('script/update-amr_testdir.R')"
