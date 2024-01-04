@@ -42,6 +42,7 @@ self_testing_self_collection,Self-testing or professional use,FALSE,Assay: Self-
 validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,TRUE,amr_testdir_meta_cols
 other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type,FALSE,amr_testdir_meta_cols
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Assay: Time to results (mins),FALSE,amr_testdir_meta_cols
+city,City,FALSE,Assay: Company/Institution Name: City,NA,amr_testdir_meta_cols
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,FALSE,amr_testdir_meta_cols
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,FALSE,amr_testdir_meta_cols
 submission_id,ID,FALSE,Submission: ID,FALSE,eqa_covid_testdir_meta_cols
@@ -87,6 +88,7 @@ connectivity_solution,Connectivity,TRUE,Instrument: Connectivity Solution,NA,tes
 find_evaluation,FIND evaluation,FALSE,FIND Evaluation,NA,testdir_meta_cols
 s_gene_dropout,S gene dropout,TRUE,Assay: S gene dropout,NA,testdir_meta_cols
 scov2_variants,Variant detection,TRUE,Assay: SARS-CoV-2 variant(s),NA,testdir_meta_cols
+city,City,FALSE,Assay: Company/Institution Name: City,NA,testdir_meta_cols
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,NA,testdir_meta_cols
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,NA,testdir_meta_cols
 is_this_a_variant_detection_test,Variant detection test,FALSE,Not found in new architecture,NA,testdir_meta_cols
@@ -145,6 +147,7 @@ sample_type,Sample type,FALSE,Sample Type,NA,chagas_testdir_meta_cols
 total_number_samples,Total number of samples,FALSE,Total number of samples,NA,chagas_testdir_meta_cols
 number_positive_samples,Number of positive samples,FALSE,Number of positive samples,NA,chagas_testdir_meta_cols
 number_negative_samples,Number of negative samples,FALSE,Number of negative samples,NA,chagas_testdir_meta_cols
+city,City,FALSE,Assay: Company/Institution Name: City,NA,chagas_testdir_meta_cols
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,NA,chagas_testdir_meta_cols
 data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,NA,chagas_testdir_meta_cols
 submission_id,ID,FALSE,Assay: Assay ID,NA,outbreaks_testdir_meta_cols
@@ -217,4 +220,5 @@ total_number_samples,Total number of samples,FALSE,Total number of samples,NA,tb
 sample_type,Sample type,FALSE,Sample Type,NA,tb_testdir_meta_cols
 number_positive_samples,Number of positive samples,FALSE,Number of positive samples,NA,tb_testdir_meta_cols
 number_negative_samples,Number of negative samples,FALSE,Number of negative samples,NA,tb_testdir_meta_cols
+city,City,FALSE,Assay: Company/Institution Name: City,NA,tb_testdir_meta_cols
 permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website,NA,tb_testdir_meta_cols
