@@ -99,7 +99,8 @@ raw <-
          disease_target = gsub("Nipah", "Nipah virus infection", disease_target),
          disease_target = gsub("Whipworm", "Trichuriasis", disease_target),
          disease_target = gsub("Zika fever", "Zika virus disease", disease_target),
-         disease_target = gsub("Lassa fever", "Lassa", disease_target)
+         disease_target = gsub("Lassa fever", "Lassa", disease_target),
+         disease_target = gsub("Yellow Fever", "Yellow fever", disease_target)
   )
 
 write_csv(raw, "data/outbreaks/outbreaks_testdir.csv")
