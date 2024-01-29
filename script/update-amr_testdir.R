@@ -72,7 +72,7 @@ geo_data <-
   geo_data |>
   mutate(city2 = gsub("South Korea", "Korea, Republic of", city2))
 
-remove_pathogens <- "Adenovirus; |Ancylostoma spp.; |Ascaris lumbricoides; |Brugia malayi; |Chikungunya virus; |Cowpox virus; |Crimean Congo Hemorrhagic Fever virus; |Dengue virus; |Ebola virus; |Enterovirus; Filovirus; |Human Coronavirus; |Human Metapneumovirus; |Human Rhinovirus; |Influenza A; |Influenza B; |Lassa virus; |Leishmania parasites; |Marburg virus; |Measles morbillivirus; |Middle East Respiratory Coronavirus; |Mpox virus; |Mycobacterium Tuberculosis; |Mycobacterium Tuberculosis Complex Species; |Mycobacterium ulcerans; |Necator americanus.; |Nipah virus; |Onchocera volvulus; |Orthopoxvirus; |Parainfluenza virus; |Plasmodium Falciparum; |Plasmodium Knowlesi; |Plasmodium Malariae; |Plasmodium Ovale; |Plasmodium Species; |Plasmodium Vivax; |Pox viruses (unspecified); |Respiratory Syncytial Virus \\(RSV\\)|Rift Valley Fever virus; |Rubella virus; |SARS-CoV-2; |Schistosoma mansoni; |Taenia solium; |Trichuris trichiura; |Trypanosoma brucei; |Trypanosoma cruzi; |Typhoid; Vaccinia virus; |Variola virus; |West Nile virus; |Wuchereria bancrofti; |Yellow Fever virus; |Zika virus; |Leishmania\U00A0parasites; "
+#remove_pathogens <- "Adenovirus; |Ancylostoma spp.; |Ascaris lumbricoides; |Brugia malayi; |Chikungunya virus; |Cowpox virus; |Crimean Congo Hemorrhagic Fever virus; |Dengue virus; |Ebola virus; |Enterovirus; Filovirus; |Human Coronavirus; |Human Metapneumovirus; |Human Rhinovirus; |Influenza A; |Influenza B; |Lassa virus; |Leishmania parasites; |Marburg virus; |Measles morbillivirus; |Middle East Respiratory Coronavirus; |Mpox virus; |Mycobacterium Tuberculosis; |Mycobacterium Tuberculosis Complex Species; |Mycobacterium ulcerans; |Necator americanus.; |Nipah virus; |Onchocera volvulus; |Orthopoxvirus; |Parainfluenza virus; |Plasmodium Falciparum; |Plasmodium Knowlesi; |Plasmodium Malariae; |Plasmodium Ovale; |Plasmodium Species; |Plasmodium Vivax; |Pox viruses (unspecified); |Respiratory Syncytial Virus \\(RSV\\)|Rift Valley Fever virus; |Rubella virus; |SARS-CoV-2; |Schistosoma mansoni; |Taenia solium; |Trichuris trichiura; |Trypanosoma brucei; |Trypanosoma cruzi; |Typhoid; Vaccinia virus; |Variola virus; |West Nile virus; |Wuchereria bancrofti; |Yellow Fever virus; |Zika virus; |Leishmania\U00A0parasites; "
 
 raw <-
   geo_data |>
@@ -86,8 +86,8 @@ raw <-
     TRUE~assay_aim
   )) |>
   mutate(syndromes=gsub("Enteric","Gastro-intestinal Infections",syndromes)) |>
-  mutate(type_of_technology=gsub("Physical","Physics based",type_of_technology)) |>
-  mutate(target_pathogen = gsub(remove_pathogens, "", target_pathogen))
+  mutate(type_of_technology=gsub("Physical","Physics based",type_of_technology)) #|>
+  #mutate(target_pathogen = gsub(remove_pathogens, "", target_pathogen))
 
 write_csv(raw, "data/amr/amr_testdir.csv")
 
