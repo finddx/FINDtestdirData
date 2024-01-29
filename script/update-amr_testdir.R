@@ -86,7 +86,7 @@ raw <-
     TRUE~assay_aim
   )) |>
   mutate(syndromes=gsub("Enteric","Gastro-intestinal Infections",syndromes)) |>
-  #mutate(type_of_technology=gsub("Physical","Physics based",type_of_technology)) |>
+  mutate(type_of_technology=gsub("Physical","Physics based",type_of_technology)) |>
   mutate(target_pathogen = gsub(remove_pathogens, "", target_pathogen))
 
 write_csv(raw, "data/amr/amr_testdir.csv")
