@@ -7,7 +7,7 @@ submission_title,Assay name,TRUE,Assay: Assay Name,TRUE
 country,Country of manufacturer HQ,TRUE,Assay: Company/Institution Name: Country,TRUE
 region,Region of manufacturer HQ,TRUE,Assay: Company/Institution Name: WHO Region,TRUE
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development,FALSE
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,TRUE
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,TRUE
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology,TRUE
 assay_aim,Assay aim,TRUE,Assay: Assay Aim,TRUE
 syndromes,Syndrome,TRUE,Assay: Syndromes,TRUE
@@ -39,8 +39,8 @@ instrument_requirement,Instrument requirement,FALSE,Assay: Instrument requiremen
 level_of_automation,Level of automation,FALSE,Assay: Level of automation,FALSE
 lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,TRUE
 self_testing_self_collection,Self-testing or professional use,FALSE,Assay: Self-testing/Self-Collection,FALSE
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,TRUE
-other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type,FALSE
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,TRUE
+other_validated_sample_type,Other Sample types,FALSE,Assay: Other Validated Sample Type,FALSE
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Assay: Time to results (mins),FALSE
 city,City,FALSE,Assay: Company/Institution Name: City
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,FALSE
