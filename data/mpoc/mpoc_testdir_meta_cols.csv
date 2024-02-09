@@ -7,7 +7,7 @@ submission_title,Instrument name,TRUE,Instrument: Instrument Name
 country,Manufacturer HQ country,TRUE,Instrument: Company/Institution Name: Country
 region,Manufacturer HQ Region,TRUE,Instrument: Company/Institution Name: WHO Region
 stage_of_development,Stage of development,TRUE,Instrument: Stage of Development
-regulatory_status,Regulatory status,TRUE,Instrument: Regulatory Approval
+regulatory_status,Regulatory body,TRUE,Instrument: Regulatory Approval
 type_of_technology,Type of technology,TRUE,Instrument: Type of Technology
 technology_principle,Technology principle,TRUE,Instrument: Technology principle
 test_format,Test format,TRUE,Instrument: Test Format

@@ -12,13 +12,13 @@ self_testing_self_collection,Self-testing/self-collection,TRUE      ,Assay: Self
 assay_target                ,Assay target                ,TRUE      ,Assay: Assay Target
 test_format                 ,Test format                 ,TRUE      ,Assay: Test Format
 target_analyte              ,Target analyte              ,TRUE      ,Assay: Target Analyte(s)
-validated_sample_types      ,Validated sample types      ,TRUE      ,Assay: Validated Sample Types
+validated_sample_types      ,Sample types      ,TRUE      ,Assay: Validated Sample Types
 instrument_requirement      ,Instrument requirement      ,TRUE      ,Assay: Instrument requirement
 level_of_automation         ,Level of automation         ,TRUE      ,Assay: Level of automation
 laboratory_point_of_care    ,Laboratory/point-of-care    ,TRUE      ,Assay: Lab vs. POC
 time_to_result              ,Time to result              ,FALSE     ,Assay: Time to results (mins)
 connectivity                ,Connectivity,FALSE     ,Connectivity Solution
-regulatory_status           ,Regulatory status           ,TRUE      ,Assay: Regulatory Approval
+regulatory_status           ,Regulatory body           ,TRUE      ,Assay: Regulatory Approval
 sensitivity        ,Sensitivity                 ,FALSE     ,Sensitivity (%)
 specificity        ,Specificity                 ,FALSE     ,Specificity (%)
 stage_of_development,Stage of development,TRUE      ,Assay: Stage of Development

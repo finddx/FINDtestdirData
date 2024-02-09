@@ -8,14 +8,14 @@ assay_target,Assay target,TRUE,Assay: Assay Target
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s)
 drug_resistance_target,Drug resistance target,TRUE,Assay: Drug Resistance Target
 other_drug_resistance_target,Other drug resistance target,FALSE,Other drug resistance target
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
-other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types
+other_validated_sample_type,Other sample types,FALSE,Assay: Other Validated Sample Type
 submission_title,Assay name,TRUE,Assay: Assay Name
 manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name
 country,Manufacturer HQ country,TRUE,Assay: Company/Institution Name: Country
 region,Manufacturer HQ region,TRUE,Assay: Company/Institution Name: WHO Region
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval
 other_regulatory_status,Other regulatory status,FALSE,Assay: Other Regulatory Approval
 target_pathogen,Target pathogen,FALSE,Assay: Target Pathogen
 planned_market_entry,Planned market entry,FALSE,Assay: Planned Market Entry

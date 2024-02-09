@@ -9,7 +9,7 @@ stage_of_development,Stage of development,FALSE,Assay: Stage of Development
 country,Country,TRUE,Assay: Company/Institution Name: Country
 region,WHO region,TRUE,Assay: Company/Institution Name: WHO Region
 permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval
 sensitivity,Sensitivity,FALSE,Sensitivity (%)
 specificity,Specificity,FALSE,Specificity (%)
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology
@@ -21,7 +21,7 @@ instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement
 level_of_automation,Level of automation,TRUE,Assay: Level of automation
 lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC
 self_testing_self_collection,Self-testing/self-collection,TRUE,Assay: Self-testing/Self-Collection
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Not found in new architecture
 time_to_results_incl_prep,Time to result incl sample prep,FALSE,Not found in new architecture
 connectivity_solution,Connectivity,TRUE,Instrument: Connectivity Solution

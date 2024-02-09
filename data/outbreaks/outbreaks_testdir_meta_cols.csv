@@ -7,14 +7,14 @@ country,Manufacturer HQ country,TRUE,Assay: Company/Institution Name: Country
 region,Manufacturer HQ Region,TRUE,Assay: Company/Institution Name: WHO Region
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval
 target_pathogen,Target Pathogen,TRUE,Assay: Target Pathogen
 serovar_subtype,Serovar subtype,TRUE,Assay: Serovar subtype
 assay_target,Assay target,TRUE,Assay: Assay Target
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s)
 test_format,Test format,TRUE,Assay: Test Format
 lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types
 city,City,FALSE,Assay: Company/Institution Name: City
 instrument_name,Instrument Name,FALSE,Instrument: Instrument Name
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?
