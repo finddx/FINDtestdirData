@@ -1,5 +1,6 @@
 id,description,filterable,salesforce_name
 submission_id,ID,FALSE,Instrument: Instrument ID
+instrument_picture,Instrument Illustration,FALSE,Instrument: Instrument llustration
 lab_vs_poc,Laboratory/point of care,TRUE,Instrument: Lab vs. POC
 instrument_type,Instrument type,TRUE,Instrument: Type of instrument
 manufacturer,Manufacturer,TRUE,Instrument: Company/Institution Name: Organisation Name
@@ -13,6 +14,7 @@ technology_principle,Technology principle,TRUE,Instrument: Technology principle
 test_format,Test format,TRUE,Instrument: Test Format
 readout_technology,Readout Technology,TRUE,Instrument: Readout Technology
 multiplexing_capacity,Multiplexing capacity,TRUE,Instrument: Multiplexing capacity
+multiplexing_range,Multiplexing range,FALSE,Instrument: Multiplexing Range
 time_to_results,Time to results (mins),TRUE,Instrument: Time to results (mins)
 instrument_weight,Instrument weight (kg),TRUE,Instrument: Weight (in Kg)
 power_supply,Power supply,TRUE,Instrument: Instrument power supply
