@@ -7,7 +7,7 @@ submission_title,Assay name,TRUE,Assay: Assay Name,TRUE,amr_testdir_meta_cols
 country,Country of manufacturer HQ,TRUE,Assay: Company/Institution Name: Country,TRUE,amr_testdir_meta_cols
 region,Region of manufacturer HQ,TRUE,Assay: Company/Institution Name: WHO Region,TRUE,amr_testdir_meta_cols
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development,FALSE,amr_testdir_meta_cols
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,TRUE,amr_testdir_meta_cols
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,TRUE,amr_testdir_meta_cols
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology,TRUE,amr_testdir_meta_cols
 assay_aim,Assay aim,TRUE,Assay: Assay Aim,TRUE,amr_testdir_meta_cols
 syndromes,Syndrome,TRUE,Assay: Syndromes,TRUE,amr_testdir_meta_cols
@@ -39,8 +39,8 @@ instrument_requirement,Instrument requirement,FALSE,Assay: Instrument requiremen
 level_of_automation,Level of automation,FALSE,Assay: Level of automation,FALSE,amr_testdir_meta_cols
 lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,TRUE,amr_testdir_meta_cols
 self_testing_self_collection,Self-testing or professional use,FALSE,Assay: Self-testing/Self-Collection,FALSE,amr_testdir_meta_cols
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,TRUE,amr_testdir_meta_cols
-other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type,FALSE,amr_testdir_meta_cols
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,TRUE,amr_testdir_meta_cols
+other_validated_sample_type,Other Sample types,FALSE,Assay: Other Validated Sample Type,FALSE,amr_testdir_meta_cols
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Assay: Time to results (mins),FALSE,amr_testdir_meta_cols
 city,City,FALSE,Assay: Company/Institution Name: City,NA,amr_testdir_meta_cols
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,FALSE,amr_testdir_meta_cols
@@ -69,7 +69,7 @@ stage_of_development,Stage of development,FALSE,Assay: Stage of Development,NA,t
 country,Country,TRUE,Assay: Company/Institution Name: Country,NA,testdir_meta_cols
 region,WHO region,TRUE,Assay: Company/Institution Name: WHO Region,NA,testdir_meta_cols
 permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website,NA,testdir_meta_cols
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,NA,testdir_meta_cols
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,NA,testdir_meta_cols
 sensitivity,Sensitivity,FALSE,Sensitivity (%),NA,testdir_meta_cols
 specificity,Specificity,FALSE,Specificity (%),NA,testdir_meta_cols
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology,NA,testdir_meta_cols
@@ -81,7 +81,7 @@ instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement
 level_of_automation,Level of automation,TRUE,Assay: Level of automation,NA,testdir_meta_cols
 lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,NA,testdir_meta_cols
 self_testing_self_collection,Self-testing/self-collection,TRUE,Assay: Self-testing/Self-Collection,NA,testdir_meta_cols
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,NA,testdir_meta_cols
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,NA,testdir_meta_cols
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,Not found in new architecture,NA,testdir_meta_cols
 time_to_results_incl_prep,Time to result incl sample prep,FALSE,Not found in new architecture,NA,testdir_meta_cols
 connectivity_solution,Connectivity,TRUE,Instrument: Connectivity Solution,NA,testdir_meta_cols
@@ -122,13 +122,13 @@ self_testing_self_collection,Self-testing/self-collection,TRUE,Assay: Self-testi
 assay_target,Assay target,TRUE,Assay: Assay Target,NA,chagas_testdir_meta_cols
 test_format,Test format,TRUE,Assay: Test Format,NA,chagas_testdir_meta_cols
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),NA,chagas_testdir_meta_cols
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,NA,chagas_testdir_meta_cols
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,NA,chagas_testdir_meta_cols
 instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement,NA,chagas_testdir_meta_cols
 level_of_automation,Level of automation,TRUE,Assay: Level of automation,NA,chagas_testdir_meta_cols
 laboratory_point_of_care,Laboratory/point-of-care,TRUE,Assay: Lab vs. POC,NA,chagas_testdir_meta_cols
 time_to_result,Time to result,FALSE,Assay: Time to results (mins),NA,chagas_testdir_meta_cols
 connectivity,Connectivity,FALSE,Connectivity Solution,NA,chagas_testdir_meta_cols
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,NA,chagas_testdir_meta_cols
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,NA,chagas_testdir_meta_cols
 sensitivity,Sensitivity,FALSE,Sensitivity (%),NA,chagas_testdir_meta_cols
 specificity,Specificity,FALSE,Specificity (%),NA,chagas_testdir_meta_cols
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development,NA,chagas_testdir_meta_cols
@@ -158,14 +158,14 @@ country,Manufacturer HQ country,TRUE,Assay: Company/Institution Name: Country,NA
 region,Manufacturer HQ Region,TRUE,Assay: Company/Institution Name: WHO Region,NA,outbreaks_testdir_meta_cols
 type_of_technology,Type of technology,TRUE,Assay: Type of Technology,NA,outbreaks_testdir_meta_cols
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development,NA,outbreaks_testdir_meta_cols
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,NA,outbreaks_testdir_meta_cols
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,NA,outbreaks_testdir_meta_cols
 target_pathogen,Target Pathogen,TRUE,Assay: Target Pathogen,NA,outbreaks_testdir_meta_cols
 serovar_subtype,Serovar subtype,TRUE,Assay: Serovar subtype,NA,outbreaks_testdir_meta_cols
 assay_target,Assay target,TRUE,Assay: Assay Target,NA,outbreaks_testdir_meta_cols
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),NA,outbreaks_testdir_meta_cols
 test_format,Test format,TRUE,Assay: Test Format,NA,outbreaks_testdir_meta_cols
 lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,NA,outbreaks_testdir_meta_cols
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,NA,outbreaks_testdir_meta_cols
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,NA,outbreaks_testdir_meta_cols
 city,City,FALSE,Assay: Company/Institution Name: City,NA,outbreaks_testdir_meta_cols
 instrument_name,Instrument Name,FALSE,Instrument: Instrument Name,NA,outbreaks_testdir_meta_cols
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,NA,outbreaks_testdir_meta_cols
@@ -179,14 +179,14 @@ assay_target,Assay target,TRUE,Assay: Assay Target,NA,tb_testdir_meta_cols
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),NA,tb_testdir_meta_cols
 drug_resistance_target,Drug resistance target,TRUE,Assay: Drug Resistance Target,NA,tb_testdir_meta_cols
 other_drug_resistance_target,Other drug resistance target,FALSE,Other drug resistance target,NA,tb_testdir_meta_cols
-validated_sample_types,Validated sample types,TRUE,Assay: Validated Sample Types,NA,tb_testdir_meta_cols
-other_validated_sample_type,Other validated sample types,FALSE,Assay: Other Validated Sample Type,NA,tb_testdir_meta_cols
+validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,NA,tb_testdir_meta_cols
+other_validated_sample_type,Other sample types,FALSE,Assay: Other Validated Sample Type,NA,tb_testdir_meta_cols
 submission_title,Assay name,TRUE,Assay: Assay Name,NA,tb_testdir_meta_cols
 manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,NA,tb_testdir_meta_cols
 country,Manufacturer HQ country,TRUE,Assay: Company/Institution Name: Country,NA,tb_testdir_meta_cols
 region,Manufacturer HQ region,TRUE,Assay: Company/Institution Name: WHO Region,NA,tb_testdir_meta_cols
 stage_of_development,Stage of development,TRUE,Assay: Stage of Development,NA,tb_testdir_meta_cols
-regulatory_status,Regulatory status,TRUE,Assay: Regulatory Approval,NA,tb_testdir_meta_cols
+regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,NA,tb_testdir_meta_cols
 other_regulatory_status,Other regulatory status,FALSE,Assay: Other Regulatory Approval,NA,tb_testdir_meta_cols
 target_pathogen,Target pathogen,FALSE,Assay: Target Pathogen,NA,tb_testdir_meta_cols
 planned_market_entry,Planned market entry,FALSE,Assay: Planned Market Entry,NA,tb_testdir_meta_cols
