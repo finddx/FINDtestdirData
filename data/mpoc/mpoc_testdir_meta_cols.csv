@@ -21,4 +21,5 @@ instrument_size,Instrument size (cm),FALSE,Instrument: Size (LxWxH) in cm
 assay_menu,Assay menu,FALSE,Instrument: Assay menu (Commercial)
 assay_in_development,Assay in development,FALSE,Instrument: Assay in development
 city,City,FALSE,Instrument: Company/Institution Name: City
+product_website,Product website,FALSE,Instrument: Product Website
 permalink,Website,FALSE,Instrument: Company/Institution Name: Website
