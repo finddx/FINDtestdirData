@@ -18,5 +18,7 @@ instrument_weight,Instrument weight (kg),TRUE,Instrument: Weight (in Kg)
 power_supply,Power supply,TRUE,Instrument: Instrument power supply
 connectivity_companion,Connectivity companion,TRUE,Instrument: Companion solutions
 instrument_size,Instrument size (cm),FALSE,Instrument: Size (LxWxH) in cm
+assay_menu,Assay menu,FALSE,Instrument: Assay menu (Commercial)
+assay_in_development,Assay in development,FALSE,Instrument: Assay in development
 city,City,FALSE,Instrument: Company/Institution Name: City
 permalink,Website,FALSE,Instrument: Company/Institution Name: Website
