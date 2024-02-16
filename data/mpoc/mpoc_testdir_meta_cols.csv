@@ -15,6 +15,7 @@ readout_technology,Readout Technology,TRUE,Instrument: Readout Technology
 multiplexing_range,Multiplexing range,TRUE,Instrument: Multiplexing Range
 time_to_results,Time to results (mins),TRUE,Instrument: Time to results (mins)
 instrument_weight,Instrument weight (kg),TRUE,Instrument: Weight (in Kg)
+instrument_footprint,Instrument footprint,TRUE,Instrument: Instrument footprint
 power_supply,Power supply,TRUE,Instrument: Instrument power supply
 connectivity_companion,Connectivity companion,TRUE,Instrument: Companion solutions
 instrument_size,Instrument size (cm),FALSE,Instrument: Size (LxWxH) in cm

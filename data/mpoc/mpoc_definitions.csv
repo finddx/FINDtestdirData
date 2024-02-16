@@ -19,3 +19,7 @@ Mains power,Platforms with high power consumption that require Alternating Curre
 Battery-operated,"Platforms that come with a battery, either integrated (e.g. Li-ion), disposable (e.g. AA cell) or removable (plug and play)",Power supply
 Portable charger compatible,Platforms that do not come up with a battery (i.e. not part of the standard kit) but have a low power consumption that allows operations for a few hours with a portable charger / power bank (that needs to be purchased separately),Power supply
 Power free,"Platforms that create its own energy, for example through a chemical reaction that provides such energy or heat",Power supply
+Handheld,"Palm-size instrument. All dimensions below or equal to 15 cm",Instrument footprint
+Small,"Instrument of the size of a shoebox / toaster. All dimensions below or equal to 30 cm",Instrument footprint
+Intermediate,"Instrument of the size of a standard printer. All dimensions below or equal top 55 cm",Instrument footprint
+Large,"Instrument of the size of a fridge. At least 1 dimension equal or above 56 cm",Instrument footprint
