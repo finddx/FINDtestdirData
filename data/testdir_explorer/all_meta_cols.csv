@@ -1,224 +1,77 @@
-id,description,filterable,salesforce_name,include_in_table,name
-submission_id,ID,FALSE,Assay: Assay ID,NA,amr_testdir_meta_cols
-performance_detail_submission_id,Performance ID,FALSE,Performance Detail Submission ID,NA,amr_testdir_meta_cols
-date_of_submission,Date,FALSE,Assay: Created Date,NA,amr_testdir_meta_cols
-manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,TRUE,amr_testdir_meta_cols
-submission_title,Assay name,TRUE,Assay: Assay Name,TRUE,amr_testdir_meta_cols
-country,Country of manufacturer HQ,TRUE,Assay: Company/Institution Name: Country,TRUE,amr_testdir_meta_cols
-region,Region of manufacturer HQ,TRUE,Assay: Company/Institution Name: WHO Region,TRUE,amr_testdir_meta_cols
-stage_of_development,Stage of development,TRUE,Assay: Stage of Development,FALSE,amr_testdir_meta_cols
-regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,TRUE,amr_testdir_meta_cols
-type_of_technology,Type of technology,TRUE,Assay: Type of Technology,TRUE,amr_testdir_meta_cols
-assay_aim,Assay aim,TRUE,Assay: Assay Aim,TRUE,amr_testdir_meta_cols
-syndromes,Syndrome,TRUE,Assay: Syndromes,TRUE,amr_testdir_meta_cols
-other_target_pathogen,Other target pathogen,FALSE,Assay: Other target pathogen,FALSE,amr_testdir_meta_cols
-permalink,Website,FALSE,Assay: Company/Institution Name: Website,FALSE,amr_testdir_meta_cols
-planned_market_entry,Planned market entry,FALSE,Assay: Planned Market Entry,FALSE,amr_testdir_meta_cols
-primary_use_case,Primary use case,FALSE,Assay: Primary Use Case,FALSE,amr_testdir_meta_cols
-ID_type,Type of ID,FALSE,Assay: ID type,FALSE,amr_testdir_meta_cols
-disease_target,Disease target,FALSE,Assay: Disease Target,FALSE,amr_testdir_meta_cols
-assay_target,Assay target,FALSE,Assay: Assay Target,TRUE,amr_testdir_meta_cols
-organism_classes,Organism class,TRUE,Assay: Target Organism Classes,FALSE,amr_testdir_meta_cols
-target_pathogen,Target pathogen,TRUE,Assay: Target Pathogen,TRUE,amr_testdir_meta_cols
-target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),TRUE,amr_testdir_meta_cols
-technology_principle,Technology principle,FALSE,Assay: Technology principle,FALSE,amr_testdir_meta_cols
-other_technology_principle,Other technology principle,FALSE,Assay: Other Technology Principle,FALSE,amr_testdir_meta_cols
-readout_technology,Readout technology,FALSE,Assay: Readout Technology,FALSE,amr_testdir_meta_cols
-other_readout_technology,Other readout technology,FALSE,Assay: Other Readout Technology,FALSE,amr_testdir_meta_cols
-qualitative_or_quantitative,Quantitative or qualitative,FALSE,Assay: Qualitative or Quantitative,FALSE,amr_testdir_meta_cols
-antimicrobial_resistance_class,Antimicrobial resistance class,TRUE,Assay: Antimicrobial Resistance Class,TRUE,amr_testdir_meta_cols
-resistance_marker,Resistance marker,TRUE,Assay: Resistance Marker,TRUE,amr_testdir_meta_cols
-other_resistance_marker,Other resistance marker,FALSE,Assay: Other Resistance Marker,FALSE,amr_testdir_meta_cols
-other_antimicrobial_resistance_class,Other antimicrobial resistance class,FALSE,Assay: Other Antimicrobial Resistance Class,FALSE,amr_testdir_meta_cols
-Drug_resistance_target,Antimicrobial agent,FALSE,Assay: Drug Resistance Target,TRUE,amr_testdir_meta_cols
-Other Drug resistance target,Other antimicrobial agent,FALSE,Assay: Other drug resistance target,FALSE,amr_testdir_meta_cols
-AST_output,AST output,FALSE,Assay: AST Output,FALSE,amr_testdir_meta_cols
-test_format,Test format,FALSE,Assay: Test Format,FALSE,amr_testdir_meta_cols
-other_test_format,Other test format,FALSE,Assay: Other Test Format,FALSE,amr_testdir_meta_cols
-instrument_requirement,Instrument requirement,FALSE,Assay: Instrument requirement,FALSE,amr_testdir_meta_cols
-level_of_automation,Level of automation,FALSE,Assay: Level of automation,FALSE,amr_testdir_meta_cols
-lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,TRUE,amr_testdir_meta_cols
-self_testing_self_collection,Self-testing or professional use,FALSE,Assay: Self-testing/Self-Collection,FALSE,amr_testdir_meta_cols
-validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,TRUE,amr_testdir_meta_cols
-other_validated_sample_type,Other Sample types,FALSE,Assay: Other Validated Sample Type,FALSE,amr_testdir_meta_cols
-time_to_results_excl_prep,Time to result excl sample prep,FALSE,Assay: Time to results (mins),FALSE,amr_testdir_meta_cols
-city,City,FALSE,Assay: Company/Institution Name: City,NA,amr_testdir_meta_cols
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,FALSE,amr_testdir_meta_cols
-data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,FALSE,amr_testdir_meta_cols
-submission_id,ID,FALSE,Submission: ID,FALSE,eqa_covid_testdir_meta_cols
-manufacturer,Organization name,FALSE,Organisation Name,TRUE,eqa_covid_testdir_meta_cols
-submission_title,EQA name,FALSE,Submission: Submission Title,TRUE,eqa_covid_testdir_meta_cols
-region,Region of production,FALSE,Region,TRUE,eqa_covid_testdir_meta_cols
-region_availability,Region of availability,FALSE,Regions of test availability,TRUE,eqa_covid_testdir_meta_cols
-target_pathogen,Target pathogen,TRUE,Target Pathogen,TRUE,eqa_covid_testdir_meta_cols
-type_of_technology,Type of technology,TRUE,Type of Technology,TRUE,eqa_covid_testdir_meta_cols
-assay_target,Assay target,TRUE,Assay Target,TRUE,eqa_covid_testdir_meta_cols
-target_analyte,Target analyte,TRUE,Target Analyte(s),TRUE,eqa_covid_testdir_meta_cols
-is_this_a_variant_detection_test,Are multiple variants included?,FALSE,Is this a variant detection test?,TRUE,eqa_covid_testdir_meta_cols
-format_of_material_provided,Format of material provided,FALSE,Format of Material Provided,TRUE,eqa_covid_testdir_meta_cols
-qual_or_quant,Qualitative/Quantitative,TRUE,Qualitative or Quantitative,TRUE,eqa_covid_testdir_meta_cols
-storage_temp,Storage temperature,FALSE,Storage Temperature,TRUE,eqa_covid_testdir_meta_cols
-permalink,Permanent link,FALSE,Product Website,TRUE,eqa_covid_testdir_meta_cols
-submission_id,ID,FALSE,Assay: Assay ID,NA,testdir_meta_cols
-performance_detail_submission_id,Performance ID,FALSE,Performance Detail Submission ID,NA,testdir_meta_cols
-date_of_submission,Date,FALSE,Created Date,NA,testdir_meta_cols
-manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,NA,testdir_meta_cols
-submission_title,Assay name,TRUE,Assay: Assay Name,NA,testdir_meta_cols
-target_pathogen,Target Pathogen,FALSE,Assay: Target Pathogen,NA,testdir_meta_cols
-stage_of_development,Stage of development,FALSE,Assay: Stage of Development,NA,testdir_meta_cols
-country,Country,TRUE,Assay: Company/Institution Name: Country,NA,testdir_meta_cols
-region,WHO region,TRUE,Assay: Company/Institution Name: WHO Region,NA,testdir_meta_cols
-permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website,NA,testdir_meta_cols
-regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,NA,testdir_meta_cols
-sensitivity,Sensitivity,FALSE,Sensitivity (%),NA,testdir_meta_cols
-specificity,Specificity,FALSE,Specificity (%),NA,testdir_meta_cols
-type_of_technology,Type of technology,TRUE,Assay: Type of Technology,NA,testdir_meta_cols
-assay_target,Assay target,TRUE,Assay: Assay Target,NA,testdir_meta_cols
-target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),NA,testdir_meta_cols
-technology_principle,Technology principle,TRUE,Assay: Technology principle,NA,testdir_meta_cols
-test_format,Test format,TRUE,Assay: Test Format,NA,testdir_meta_cols
-instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement,NA,testdir_meta_cols
-level_of_automation,Level of automation,TRUE,Assay: Level of automation,NA,testdir_meta_cols
-lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,NA,testdir_meta_cols
-self_testing_self_collection,Self-testing/self-collection,TRUE,Assay: Self-testing/Self-Collection,NA,testdir_meta_cols
-validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,NA,testdir_meta_cols
-time_to_results_excl_prep,Time to result excl sample prep,FALSE,Not found in new architecture,NA,testdir_meta_cols
-time_to_results_incl_prep,Time to result incl sample prep,FALSE,Not found in new architecture,NA,testdir_meta_cols
-connectivity_solution,Connectivity,TRUE,Instrument: Connectivity Solution,NA,testdir_meta_cols
-find_evaluation,FIND evaluation,FALSE,FIND Evaluation,NA,testdir_meta_cols
-s_gene_dropout,S gene dropout,TRUE,Assay: S gene dropout,NA,testdir_meta_cols
-scov2_variants,Variant detection,TRUE,Assay: SARS-CoV-2 variant(s),NA,testdir_meta_cols
-city,City,FALSE,Assay: Company/Institution Name: City,NA,testdir_meta_cols
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,NA,testdir_meta_cols
-data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,NA,testdir_meta_cols
-is_this_a_variant_detection_test,Variant detection test,FALSE,Not found in new architecture,NA,testdir_meta_cols
-revoked_not_approved_by,Not approved,FALSE,Not found in new architecture,NA,testdir_meta_cols
-study_type,Study type,FALSE,Study Type,NA,testdir_meta_cols
-number_of_positive_samples,Number of positive samples,FALSE,Number of positive samples,NA,testdir_meta_cols
-number_of_negative_samples,Number of negative samples,FALSE,Number of negative samples,NA,testdir_meta_cols
-total_number_of_samples,Total number of samples,FALSE,Total number of samples,NA,testdir_meta_cols
-no_expected_impact,No expected impact,FALSE,Assay: No expected impact (in silico analyses),NA,testdir_meta_cols
-potential_impact,Potential impact,FALSE,Assay: Potential impact (in silico analyses),NA,testdir_meta_cols
-no_impact,No impact,FALSE,Assay: No impact (analytical/clinical studies),NA,testdir_meta_cols
-impact,Impact,FALSE,Assay: Impact (analytical/clinical studies),NA,testdir_meta_cols
-sc2_impact_alpha,Alpha variant,TRUE,Alpha,NA,testdir_meta_cols
-sc2_impact_beta,Beta variant,TRUE,Beta,NA,testdir_meta_cols
-sc2_impact_delta,Delta variant,TRUE,Delta,NA,testdir_meta_cols
-sc2_impact_delta_plus,Delta+ variant,TRUE,Delta+,NA,testdir_meta_cols
-sc2_impact_gamma,Gamma variant,TRUE,Gamma,NA,testdir_meta_cols
-sc2_impact_omicron,Omicron variant,TRUE,Omicron,NA,testdir_meta_cols
-sc2_impact_omicron_ba4,Omicron (BA.4) variant,TRUE,Omicron (BA.4),NA,testdir_meta_cols
-sc2_impact_omicron_ba5,Omicron (BA.5) variant,TRUE,Omicron (BA.5),NA,testdir_meta_cols
-submission_id,ID,FALSE,Assay: Assay ID,NA,chagas_testdir_meta_cols
-performance_detail_submission_id,ID,FALSE,Performance Detail Submission ID,NA,chagas_testdir_meta_cols
-disease_target,Disease target,TRUE,Assay: Disease Target,NA,chagas_testdir_meta_cols
-primary_use_case,Primary use case,TRUE,Assay: Primary Use Case,NA,chagas_testdir_meta_cols
-manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,NA,chagas_testdir_meta_cols
-submission_title,Assay name,FALSE,Assay: Assay Name,NA,chagas_testdir_meta_cols
-region,Region of company headquarters,TRUE,Assay: Company/Institution Name: WHO Region,NA,chagas_testdir_meta_cols
-country,Country,TRUE,Assay: Company/Institution Name: Country,NA,chagas_testdir_meta_cols
-type_of_technology,Type of technology,TRUE,Assay: Type of Technology,NA,chagas_testdir_meta_cols
-self_testing_self_collection,Self-testing/self-collection,TRUE,Assay: Self-testing/Self-Collection,NA,chagas_testdir_meta_cols
-assay_target,Assay target,TRUE,Assay: Assay Target,NA,chagas_testdir_meta_cols
-test_format,Test format,TRUE,Assay: Test Format,NA,chagas_testdir_meta_cols
-target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),NA,chagas_testdir_meta_cols
-validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,NA,chagas_testdir_meta_cols
-instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement,NA,chagas_testdir_meta_cols
-level_of_automation,Level of automation,TRUE,Assay: Level of automation,NA,chagas_testdir_meta_cols
-laboratory_point_of_care,Laboratory/point-of-care,TRUE,Assay: Lab vs. POC,NA,chagas_testdir_meta_cols
-time_to_result,Time to result,FALSE,Assay: Time to results (mins),NA,chagas_testdir_meta_cols
-connectivity,Connectivity,FALSE,Connectivity Solution,NA,chagas_testdir_meta_cols
-regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,NA,chagas_testdir_meta_cols
-sensitivity,Sensitivity,FALSE,Sensitivity (%),NA,chagas_testdir_meta_cols
-specificity,Specificity,FALSE,Specificity (%),NA,chagas_testdir_meta_cols
-stage_of_development,Stage of development,TRUE,Assay: Stage of Development,NA,chagas_testdir_meta_cols
-technology_principle,Technology principle,TRUE,Assay: Technology principle,NA,chagas_testdir_meta_cols
-permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website,NA,chagas_testdir_meta_cols
-find_evaluation,FIND evaluation,TRUE,FIND Evaluation,NA,chagas_testdir_meta_cols
-performance_submission_title,Performance submission title,FALSE,Perf Submission Title,NA,chagas_testdir_meta_cols
-study_type,Study type,FALSE,Study Type,NA,chagas_testdir_meta_cols
-type_data_source,Type of data source,FALSE,Type of data source,NA,chagas_testdir_meta_cols
-sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE,95% CI for Clinical Sensitivity (Lower),NA,chagas_testdir_meta_cols
-sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,95% CI for Clinical Sensitivity (Upper),NA,chagas_testdir_meta_cols
-specificity_ci_low,95% CI Specificity (Lower),FALSE,95% CI for Clinical Specificity (Lower),NA,chagas_testdir_meta_cols
-specificity_ci_up,95% CI Specificity (Upper),FALSE,95% CI for Clinical Specificity (Upper),NA,chagas_testdir_meta_cols
-target_patient_group,Target patient group,FALSE,Target Patient Group,NA,chagas_testdir_meta_cols
-sample_type,Sample type,FALSE,Sample Type,NA,chagas_testdir_meta_cols
-total_number_samples,Total number of samples,FALSE,Total number of samples,NA,chagas_testdir_meta_cols
-number_positive_samples,Number of positive samples,FALSE,Number of positive samples,NA,chagas_testdir_meta_cols
-number_negative_samples,Number of negative samples,FALSE,Number of negative samples,NA,chagas_testdir_meta_cols
-city,City,FALSE,Assay: Company/Institution Name: City,NA,chagas_testdir_meta_cols
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,NA,chagas_testdir_meta_cols
-data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,NA,chagas_testdir_meta_cols
-submission_id,ID,FALSE,Assay: Assay ID,NA,outbreaks_testdir_meta_cols
-disease_target,Disease target,TRUE,Assay: Disease Target,NA,outbreaks_testdir_meta_cols
-manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,NA,outbreaks_testdir_meta_cols
-submission_title,Assay name,TRUE,Assay: Assay Name,NA,outbreaks_testdir_meta_cols
-country,Manufacturer HQ country,TRUE,Assay: Company/Institution Name: Country,NA,outbreaks_testdir_meta_cols
-region,Manufacturer HQ Region,TRUE,Assay: Company/Institution Name: WHO Region,NA,outbreaks_testdir_meta_cols
-type_of_technology,Type of technology,TRUE,Assay: Type of Technology,NA,outbreaks_testdir_meta_cols
-stage_of_development,Stage of development,TRUE,Assay: Stage of Development,NA,outbreaks_testdir_meta_cols
-regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,NA,outbreaks_testdir_meta_cols
-target_pathogen,Target Pathogen,TRUE,Assay: Target Pathogen,NA,outbreaks_testdir_meta_cols
-serovar_subtype,Serovar subtype,TRUE,Assay: Serovar subtype,NA,outbreaks_testdir_meta_cols
-assay_target,Assay target,TRUE,Assay: Assay Target,NA,outbreaks_testdir_meta_cols
-target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),NA,outbreaks_testdir_meta_cols
-test_format,Test format,TRUE,Assay: Test Format,NA,outbreaks_testdir_meta_cols
-lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,NA,outbreaks_testdir_meta_cols
-validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,NA,outbreaks_testdir_meta_cols
-city,City,FALSE,Assay: Company/Institution Name: City,NA,outbreaks_testdir_meta_cols
-instrument_name,Instrument Name,FALSE,Instrument: Instrument Name,NA,outbreaks_testdir_meta_cols
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,NA,outbreaks_testdir_meta_cols
-permalink,Website,FALSE,Assay: Company/Institution Name: Website,NA,outbreaks_testdir_meta_cols
-submission_id,ID,FALSE,Assay: Assay ID,NA,tb_testdir_meta_cols
-created_date,Date,FALSE,Assay: Created Date,NA,tb_testdir_meta_cols
-disease_target_phase,Disease spectrum,TRUE,Assay: Disease Target Phase,NA,tb_testdir_meta_cols
-primary_use_case,Primary use case,TRUE,Assay: Primary Use Case,NA,tb_testdir_meta_cols
-assay_aim,Assay aim,TRUE,Assay: Assay Aim,NA,tb_testdir_meta_cols
-assay_target,Assay target,TRUE,Assay: Assay Target,NA,tb_testdir_meta_cols
-target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),NA,tb_testdir_meta_cols
-drug_resistance_target,Drug resistance target,TRUE,Assay: Drug Resistance Target,NA,tb_testdir_meta_cols
-other_drug_resistance_target,Other drug resistance target,FALSE,Other drug resistance target,NA,tb_testdir_meta_cols
-validated_sample_types,Sample types,TRUE,Assay: Validated Sample Types,NA,tb_testdir_meta_cols
-other_validated_sample_type,Other sample types,FALSE,Assay: Other Validated Sample Type,NA,tb_testdir_meta_cols
-submission_title,Assay name,TRUE,Assay: Assay Name,NA,tb_testdir_meta_cols
-manufacturer,Manufacturer,TRUE,Assay: Company/Institution Name: Organisation Name,NA,tb_testdir_meta_cols
-country,Manufacturer HQ country,TRUE,Assay: Company/Institution Name: Country,NA,tb_testdir_meta_cols
-region,Manufacturer HQ region,TRUE,Assay: Company/Institution Name: WHO Region,NA,tb_testdir_meta_cols
-stage_of_development,Stage of development,TRUE,Assay: Stage of Development,NA,tb_testdir_meta_cols
-regulatory_status,Regulatory body,TRUE,Assay: Regulatory Approval,NA,tb_testdir_meta_cols
-other_regulatory_status,Other regulatory status,FALSE,Assay: Other Regulatory Approval,NA,tb_testdir_meta_cols
-target_pathogen,Target pathogen,FALSE,Assay: Target Pathogen,NA,tb_testdir_meta_cols
-planned_market_entry,Planned market entry,FALSE,Assay: Planned Market Entry,NA,tb_testdir_meta_cols
-who_technology_class,WHO technology class,TRUE,WHO Technology Class,NA,tb_testdir_meta_cols
-type_of_technology,Type of technology,TRUE,Assay: Type of Technology,NA,tb_testdir_meta_cols
-technology_principle,Technology principle,TRUE,Assay: Technology principle,NA,tb_testdir_meta_cols
-test_format,Test format,TRUE,Assay: Test Format,NA,tb_testdir_meta_cols
-instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement,NA,tb_testdir_meta_cols
-lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC,NA,tb_testdir_meta_cols
-other_technology_principle,Other technology principle,FALSE,Assay: Other Technology Principle,NA,tb_testdir_meta_cols
-readout_technology,Readout technology,FALSE,Assay: Readout Technology,NA,tb_testdir_meta_cols
-resistance_marker,Resistance marker,FALSE,Assay: Resistance Marker,NA,tb_testdir_meta_cols
-other_resistance_marker,Other resistance marker,FALSE,Assay: Other Resistance Marker,NA,tb_testdir_meta_cols
-other_test_format,Other test format,FALSE,Assay: Other Test Format,NA,tb_testdir_meta_cols
-level_of_automation,Level of automation,FALSE,Assay: Level of automation,NA,tb_testdir_meta_cols
-self_testing_self_collection,Self-testing or professional use,FALSE,Assay: Self-testing/Self-Collection,NA,tb_testdir_meta_cols
-time_to_results_excl_prep,Time to result excl sample prep,FALSE,Assay: Time to results (mins),NA,tb_testdir_meta_cols
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,Assay: Test to be listed on FIND's web page?,NA,tb_testdir_meta_cols
-data_to_be_published_on_finds_web_page,Data published,FALSE,Data to be published on FIND's web page,NA,tb_testdir_meta_cols
-target_patient_group,Target patient group,FALSE,Target Patient Group,NA,tb_testdir_meta_cols
-type_data_source,Type of data source,FALSE,Type of data source,NA,tb_testdir_meta_cols
-study_type,Study type,FALSE,Study Type,NA,tb_testdir_meta_cols
-performance_submission_title,Performance submission title,FALSE,Perf Submission Title,NA,tb_testdir_meta_cols
-sensitivity,Sensitivity (%),FALSE,Sensitivity (%),NA,tb_testdir_meta_cols
-sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE,95% CI for Clinical Sensitivity (Lower),NA,tb_testdir_meta_cols
-sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,95% CI for Clinical Sensitivity (Upper),NA,tb_testdir_meta_cols
-specificity,Specificity (%),FALSE,Specificity (%),NA,tb_testdir_meta_cols
-specificity_ci_low,95% CI Specificity (Lower),FALSE,95% CI for Clinical Specificity (Lower),NA,tb_testdir_meta_cols
-specificity_ci_up,95% CI Specificity (Upper),FALSE,95% CI for Clinical Specificity (Upper),NA,tb_testdir_meta_cols
-total_number_samples,Total number of samples,FALSE,Total number of samples,NA,tb_testdir_meta_cols
-sample_type,Sample type,FALSE,Sample Type,NA,tb_testdir_meta_cols
-number_positive_samples,Number of positive samples,FALSE,Number of positive samples,NA,tb_testdir_meta_cols
-number_negative_samples,Number of negative samples,FALSE,Number of negative samples,NA,tb_testdir_meta_cols
-city,City,FALSE,Assay: Company/Institution Name: City,NA,tb_testdir_meta_cols
-permalink,Permanent link,FALSE,Assay: Company/Institution Name: Website,NA,tb_testdir_meta_cols
+id,description,filterable,include_in_table,salesforce_name,salesforce_name_report
+submission_id,ID,FALSE,FALSE,Assay__c,Assay: Assay ID
+date_of_submission,Date,FALSE,FALSE,CreatedDate,Assay: Created Date
+manufacturer,Manufacturer,TRUE,TRUE,Company_Institution_Name__c,Assay: Company/Institution Name: Organisation Name
+submission_title,Assay name,TRUE,TRUE,Name,Assay: Assay Name
+country,Country of manufacturer HQ,TRUE,TRUE,BillingCountry,Assay: Company/Institution Name: Country
+region,Region of manufacturer HQ,TRUE,TRUE,WHO_Region__c,Assay: Company/Institution Name: WHO Region
+stage_of_development,Stage of development,TRUE,FALSE,Stage_of_Development__c,Assay: Stage of Development
+regulatory_status,Regulatory body,TRUE,TRUE,Regulatory_Approval__c,Assay: Regulatory Approval
+type_of_technology,Type of technology,TRUE,TRUE,Type_of_Technology__c,Assay: Type of Technology
+assay_aim,Assay aim,TRUE,TRUE,Assay_Aim__c,Assay: Assay Aim
+syndromes,Syndrome,TRUE,TRUE,Syndromes__c,Assay: Syndromes
+permalink,Website,FALSE,FALSE,Website,Assay: Company/Institution Name: Website
+planned_market_entry,Planned market entry,FALSE,FALSE,Planned_Market_Entry__c,Assay: Planned Market Entry
+primary_use_case,Primary use case,FALSE,FALSE,Primary_Use_Case__c,Assay: Primary Use Case
+ID_type,Type of ID,FALSE,FALSE,ID_type__c,Assay: ID type
+disease_target,Disease target,FALSE,FALSE,Disease_Target__c,Assay: Disease Target
+assay_target,Assay target,FALSE,TRUE,Assay_Target__c,Assay: Assay Target
+organism_classes,Organism class,TRUE,FALSE,Assay_Target_Organism_Classes__c,Assay: Target Organism Classes
+target_pathogen,Target pathogen,TRUE,TRUE,Target_Pathogen__c,Assay: Target Pathogen
+target_analyte,Target analyte,TRUE,TRUE,Target_Analytes__c,Assay: Target Analyte(s)
+technology_principle,Technology principle,FALSE,FALSE,Technology_principle__c,Assay: Technology principle
+readout_technology,Readout technology,FALSE,FALSE,Readout_Technology__c,Assay: Readout Technology
+qualitative_or_quantitative,Quantitative or qualitative,FALSE,FALSE,Qualitative_or_Quantitative__c,Assay: Qualitative or Quantitative
+antimicrobial_resistance_class,Antimicrobial resistance class,TRUE,TRUE,Antimicrobial_Resistance_Class__c,Assay: Antimicrobial Resistance Class
+resistance_marker,Resistance marker,TRUE,TRUE,Resistance_Marker__c,Assay: Resistance Marker
+Drug_resistance_target,Antimicrobial agent,FALSE,TRUE,Drug_Resistance_Target__c,Assay: Drug Resistance Target
+AST_output,AST output,FALSE,FALSE,AST_Output__c,Assay: AST Output
+test_format,Test format,FALSE,FALSE,Test_Format__c,Assay: Test Format
+instrument_requirement,Instrument requirement,FALSE,FALSE,Instrument_requirement__c,Assay: Instrument requirement
+level_of_automation,Level of automation,FALSE,FALSE,Level_of_automation__c,Assay: Level of automation
+lab_vs_poc,Laboratory/point of care,TRUE,TRUE,Lab_vs_POC__c,Assay: Lab vs. POC
+self_testing_self_collection,Self-testing or professional use,FALSE,FALSE,SelftestingSelfCollection__c,Assay: Self-testing/Self-Collection
+validated_sample_types,Sample types,TRUE,TRUE,Validated_Sample_Types__c,Assay: Validated Sample Types
+time_to_results_excl_prep,Time to result excl sample prep,FALSE,FALSE,Time_to_results_mins__c,Assay: Time to results (mins)
+city,City,FALSE,FALSE,BillingCity,Assay: Company/Institution Name: City
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?
+data_to_be_published_on_finds_web_page,Data published,FALSE,FALSE,Data_to_be_published_on_FIND_s_web_page__c,Data to be published on FIND's web page
+region_availability,Region of availability,FALSE,TRUE,Regions_of_test_availability__c,Regions of test availability
+is_this_a_variant_detection_test,Are multiple variants included?,FALSE,TRUE,Is_this_a_variant_detection_test__c,Is this a variant detection test?
+format_of_material_provided,Format of material provided,FALSE,TRUE,Format_of_Material_Provided__c,Format of Material Provided
+storage_temp,Storage temperature,FALSE,TRUE,Storage_Temperature__c,Storage Temperature
+permalink,Permanent link,FALSE,TRUE,Product_Website__c,Product Website
+sensitivity,Sensitivity,FALSE,FALSE,Clinical_Sensitivity_Percentage__c,Sensitivity (%)
+specificity,Specificity,FALSE,FALSE,Clinical_Specificity_Percentage__c,Specificity (%)
+connectivity_solution,Connectivity,TRUE,FALSE,Connectivity_Solution__c,Instrument: Connectivity Solution
+find_evaluation,FIND evaluation,FALSE,FALSE,FIND_Evaluation__c,FIND Evaluation
+s_gene_dropout,S gene dropout,TRUE,FALSE,S_gene_dropout__c,Assay: S gene dropout
+scov2_variants,Variant detection,TRUE,FALSE,SARSCoV2_variant_s__c,Assay: SARS-CoV-2 variant(s)
+study_type,Study type,FALSE,FALSE,Study_Type__c,Study Type
+number_of_positive_samples,Number of positive samples,FALSE,FALSE,Number_of_positive_samples__c,Number of positive samples
+number_of_negative_samples,Number of negative samples,FALSE,FALSE,Number_of_negative_samples__c,Number of negative samples
+total_number_of_samples,Total number of samples,FALSE,FALSE,Total_number_of_samples_clinical__c,Total number of samples
+no_expected_impact,No expected impact,FALSE,FALSE,No_expected_impact_in_silico_analyses__c,Assay: No expected impact (in silico analyses)
+potential_impact,Potential impact,FALSE,FALSE,Potential_impact_in_silico_analyses__c,Assay: Potential impact (in silico analyses)
+no_impact,No impact,FALSE,FALSE,No_impact_analytical_clinical_studies__c,Assay: No impact (analytical/clinical studies)
+impact,Impact,FALSE,FALSE,Impact_analytical_clinical_studies__c,Assay: Impact (analytical/clinical studies)
+sc2_impact_alpha,Alpha variant,TRUE,FALSE,Alpha,Alpha
+sc2_impact_beta,Beta variant,TRUE,FALSE,Beta,Beta
+sc2_impact_delta,Delta variant,TRUE,FALSE,Delta,Delta
+sc2_impact_delta_plus,Delta+ variant,TRUE,FALSE,Delta+,Delta+
+sc2_impact_gamma,Gamma variant,TRUE,FALSE,Gamma,Gamma
+sc2_impact_omicron,Omicron variant,TRUE,FALSE,Omicron,Omicron
+sc2_impact_omicron_ba4,Omicron (BA.4) variant,TRUE,FALSE,Omicron (BA.4),Omicron (BA.4)
+sc2_impact_omicron_ba5,Omicron (BA.5) variant,TRUE,FALSE,Omicron (BA.5),Omicron (BA.5)
+type_data_source,Type of data source,FALSE,FALSE,Type_of_data_source__c,Type of data source
+sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE,FALSE,X95_CI_for_Clinical_Sensitivity_Lower__c,95% CI for Clinical Sensitivity (Lower)
+sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,FALSE,X95_CI_for_Clinical_Sensitivity_Upper__c,95% CI for Clinical Sensitivity (Upper)
+specificity_ci_low,95% CI Specificity (Lower),FALSE,FALSE,X95_CI_for_Clinical_Specificity_Lower__c,95% CI for Clinical Specificity (Lower)
+specificity_ci_up,95% CI Specificity (Upper),FALSE,FALSE,X95_CI_for_Clinical_Specificity_Upper__c,95% CI for Clinical Specificity (Upper)
+target_patient_group,Target patient group,FALSE,FALSE,Target_Patient_Group__c,Target Patient Group
+sample_type,Sample type,FALSE,FALSE,Sample_Type__c,Sample Type
+serovar_subtype,Serovar subtype,TRUE,FALSE,Serovar_subtype__c,Assay: Serovar subtype
+instrument_name,Instrument Name,FALSE,FALSE,IS Name OR Instrument__c OR Instrument_Name__c,Instrument: Instrument Name
+disease_target_phase,Disease spectrum,TRUE,FALSE,"Disease_Target_Phase__c""",Assay: Disease Target Phase
+who_technology_class,WHO technology class,TRUE,FALSE,WHO Technology Class,WHO Technology Class
+Performance submission title,Performance submission title,FALSE,FALSE,Perf_Submission_Title__c,Perf Submission Title
