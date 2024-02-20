@@ -10,7 +10,8 @@ Multiplexing capacity,"The maximum number of targets (without controls) that can
 No multiplexing,1 target ,Multiplexing range
 Low,3 targets or lower ,Multiplexing range
 Medium,9 targets or lower ,Multiplexing range
-High,10 targets or lower ,Multiplexing range
+High,19 targets or lower ,Multiplexing range
+Very high,20 targets or above ,Multiplexing range
 NAT reagent kit (open source),"A kit containing reagents for a nucleic acid amplification test that can be run on standard laboratory equipment such as thermocyclers. Not restrained to a specific instrument. Requires a laboratory technician, as several mixing, manual liquid transfers are required. Examples: PCR kits for conventional thermocyclers",Test format
 NAT reagent kit (proprietary platform),"A kit containing reagents for a nucleic acid amplification test that can be run only on a specific instrument, for example developed by the same developer of the NAT reagent kit. Requires a laboratory technician, as several mixing, manual liquid transfers are required. Example: PCR kits designed for a single instrument (often developed by the same company)",Test format
 Cartridge-based processing,"An assay in which the process is performed within a cartridge, therefore allowing some level of automation. The cartridge has in-built reagents and can perform tasks like sample preparation, extraction, amplification and detection frequently through microfluidics and microengineering. A minimally trained user inserts the sample in the cartridge and the result is obtained in usually less than 60 minutes. Example: Automated cartridge-based molecular technique",Test format
