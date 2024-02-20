@@ -26,7 +26,7 @@ test_format,Test format,TRUE,Assay: Test Format
 instrument_requirement,Instrument requirement,TRUE,Assay: Instrument requirement
 lab_vs_poc,Laboratory/point of care,TRUE,Assay: Lab vs. POC
 other_technology_principle,Other technology principle,FALSE,Assay: Other Technology Principle
-readout_technology,Readout technology,FALSE,Assay: Readout Technology
+readout_technology,Readout signal,FALSE,Assay: Readout Technology
 resistance_marker,Resistance marker,FALSE,Assay: Resistance Marker
 other_resistance_marker,Other resistance marker,FALSE,Assay: Other Resistance Marker
 other_test_format,Other test format,FALSE,Assay: Other Test Format

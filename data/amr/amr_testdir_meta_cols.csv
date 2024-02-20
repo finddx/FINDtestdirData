@@ -23,8 +23,8 @@ target_pathogen,Target pathogen,TRUE,Assay: Target Pathogen,TRUE
 target_analyte,Target analyte,TRUE,Assay: Target Analyte(s),TRUE
 technology_principle,Technology principle,FALSE,Assay: Technology principle,FALSE
 other_technology_principle,Other technology principle,FALSE,Assay: Other Technology Principle,FALSE
-readout_technology,Readout technology,FALSE,Assay: Readout Technology,FALSE
-other_readout_technology,Other readout technology,FALSE,Assay: Other Readout Technology,FALSE
+readout_technology,Readout signal,FALSE,Assay: Readout Technology,FALSE
+other_readout_technology,Other readout signal,FALSE,Assay: Other Readout Technology,FALSE
 qualitative_or_quantitative,Quantitative or qualitative,FALSE,Assay: Qualitative or Quantitative,FALSE
 antimicrobial_resistance_class,Antimicrobial resistance class,TRUE,Assay: Antimicrobial Resistance Class,TRUE
 resistance_marker,Resistance marker,TRUE,Assay: Resistance Marker,TRUE
