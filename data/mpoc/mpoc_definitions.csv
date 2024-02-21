@@ -26,4 +26,4 @@ Intermediate,"Instrument of the size of a standard printer. All dimensions below
 Large,"Instrument of the size of a fridge. At least 1 dimension equal or above 56 cm",Instrument footprint
 Regulatory body,"When selected it means that at least one molecular assay on this platform has received regulatory approval/clearance from the regulatory bodies",Note
 Time to result,"This is assay-dependent and, therefore, the information is for indication only",Note
-Performance,"This is assay-dependent and, therefore, not shown in this directory. For many of the commercialized platforms listed here, the performance of the individual assay can be consulted in the other disease-based <a href='https://www.finddx.org/tools-and-resources/dxconnect/test-directories/' target='_blank'>test directories</a>",Note
+Performance,"This is assay-dependent and, therefore, not shown in this directory. For many of the commercialized platforms listed here, the performance of the individual assay can be consulted in the other disease-based test directories (https://www.finddx.org/tools-and-resources/dxconnect/test-directories)",Note
