@@ -6,12 +6,12 @@ Late Stage Development (fully functional prototype),A functional prototype is va
 Research Use Only (RUO),The product is commercially available and for research use only (not regulatory approved and cannot be used for IVD applications),Stage of development
 Regulatory Achieved​,The product has been cleared/approved by one or more regulatory bodies​,Stage of development
 Regulatory Status Unknown,The product is commercialized or made available but the regulatory status is unknown,Stage of development
-Multiplexing capacity,"The maximum number of targets (without controls) that can be simultaneously reported in a single sample through a common process of sample preparation, amplification and collective interpretation.",Multiplexing capacity
-No multiplexing,1 target ,Multiplexing range
-Low,3 targets or lower ,Multiplexing range
-Medium,9 targets or lower ,Multiplexing range
-High,19 targets or lower ,Multiplexing range
-Very high,20 targets or above ,Multiplexing range
+Multiplexing capacity,"The maximum number of targets (pathogens + controls) that can be simultaneously reported in a single sample through a common process of sample preparation, amplification and collective interpretation. Example: An instrument that splits a sample into 3 independent reaction wells (i.e. spatial multiplexing) and a 4-color read-out technology (i.i. spectral multiplexing) has a theoretical multiplexing capacity of 3x4=12.",Multiplexing capacity
+No multiplexing,2 targets (e.g. 1 pathogen + 1 control),Multiplexing range
+Low,4 targets or lower (e.g. 3 pathogens + 1 control),Multiplexing range
+Medium,10 targets or lower (e.g. 9 pathogens + 1 control),Multiplexing range
+High,20 targets or lower (e.g. 19 pathogens + 1 control),Multiplexing range
+Very high,21 targets or above (e.g. 20 pathogens + 1 control),Multiplexing range
 NAT reagent kit (open source),"A kit containing reagents for a nucleic acid amplification test that can be run on standard laboratory equipment such as thermocyclers. Not restrained to a specific instrument. Requires a laboratory technician, as several mixing, manual liquid transfers are required. Examples: PCR kits for conventional thermocyclers",Test format
 NAT reagent kit (proprietary platform),"A kit containing reagents for a nucleic acid amplification test that can be run only on a specific instrument, for example developed by the same developer of the NAT reagent kit. Requires a laboratory technician, as several mixing, manual liquid transfers are required. Example: PCR kits designed for a single instrument (often developed by the same company)",Test format
 Cartridge-based processing,"An assay in which the process is performed within a cartridge, therefore allowing some level of automation. The cartridge has in-built reagents and can perform tasks like sample preparation, extraction, amplification and detection frequently through microfluidics and microengineering. A minimally trained user inserts the sample in the cartridge and the result is obtained in usually less than 60 minutes. Example: Automated cartridge-based molecular technique",Test format
@@ -24,3 +24,6 @@ Handheld,"Palm-size instrument. All dimensions below or equal to 15 cm",Instrume
 Small,"Instrument of the size of a shoebox / toaster. All dimensions below or equal to 30 cm",Instrument footprint
 Intermediate,"Instrument of the size of a standard printer. All dimensions below or equal top 55 cm",Instrument footprint
 Large,"Instrument of the size of a fridge. At least 1 dimension equal or above 56 cm",Instrument footprint
+Regulatory body,"When selected it means that at least one molecular assay on this platform has received regulatory approval/clearance from the regulatory bodies",Note
+Time to result,"This is assay-dependent and, therefore, the information is for indication only",Note
+Performance,"This is assay-dependent and, therefore, not shown in this directory. For many of the commercialized platforms listed here, the performance of the individual assay can be consulted in the other disease-based <a href='https://www.finddx.org/tools-and-resources/dxconnect/test-directories/' target='_blank'>test directories</a>",Note
