@@ -20,8 +20,6 @@ sf_names <- c("Assay__c","Instrument__c","Performance_Detail_Submission__c","Sof
 
 sf_list_dfs <- list()
 
-
-
 for (sf_name in sf_names){
 
   sf_metadata  <- tryCatch({
@@ -55,8 +53,6 @@ map(sf_names, ~ assign(.x, sf_list_dfs[[.x]], envir = .GlobalEnv))
 meta_cols <- readr::read_csv("data/testdir_explorer/all_meta_cols.csv", show_col_types=FALSE)
 
 map(sf_names, ~ assign(.x, select(get(.x), any_of(meta_cols$salesforce_name)), envir=.GlobalEnv))
-
-
 
 Account <- Account %>%
   rename(Account_Name=Name) %>%
@@ -156,8 +152,6 @@ geo_data <-
 geo_data <-
   geo_data %>%
   mutate(city2 = gsub("South Korea", "Korea, Republic of", city2))
-
-
 
 raw <-
   geo_data %>%
