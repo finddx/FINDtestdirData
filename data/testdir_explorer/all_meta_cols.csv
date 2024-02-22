@@ -84,4 +84,4 @@ sample_type,Sample type,FALSE,FALSE,Sample_Type__c,Sample Type,
 serovar_subtype,Serovar subtype,TRUE,FALSE,Serovar_subtype__c,Assay: Serovar subtype,
 disease_target_phase,Disease spectrum,TRUE,FALSE,"Disease_Target_Phase__c""",Assay: Disease Target Phase,
 who_technology_class,WHO technology class,TRUE,FALSE,WHO Technology Class,WHO Technology Class,Created in the app
-performance_submission_title,Performance submission title,FALSE,FALSE,Perf_Submission_Title__c,Perf Submission Title
+performance_submission_title,Performance submission title,FALSE,FALSE,Perf_Submission_Title__c,Perf Submission Title,
