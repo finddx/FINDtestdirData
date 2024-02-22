@@ -11,7 +11,7 @@ regulatory_status,Regulatory body,TRUE,Instrument: Regulatory Approval
 technology_principle,Technology principle,TRUE,Instrument: Technology principle
 type_of_technology,Type of technology,FALSE,Instrument: Type of Technology
 test_format,Test format,TRUE,Instrument: Test Format
-readout_technology,Readout Technology,TRUE,Instrument: Readout Technology
+readout_technology,Readout signal,TRUE,Instrument: Readout Technology
 multiplexing_range,Multiplexing range,TRUE,Instrument: Multiplexing Range
 time_to_results,Time to results (mins),TRUE,Instrument: Time to results (mins)
 instrument_weight,Instrument weight (kg),TRUE,Instrument: Weight (in Kg)
