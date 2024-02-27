@@ -1,4 +1,4 @@
-in the me,description,filterable,include_in_table,salesforce_name,salesforce_name_report,disease_group,comments
+id,description,filterable,include_in_table,salesforce_name,salesforce_name_report,disease_group,comments
 id,ID,FALSE,FALSE,Id,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis,COVID also/ID for joining objects
 assay_id,Assay ID,FALSE,FALSE,Assay__c,Assay: Assay ID,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis,COVID also/ID for joining objects
 package_id,Package ID,FALSE,FALSE,Package__c,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis,COVID also/ID for joining objects
