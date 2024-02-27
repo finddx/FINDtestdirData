@@ -1,6 +1,5 @@
 id,description,filterable,salesforce_name
 submission_id,ID,FALSE,Instrument: Instrument ID
-lab_vs_poc,Laboratory/point of care,TRUE,Instrument: Lab vs. POC
 instrument_type,Instrument type,TRUE,Instrument: Type of instrument
 manufacturer,Manufacturer,TRUE,Instrument: Company/Institution Name: Organisation Name
 submission_title,Instrument name,TRUE,Instrument: Instrument Name
@@ -14,11 +13,9 @@ test_format,Test format,TRUE,Instrument: Test Format
 readout_technology,Readout signal,TRUE,Instrument: Readout Technology
 multiplexing_range,Multiplexing range,TRUE,Instrument: Multiplexing Range
 time_to_results,Time to results (mins),TRUE,Instrument: Time to results (mins)
-instrument_weight,Instrument weight (kg),TRUE,Instrument: Weight (in Kg)
 instrument_footprint,Instrument footprint,TRUE,Instrument: Instrument footprint
 power_supply,Power supply,TRUE,Instrument: Instrument power supply
 connectivity_companion,Connectivity companion,TRUE,Instrument: Companion solutions
-instrument_size,Instrument size (cm),FALSE,Instrument: Size (LxWxH) in cm
 assay_menu,Assay menu,FALSE,Instrument: Assay menu (Commercial)
 assay_in_development,Assay in development,FALSE,Instrument: Assay in development
 city,City,FALSE,Instrument: Company/Institution Name: City
