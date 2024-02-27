@@ -39,8 +39,8 @@ resistance_marker,Resistance marker,TRUE,TRUE,Resistance_Marker__c,Assay: Resist
 Drug_resistance_target,Antimicrobial agent,FALSE,TRUE,Drug_Resistance_Target__c,Assay: Drug Resistance Target,AMR;Tuberculosis,
 AST_output,AST output,FALSE,FALSE,AST_Output__c,Assay: AST Output,AMR,
 test_format,Test format,FALSE,FALSE,Test_Format__c,Assay: Test Format,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis,COVID also
-instrument_requirement,Instrument requirement,FALSE,FALSE,Instrument_requirement__c,Assay: Instrument requirement,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,COVID
-level_of_automation,Level of automation,FALSE,FALSE,Level_of_automation__c,Assay: Level of automation,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,COVID
+instrument_requirement,Instrument requirement,FALSE,FALSE,Instrument_requirement__c,Assay: Instrument requirement,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,COVID only
+level_of_automation,Level of automation,FALSE,FALSE,Level_of_automation__c,Assay: Level of automation,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,COVID only
 lab_vs_poc,Laboratory/point of care,TRUE,TRUE,Lab_vs_POC__c,Assay: Lab vs. POC,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis,COVID also
 self_testing_self_collection,Self-testing or professional use,FALSE,FALSE,SelftestingSelfCollection__c,Assay: Self-testing/Self-Collection,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,COVID only
 validated_sample_types,Sample types,TRUE,TRUE,Validated_Sample_Types__c,Assay: Validated Sample Types,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,COVID also
