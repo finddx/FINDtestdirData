@@ -204,4 +204,7 @@ raw_unnested <-
   separate_rows(instrument_disease_target, sep = ";") |>
   separate_rows(instrument_find_website_area, sep = ";")
 
-write_csv(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.csv")
+
+saveRDS(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.rds")
+# write_csv(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.csv")
+
