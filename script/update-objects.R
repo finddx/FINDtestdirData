@@ -98,6 +98,8 @@ df_all <- df_all |>
   select({ meta_cols$salesforce_name }) |>
   rename_with(~ meta_cols$id, meta_cols$salesforce_name)
 
+df_all <- df_all |>
+  mutate(assay_find_website_area = ifelse(grepl("Covid-19", assay_disease_target), paste0(assay_find_website_area, ";COVID"), assay_find_website_area))
 
 
 # meta_cols <- readr::read_csv("data/testdir_explorer/all_meta_cols.csv", show_col_types=FALSE)
@@ -181,7 +183,7 @@ raw <-
   # mutate(validated_sample_types = stringr::str_replace_all(validated_sample_types, c("Feces" = "Faeces")))
 
 write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
-
+# saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
 
 raw_unnested <-
   raw |>
@@ -207,4 +209,3 @@ raw_unnested <-
 
 saveRDS(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.rds")
 # write_csv(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.csv")
-
