@@ -1,0 +1,41 @@
+id,description,filterable,include_in_table,salesforce_name,salesforce_name_report,area_group,comments
+id,ID,FALSE,FALSE,Id,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,ID for joining objects
+package_id,Package ID,FALSE,FALSE,Package_Id,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,ID for joining objects
+performance_id,Performance ID,FALSE,FALSE,Performance_Id,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,
+assay_id,Assay ID,FALSE,FALSE,Package_Assay__c,Assay: Assay ID,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,ID for joining objects
+instrument_id,Instrument ID,FALSE,FALSE,Package_Instrument__c,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,ID for joining objects
+software_id,Software ID,FALSE,FALSE,Package_Software__c,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,ID for joining objects
+technology_submission_id,Technology submission ID,FALSE,FALSE,Package_Technology_Submission__c,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,ID for joining objects
+directory,Directory,FALSE,FALSE,directory,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,
+name,Name,FALSE,FALSE,Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,"Placeholder to select all name objects, then this is changed to the name of each object, see rows below"
+assay_name,Assay name,TRUE,TRUE,Assay_Name,Assay: Assay Name,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,
+instrument_name,Instrument name,FALSE,FALSE,Instrument_Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,
+software_name,Software name,FALSE,FALSE,Software_Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,
+package_name,Package name,FALSE,FALSE,Package_Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,
+performance_name,Performance name,FALSE,FALSE,Performance_Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID,
+instrument_find_website_area,Instrument: FIND Area,FALSE,FALSE,Instrument_FIND_Website_Area__c,,MPOC,
+instrument_test_to_be_listed_on_finds_web_page,Instrument: Test listed,FALSE,FALSE,Instrument_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,MPOC,
+instrument_disease_target,Instrument: Disease target,TRUE,FALSE,Instrument_Disease_Target__c,Assay: Disease Target,MPOC,
+instrument_assay_menu,Instrument: Assay menu,TRUE,FALSE,Instrument_Assay_menu_Commercial__c,Instrument: Assay menu (Commercial),MPOC,
+instrument_connectivity_companion,Instrument: Connectivity companion,FALSE,FALSE,Instrument_Companion_solutions__c,Instrument: Companion solutions,MPOC,
+instrument_connectivity_options,Instrument: Connectivity options,FALSE,FALSE,Instrument_Connectivity_options__c,Instrument: Connectivity options,MPOC,
+instrument_instrument_size,Instrument: Instrument size (cm),FALSE,FALSE,Instrument_Size_L_W_H_in_cm__c,Instrument: Size (LxWxH) in cm,MPOC,
+instrument_instrument_type,Instrument: Instrument type,FALSE,FALSE,Instrument_Type_of_instrument__c,Instrument: Type of instrument,MPOC,
+instrument_instrument_weight,Instrument: Instrument weight (kg),FALSE,FALSE,Instrument_Weight_in_Kg__c,Instrument: Weight (in Kg),MPOC,
+instrument_max_operating_temp,Instrument: Operating Temp. - Max (°C),FALSE,FALSE,Instrument_Maximum_Operating_Temperature__c,Instrument: Maximum Operating Temperature,MPOC,
+instrument_min_operating_temp,Instrument: Operating Temp. - Min (°C),FALSE,FALSE,Instrument_Minimum_Operating_Temperature__c,Instrument: Minimum Operating Temperature,MPOC,
+instrument_multiplexing_capacity,Instrument: Multiplexing capacity,FALSE,FALSE,Instrument_Multiplexing_capacity__c,Instrument: Multiplexing capacity,MPOC,
+instrument_power_supply,Instrument: Power supply,FALSE,FALSE,Instrument_Instrument_power_supply__c,Instrument: Instrument power supply,MPOC,
+instrument_date_of_submission,Instrument: Date,FALSE,FALSE,Instrument_CreatedDate,Intrument: Created Date,MPOC,
+instrument_stage_of_development,Instrument: Stage of development,TRUE,FALSE,Instrument_Stage_of_Development__c,,MPOC,
+instrument_regulatory_status,Instrument: Regulatory body,TRUE,TRUE,Instrument_Regulatory_Approval__c,,MPOC,
+instrument_technology_principle,Instrument: Technology principle,FALSE,FALSE,Instrument_Technology_principle__c,,MPOC,
+instrument_readout_technology,Instrument: Readout technology,FALSE,FALSE,Instrument_Readout_Technology__c,,MPOC,
+instrument_test_format,Instrument: Test format,FALSE,FALSE,Instrument_Test_Format__c,,MPOC,
+instrument_lab_vs_poc,Instrument: Laboratory/point of care,TRUE,TRUE,Instrument_Lab_vs_POC__c,,MPOC,
+instrument_time_to_results_excl_prep,Instrument: Time to result excl sample prep,FALSE,FALSE,Instrument_Time_to_results_mins__c,,MPOC,
+instrument_manufacturer,Instrument: Manufacturer,TRUE,TRUE,Instrument_Account_Name,,MPOC,
+instrument_city,Instrument: City,FALSE,FALSE,Instrument_Account_BillingCity,,MPOC,
+instrument_country,Instrument: Country of manufacturer HQ,TRUE,TRUE,Instrument_Account_BillingCountry,,MPOC,
+instrument_region,Instrument: Region of manufacturer HQ,TRUE,TRUE,Instrument_Account_WHO_Region__c,,MPOC,
+instrument_permalink,Instrument: Website,FALSE,FALSE,Instrument_Account_Website,,MPOC,

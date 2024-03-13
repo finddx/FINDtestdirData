@@ -73,31 +73,34 @@ names(Performance_Detail_Submission__c) <- paste0("Performance_", names(Performa
 names(Test_Directory_Package__c) <- paste0("Package_", names(Test_Directory_Package__c))
 
 
-#Add additional prefix to objects coming from account
-# names(Assay__c) <- ifelse(str_starts(names(Assay__c), "Account_"), paste0("Assay_", names(Assay__c)), names(Assay__c))
-# names(Instrument__c) <- ifelse(str_starts(names(Instrument__c), "Account_"), paste0("Instrument_", names(Instrument__c)), names(Instrument__c))
-# names(Software__c) <- ifelse(str_starts(names(Software__c), "Account_"), paste0("Software_", names(Software__c)), names(Software__c))
 
-df_all <- Test_Directory_Package__c |>
-  #left_join(Assay__c_company, by=c("Package_assay_id"="Assay_id")) |>
-  left_join(Assay__c, by=c("Package_Assay__c"="Assay_Id")) |>
+df_all_assays <- Test_Directory_Package__c |>
+  left_join(Assay__c, by=c("Package_Assay__c"="Assay_Id")) #|>
+  # left_join(Instrument__c, by=c("Package_Instrument__c"="Instrument_Id")) |>
+  # left_join(Software__c, by=c("Package_Software__c"="Software_Id"))
+df_all_assays <- df_all_assays |>
+  left_join(Performance_Detail_Submission__c, by=c("Package_Id"="Performance_Package__c")) |>
+  mutate(directory="Assays")
+
+
+df_all_instruments <- Test_Directory_Package__c |>
   left_join(Instrument__c, by=c("Package_Instrument__c"="Instrument_Id")) |>
-  left_join(Software__c, by=c("Package_Software__c"="Software_Id"))
+  mutate(directory="Instruments")
 
-df_all <- df_all |>
-  left_join(Performance_Detail_Submission__c, by=c("Package_Id"="Performance_Package__c"))
+#Temporarly append assay and instruments
+df_all <- bind_rows(df_all_assays, df_all_instruments)
 
 
-
+#Read metacols data and filter for listed variables
 meta_cols <-
   readr::read_csv("data/testdir_explorer/all_meta_cols.csv", show_col_types = FALSE) |>
   filter(salesforce_name %in% names(df_all))
-
 
 df_all <- df_all |>
   select({ meta_cols$salesforce_name }) |>
   rename_with(~ meta_cols$id, meta_cols$salesforce_name)
 
+#Add COVID in Website area
 df_all <- df_all |>
   mutate(assay_find_website_area = ifelse(grepl("Covid-19", assay_disease_target), paste0(assay_find_website_area, ";COVID"), assay_find_website_area))
 
@@ -110,24 +113,7 @@ df_all <- df_all |>
 #   assign(.x, rename_with(get(.x), ~ id_to_use, all_of(cols_to_rename)), envir=.GlobalEnv)
 # })
 
-# Test_Directory_Package__c <- Test_Directory_Package__c |>
-  # select(-c(CreatedDate, Technology_Submission__c)) |>
-  # rename(Package_Name=Name)
-  # Performance_Detail_Submission__c <- Performance_Detail_Submission__c |>
-  # select(-c(Assay__c, Instrument__c, Technology_Submission__c, CreatedDate, Assay_Target__c, Disease_Target__c, Drug_Resistance_Target__c, Serovar_subtype__c, Target_Pathogen__c)) |>
-  # rename(Performance_Name=Name)
 
- # Account <- Account |>
-#   rename(Account_Name=Name) |>
-#   select(-CreatedDate)
-# Assay__c <- Assay__c |>
-#   rename(Assay_Name=Name)
-# Instrument__c <- Instrument__c |>
-#   select(Id, Name) |>
-#   rename(Instrument_Name=Name)
-# Software__c <- Software__c |>
-#   select(Id, Name) |>
-#   rename(Software_Name=Name)
 
 extract_link <- function(x) {
   x <- gsub("^.+title=\"", "", x)
@@ -164,8 +150,8 @@ d <-
 geo_data <-
   d |>
   tidygeocoder::geocode(assay_city2, method = 'bing', lat = assay_lat , long = assay_lng)|>
-  tidygeocoder::geocode(instrument_city2, method = 'bing', lat = instrument_lat , long = instrument_lng)|>
-  tidygeocoder::geocode(software_city2, method = 'bing', lat = software_lat , long = software_lng)
+  tidygeocoder::geocode(instrument_city2, method = 'bing', lat = instrument_lat , long = instrument_lng)#|>
+  # tidygeocoder::geocode(software_city2, method = 'bing', lat = software_lat , long = software_lng)
 
 geo_data <-
   geo_data |>
@@ -175,18 +161,38 @@ geo_data <-
 
 raw <-
   geo_data |>
-  distinct() |>
   # filter(!is.na(manufacturer)) |>
-  filter(!if_all(c(assay_manufacturer_id, instrument_manufacturer_id, software_manufacturer_id), ~is.na(.))) |>
+  filter(!if_all(c(assay_manufacturer_id, instrument_manufacturer_id), ~is.na(.))) |>#, software_manufacturer_id
   distinct()
   # mutate(target_analyte = replace_na(target_analyte, "Unknown")) |>
   # mutate(validated_sample_types = stringr::str_replace_all(validated_sample_types, c("Feces" = "Faeces")))
 
-write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
-# saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
+#Split data by objects
+raw_assays <- raw |>
+  filter(directory=="Assays")
+meta_cols_assays <-
+  readr::read_csv("data/testdir_explorer/all_meta_cols_assays.csv", show_col_types = FALSE) |>
+  filter(id %in% names(raw_assays))
+raw_assays <- raw_assays |>
+  select({ meta_cols_assays$id })
 
-raw_unnested <-
-  raw |>
+raw_instruments <- raw |>
+  filter(directory=="Instruments")
+meta_cols_instruments <-
+  readr::read_csv("data/testdir_explorer/all_meta_cols_instruments.csv", show_col_types = FALSE) |>
+  filter(id %in% names(raw_instruments))
+raw_instruments <- raw_instruments |>
+  select({ meta_cols_instruments$id })
+
+# write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
+# write_csv(raw, "data/testdir_explorer/data_all_testdir_assays.csv")
+# write_csv(raw, "data/testdir_explorer/data_all_testdir_instruments.csv")
+# saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
+saveRDS(raw, "data/testdir_explorer/data_all_testdir_assays.rds")
+saveRDS(raw, "data/testdir_explorer/data_all_testdir_instruments.rds")
+
+raw_unnested_assays <-
+  raw_assays |>
   separate_rows(assay_regulatory_status, sep = ";") |>
   separate_rows(assay_target_analyte, sep = ";") |>
   separate_rows(assay_validated_sample_types, sep = ";") |>
@@ -201,11 +207,16 @@ raw_unnested <-
   separate_rows(assay_syndromes, sep = ";") |>
   separate_rows(assay_organism_classes, sep = ";") |>
   separate_rows(assay_scov2_variants, sep = ";") |>
-  separate_rows(assay_find_website_area, sep = ";") |>
+  separate_rows(assay_find_website_area, sep = ";")
+
+raw_unnested_instruments <-
+  raw_instruments |>
   separate_rows(instrument_regulatory_status, sep = ";") |>
   separate_rows(instrument_disease_target, sep = ";") |>
-  separate_rows(instrument_find_website_area, sep = ";")
+  separate_rows(instrument_find_website_area, sep = ";")|>
+  separate_rows(instrument_assay_menu, sep = ", |,|/")
 
-
-saveRDS(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.rds")
+saveRDS(raw_unnested_assays, "data/testdir_explorer/data_all_testdir_unnested_assays.rds")
+saveRDS(raw_unnested_instruments, "data/testdir_explorer/data_all_testdir_unnested_instruments.rds")
+# saveRDS(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.rds")
 # write_csv(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.csv")
