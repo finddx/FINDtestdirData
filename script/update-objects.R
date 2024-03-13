@@ -163,9 +163,12 @@ raw <-
   geo_data |>
   # filter(!is.na(manufacturer)) |>
   filter(!if_all(c(assay_manufacturer_id, instrument_manufacturer_id), ~is.na(.))) |>#, software_manufacturer_id
-  distinct()
+  distinct() |>
   # mutate(target_analyte = replace_na(target_analyte, "Unknown")) |>
   # mutate(validated_sample_types = stringr::str_replace_all(validated_sample_types, c("Feces" = "Faeces")))
+  filter(assay_find_website_area!="Pending" | is.na(assay_find_website_area)) |>
+  filter(instrument_find_website_area!="Pending" | is.na(instrument_find_website_area) )
+
 
 #Split data by objects
 raw_assays <- raw |>
