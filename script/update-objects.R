@@ -188,11 +188,11 @@ raw_instruments <- raw_instruments |>
   select({ meta_cols_instruments$id })
 
 # write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
-# write_csv(raw, "data/testdir_explorer/data_all_testdir_assays.csv")
-# write_csv(raw, "data/testdir_explorer/data_all_testdir_instruments.csv")
-# saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
-saveRDS(raw, "data/testdir_explorer/data_all_testdir_assays.rds")
-saveRDS(raw, "data/testdir_explorer/data_all_testdir_instruments.rds")
+write_csv(raw_assays, "data/testdir_explorer/data_all_testdir_assays.csv")
+write_csv(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.csv")
+saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
+saveRDS(raw_assays, "data/testdir_explorer/data_all_testdir_assays.rds")
+saveRDS(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.rds")
 
 raw_unnested_assays <-
   raw_assays |>
