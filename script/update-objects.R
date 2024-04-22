@@ -176,8 +176,9 @@ raw_assays <- raw |>
 meta_cols_assays <-
   readr::read_csv("data/testdir_explorer/all_meta_cols_assays.csv", show_col_types = FALSE) |>
   filter(id %in% names(raw_assays))
+
 raw_assays <- raw_assays |>
-  select({ meta_cols_assays$id })
+  select({ meta_cols_assays$id}, assay_country_tmp, assay_city2, assay_lat, assay_lng)
 
 raw_instruments <- raw |>
   filter(directory=="Instruments")
@@ -185,7 +186,7 @@ meta_cols_instruments <-
   readr::read_csv("data/testdir_explorer/all_meta_cols_instruments.csv", show_col_types = FALSE) |>
   filter(id %in% names(raw_instruments))
 raw_instruments <- raw_instruments |>
-  select({ meta_cols_instruments$id })
+  select({ meta_cols_instruments$id }, instrument_country_tmp, instrument_city2, instrument_lat, instrument_lng)
 
 # write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
 write_csv(raw_assays, "data/testdir_explorer/data_all_testdir_assays.csv")
