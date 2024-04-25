@@ -14,7 +14,6 @@ sf_auth(username = Sys.getenv("user"),
 
 sf_objects <- sf_list_metadata(list(type='CustomObject'))
 
-#
 sf_names <- c("Assay__c","Instrument__c","Performance_Detail_Submission__c","Software__c","Test_Directory_Package__c","Account","Technology_Submission__c")
 
 
@@ -175,18 +174,20 @@ raw_assays <- raw |>
   filter(directory=="Assays")
 meta_cols_assays <-
   readr::read_csv("data/testdir_explorer/all_meta_cols_assays.csv", show_col_types = FALSE) |>
-  filter(id %in% names(raw_assays))
-
+  filter(raw_id %in% names(raw_assays))
 raw_assays <- raw_assays |>
-  select({ meta_cols_assays$id}, assay_country_tmp, assay_city2, assay_lat, assay_lng)
+  select({ meta_cols_assays$raw_id }) |>
+  rename_with(~ meta_cols_assays$id, meta_cols_assays$raw_id)
+
 
 raw_instruments <- raw |>
   filter(directory=="Instruments")
 meta_cols_instruments <-
   readr::read_csv("data/testdir_explorer/all_meta_cols_instruments.csv", show_col_types = FALSE) |>
-  filter(id %in% names(raw_instruments))
+  filter(raw_id %in% names(raw_instruments))
 raw_instruments <- raw_instruments |>
-  select({ meta_cols_instruments$id }, instrument_country_tmp, instrument_city2, instrument_lat, instrument_lng)
+  select({ meta_cols_instruments$raw_id }) |>
+  rename_with(~ meta_cols_instruments$id, meta_cols_instruments$raw_id)
 
 # write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
 write_csv(raw_assays, "data/testdir_explorer/data_all_testdir_assays.csv")
@@ -195,32 +196,37 @@ saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
 saveRDS(raw_assays, "data/testdir_explorer/data_all_testdir_assays.rds")
 saveRDS(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.rds")
 
-raw_unnested_assays <-
-  raw_assays |>
-  separate_rows(assay_regulatory_status, sep = ";") |>
-  separate_rows(assay_target_analyte, sep = ";") |>
-  separate_rows(assay_validated_sample_types, sep = ";") |>
-  separate_rows(assay_serovar_subtype, sep = ";") |>
-  separate_rows(assay_type_of_technology, sep = ";") |>
-  separate_rows(assay_disease_target, sep = ";") |>
-  separate_rows(assay_target_pathogen, sep = ";") |>
-  separate_rows(assay_resistance_marker, sep = ";") |>
-  separate_rows(assay_primary_use_case, sep = ";") |>
-  separate_rows(assay_Drug_resistance_target, sep = ";") |>
-  separate_rows(assay_antimicrobial_resistance_class, sep = ";")  |>
-  separate_rows(assay_syndromes, sep = ";") |>
-  separate_rows(assay_organism_classes, sep = ";") |>
-  separate_rows(assay_scov2_variants, sep = ";") |>
-  separate_rows(assay_find_website_area, sep = ";")
 
-raw_unnested_instruments <-
-  raw_instruments |>
-  separate_rows(instrument_regulatory_status, sep = ";") |>
-  separate_rows(instrument_disease_target, sep = ";") |>
-  separate_rows(instrument_find_website_area, sep = ";")|>
-  separate_rows(instrument_assay_menu, sep = ", |,|/")
+#
+# raw_unnested_assays <-
+#   raw_assays |>
+#   separate_rows(assay_regulatory_status, sep = ";") |>
+#   separate_rows(assay_target_analyte, sep = ";") |>
+#   separate_rows(assay_validated_sample_types, sep = ";") |>
+#   separate_rows(assay_serovar_subtype, sep = ";") |>
+#   separate_rows(assay_type_of_technology, sep = ";") |>
+#   separate_rows(assay_disease_target, sep = ";") |>
+#   separate_rows(assay_target_pathogen, sep = ";") |>
+#   separate_rows(assay_resistance_marker, sep = ";") |>
+#   separate_rows(assay_primary_use_case, sep = ";") |>
+#   separate_rows(assay_Drug_resistance_target, sep = ";") |>
+#   separate_rows(assay_antimicrobial_resistance_class, sep = ";")  |>
+#   separate_rows(assay_syndromes, sep = ";") |>
+#   separate_rows(assay_organism_classes, sep = ";") |>
+#   separate_rows(assay_scov2_variants, sep = ";") |>
+#   separate_rows(assay_find_website_area, sep = ";")
 
-saveRDS(raw_unnested_assays, "data/testdir_explorer/data_all_testdir_unnested_assays.rds")
-saveRDS(raw_unnested_instruments, "data/testdir_explorer/data_all_testdir_unnested_instruments.rds")
+# raw_unnested_instruments <-
+#   raw_instruments |>
+#   separate_rows(instrument_regulatory_status, sep = ";") |>
+#   separate_rows(instrument_disease_target, sep = ";") |>
+#   separate_rows(instrument_find_website_area, sep = ";")|>
+#   separate_rows(instrument_assay_menu, sep = ", |,|/")
+#
+# saveRDS(raw_unnested_assays, "data/testdir_explorer/data_all_testdir_unnested_assays.rds")
+# saveRDS(raw_unnested_instruments, "data/testdir_explorer/data_all_testdir_unnested_instruments.rds")
+
+
+#
 # saveRDS(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.rds")
 # write_csv(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.csv")
