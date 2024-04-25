@@ -1,18 +1,18 @@
 id,description,filterable,include_in_table,raw_id,salesforce_name,salesforce_name_report,area_group
-id,ID,FALSE,FALSE,id,Id,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-package_id,Package ID,FALSE,FALSE,package_id,Package_Id,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-performance_id,Performance ID,FALSE,FALSE,performance_id,Performance_Id,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-assay_id,Assay ID,FALSE,FALSE,assay_id,Package_Assay__c,Assay: Assay ID,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-instrument_id,Instrument ID,FALSE,FALSE,instrument_id,Package_Instrument__c,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-software_id,Software ID,FALSE,FALSE,software_id,Package_Software__c,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-technology_submission_id,Technology submission ID,FALSE,FALSE,technology_submission_id,Package_Technology_Submission__c,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-directory,Directory,FALSE,FALSE,directory,directory,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-name,Name,FALSE,FALSE,name,Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-assay_name,Assay name,TRUE,TRUE,assay_name,Assay_Name,Assay: Assay Name,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-instrument_name,Instrument name,FALSE,FALSE,instrument_name,Instrument_Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-software_name,Software name,FALSE,FALSE,software_name,Software_Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-package_name,Package name,FALSE,FALSE,package_name,Package_Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-performance_name,Performance name,FALSE,FALSE,performance_name,Performance_Name,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
+id,ID,FALSE,FALSE,id,Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+package_id,Package ID,FALSE,FALSE,package_id,Package_Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+performance_id,Performance ID,FALSE,FALSE,performance_id,Performance_Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+assay_id,Assay ID,FALSE,FALSE,assay_id,Package_Assay__c,Assay: Assay ID,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+instrument_id,Instrument ID,FALSE,FALSE,instrument_id,Package_Instrument__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+software_id,Software ID,FALSE,FALSE,software_id,Package_Software__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+technology_submission_id,Technology submission ID,FALSE,FALSE,technology_submission_id,Package_Technology_Submission__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+directory,Directory,FALSE,FALSE,directory,directory,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+name,Name,FALSE,FALSE,name,Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+assay_name,Assay name,TRUE,TRUE,assay_name,Assay_Name,Assay: Assay Name,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+instrument_name,Instrument name,FALSE,FALSE,instrument_name,Instrument_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+software_name,Software name,FALSE,FALSE,software_name,Software_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+package_name,Package name,FALSE,FALSE,package_name,Package_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+performance_name,Performance name,FALSE,FALSE,performance_name,Performance_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
 find_website_area,Assay: FIND Area,FALSE,FALSE,assay_find_website_area,Assay_FIND_Website_Area__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
 test_to_be_listed_on_finds_web_page,Assay: Test listed,FALSE,FALSE,assay_test_to_be_listed_on_finds_web_page,Assay_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
 assay_target,Assay: Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
@@ -83,7 +83,7 @@ type_data_source,Performance: Type of data source,TRUE,FALSE,performance_type_da
 target_patient_group,Performance: Target patient group,TRUE,FALSE,performance_target_patient_group,Performance_Target_Patient_Group__c,Target Patient Group,Neglected Tropical Diseases;Tuberculosis
 sample_type,Performance: Sample type,TRUE,FALSE,performance_sample_type,Performance_Sample_Type__c,Sample Type,Neglected Tropical Diseases;Tuberculosis
 data_to_be_published_on_finds_web_page,Performance: Data published,FALSE,FALSE,performance_data_to_be_published_on_finds_web_page,Performance_Data_to_be_published_on_FIND_s_web_page__c,Data to be published on FIND's web page,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
-country_tmp,Country tmp,FALSE,FALSE,assay_country_tmp,Country tmp,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-city2,City2,FALSE,FALSE,assay_city2,City2,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-lat,Latitude,FALSE,FALSE,assay_lat,Latitude,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
-lng,Longitude,FALSE,FALSE,assay_lng,Longitude,,AMR;Neglected Tropical Diseases;MPOC;Outbreak;Tuberculosis;COVID
+country_tmp,Country tmp,FALSE,FALSE,assay_country_tmp,Country tmp,,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID
+city2,City2,FALSE,FALSE,assay_city2,City2,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+lat,Latitude,FALSE,FALSE,assay_lat,Latitude,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
+lng,Longitude,FALSE,FALSE,assay_lng,Longitude,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID
