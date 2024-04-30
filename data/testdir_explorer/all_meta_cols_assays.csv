@@ -1,89 +1,89 @@
-id,description,filterable,include_in_table,raw_id,salesforce_name,salesforce_name_report,area_group,default_plot,default_filter
-id,ID,FALSE,FALSE,id,Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-package_id,Package ID,FALSE,FALSE,package_id,Package_Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-performance_id,Performance ID,FALSE,FALSE,performance_id,Performance_Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-assay_id,Assay ID,FALSE,FALSE,assay_id,Package_Assay__c,Assay: Assay ID,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-instrument_id,Instrument ID,FALSE,FALSE,instrument_id,Package_Instrument__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-software_id,Software ID,FALSE,FALSE,software_id,Package_Software__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-technology_submission_id,Technology submission ID,FALSE,FALSE,technology_submission_id,Package_Technology_Submission__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-directory,Directory,FALSE,FALSE,directory,directory,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-name,Name,FALSE,FALSE,name,Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-assay_name,Assay name,TRUE,TRUE,assay_name,Assay_Name,Assay: Assay Name,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,AMR
-instrument_name,Instrument name,FALSE,FALSE,instrument_name,Instrument_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-software_name,Software name,FALSE,FALSE,software_name,Software_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-package_name,Package name,FALSE,FALSE,package_name,Package_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-performance_name,Performance name,FALSE,FALSE,performance_name,Performance_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-find_website_area,Area,FALSE,FALSE,assay_find_website_area,Assay_FIND_Website_Area__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,assay_test_to_be_listed_on_finds_web_page,Assay_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-date_of_submission,Date,FALSE,FALSE,assay_date_of_submission,Assay_CreatedDate,Assay: Created Date,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,,
-stage_of_development,Stage of development,TRUE,FALSE,assay_stage_of_development,Assay_Stage_of_Development__c,Assay: Stage of Development,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,AMR,AMR
-regulatory_status,Regulatory body,TRUE,TRUE,assay_regulatory_status,Assay_Regulatory_Approval__c,Assay: Regulatory Approval,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,AMR
-type_of_technology,Type of technology,TRUE,TRUE,assay_type_of_technology,Assay_Type_of_Technology__c,Assay: Type of Technology,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,AMR,AMR
-assay_aim,Assay aim,TRUE,TRUE,assay_assay_aim,Assay_Assay_Aim__c,Assay: Assay Aim,AMR;Tuberculosis,AMR,AMR
-syndromes,Syndrome,TRUE,TRUE,assay_syndromes,Assay_Syndromes__c,Assay: Syndromes,AMR,AMR,AMR
-planned_market_entry,Planned market entry,TRUE,FALSE,assay_planned_market_entry,Assay_Planned_Market_Entry__c,Assay: Planned Market Entry,AMR;Tuberculosis,,
-primary_use_case,Primary use case,TRUE,FALSE,assay_primary_use_case,Assay_Primary_Use_Case__c,Assay: Primary Use Case,AMR;Neglected Tropical Diseases;Tuberculosis,,
-ID_type,Type of ID,FALSE,FALSE,assay_ID_type,Assay_ID_type__c,Assay: ID type,AMR,,
-disease_target,Disease target,TRUE,FALSE,assay_disease_target,Assay_Disease_Target__c,Assay: Disease Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-organism_classes,Organism class,TRUE,FALSE,assay_organism_classes,Assay_Assay_Target_Organism_Classes__c,Assay: Target Organism Classes,AMR,AMR,AMR
-target_pathogen,Target pathogen,TRUE,TRUE,assay_target_pathogen,Assay_Target_Pathogen__c,Assay: Target Pathogen,AMR;Outbreak;Tuberculosis;COVID,,AMR
-target_analyte,Target analyte,TRUE,TRUE,assay_target_analyte,Assay_Target_Analytes__c,Assay: Target Analyte(s),AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,AMR
-technology_principle,Technology principle,TRUE,FALSE,assay_technology_principle,Assay_Technology_principle__c,Assay: Technology principle,AMR;COVID;Neglected Tropical Diseases;Tuberculosis,,
-readout_technology,Readout technology,TRUE,FALSE,assay_readout_technology,Assay_Readout_Technology__c,Assay: Readout Technology,AMR;Tuberculosis,,
-qualitative_or_quantitative,Quantitative or qualitative,TRUE,FALSE,assay_qualitative_or_quantitative,Assay_Qualitative_or_Quantitative__c,Assay: Qualitative or Quantitative,AMR,,
-antimicrobial_resistance_class,Antimicrobial resistance class,TRUE,TRUE,assay_antimicrobial_resistance_class,Assay_Antimicrobial_Resistance_Class__c,Assay: Antimicrobial Resistance Class,AMR,AMR,AMR
-resistance_marker,Resistance marker,TRUE,TRUE,assay_resistance_marker,Assay_Resistance_Marker__c,Assay: Resistance Marker,AMR;Tuberculosis,,AMR
-Drug_resistance_target,Antimicrobial agent,TRUE,TRUE,assay_Drug_resistance_target,Assay_Drug_Resistance_Target__c,Assay: Drug Resistance Target,AMR;Tuberculosis,,
-AST_output,AST output,TRUE,FALSE,assay_AST_output,Assay_AST_Output__c,Assay: AST Output,AMR,,
-test_format,Test format,TRUE,FALSE,assay_test_format,Assay_Test_Format__c,Assay: Test Format,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,,
-instrument_requirement,Instrument requirement,TRUE,FALSE,assay_instrument_requirement,Assay_Instrument_requirement__c,Assay: Instrument requirement,AMR;Neglected Tropical Diseases;COVID;Tuberculosis,,
-level_of_automation,Level of automation,TRUE,FALSE,assay_level_of_automation,Assay_Level_of_automation__c,Assay: Level of automation,AMR;Neglected Tropical Diseases;COVID;Tuberculosis,,
-lab_vs_poc,Laboratory/point of care,TRUE,TRUE,assay_lab_vs_poc,Assay_Lab_vs_POC__c,Assay: Lab vs. POC,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,AMR
-self_testing_self_collection,Self-testing or professional use,TRUE,FALSE,assay_self_testing_self_collection,Assay_SelftestingSelfCollection__c,Assay: Self-testing/Self-Collection,AMR;Neglected Tropical Diseases;COVID;Tuberculosis,,
-validated_sample_types,Sample types,TRUE,TRUE,assay_validated_sample_types,Assay_Validated_Sample_Types__c,Assay: Validated Sample Types,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,AMR
-time_to_results_excl_prep,Time to result excl sample prep,FALSE,FALSE,assay_time_to_results_excl_prep,Assay_Time_to_results_mins__c,Assay: Time to results (mins),AMR;Neglected Tropical Diseases;Tuberculosis,,
-serovar_subtype,Serovar subtype,TRUE,FALSE,assay_serovar_subtype,Assay_Serovar_subtype__c,Assay: Serovar subtype,Outbreak,,
-disease_target_phase,Disease spectrum,TRUE,FALSE,assay_disease_target_phase,Assay_Disease_Target_Phase__c,Assay: Disease Target Phase,Tuberculosis,,
-is_this_a_variant_detection_test,Are multiple variants included?,FALSE,TRUE,assay_is_this_a_variant_detection_test,Assay_Is_this_a_variant_detection_test__c,Is this a variant detection test?,COVID,,
-s_gene_dropout,S gene dropout,TRUE,FALSE,assay_s_gene_dropout,Assay_S_gene_dropout__c,Assay: S gene dropout,COVID,,
-scov2_variants,Variant detection,TRUE,FALSE,assay_scov2_variants,Assay_SARSCoV2_variant_s__c,Assay: SARS-CoV-2 variant(s),COVID,,
-no_expected_impact,No expected impact,FALSE,FALSE,assay_no_expected_impact,Assay_No_expected_impact_in_silico_analyses__c,Assay: No expected impact (in silico analyses),COVID,,
-potential_impact,Potential impact,FALSE,FALSE,assay_potential_impact,Assay_Potential_impact_in_silico_analyses__c,Assay: Potential impact (in silico analyses),COVID,,
-no_impact,No impact,FALSE,FALSE,assay_no_impact,Assay_No_impact_analytical_clinical_studies__c,Assay: No impact (analytical/clinical studies),COVID,,
-impact,Impact,FALSE,FALSE,assay_impact,Assay_Impact_analytical_clinical_studies__c,Assay: Impact (analytical/clinical studies),COVID,,
-impact_alpha,Alpha variant,TRUE,FALSE,assay_impact_alpha,Alpha,Alpha,COVID,,
-impact_beta,Beta variant,TRUE,FALSE,assay_impact_beta,Beta,Beta,COVID,,
-impact_delta,Delta variant,TRUE,FALSE,assay_impact_delta,Delta,Delta,COVID,,
-impact_delta_plus,Delta+ variant,TRUE,FALSE,assay_impact_delta_plus,Delta+,Delta+,COVID,,
-impact_gamma,Gamma variant,TRUE,FALSE,assay_impact_gamma,Gamma,Gamma,COVID,,
-impact_omicron,Omicron variant,TRUE,FALSE,assay_impact_omicron,Omicron,Omicron,COVID,,
-impact_omicron_ba4,Omicron (BA.4) variant,TRUE,FALSE,assay_impact_omicron_ba4,Omicron (BA.4),Omicron (BA.4),COVID,,
-impact_omicron_ba5,Omicron (BA.5) variant,TRUE,FALSE,assay_impact_omicron_ba5,Omicron (BA.5),Omicron (BA.5),COVID,,
-who_technology_class,WHO technology class,TRUE,FALSE,assay_who_technology_class,WHO Technology Class,WHO Technology Class,Tuberculosis,,
-manufacturer_id,Manufacturer ID,FALSE,FALSE,assay_manufacturer_id,Assay_Company_Institution_Name__c,Assay: Company/Institution Name: Organisation Name,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,,
-manufacturer,Manufacturer,TRUE,TRUE,assay_manufacturer,Assay_Account_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,AMR
-city,City,FALSE,FALSE,assay_city,Assay_Account_BillingCity,Assay: Company/Institution Name: City,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-country,Country of manufacturer HQ,TRUE,TRUE,assay_country,Assay_Account_BillingCountry,Assay: Company/Institution Name: Country,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,AMR,AMR
-region,Region of manufacturer HQ,TRUE,TRUE,assay_region,Assay_Account_WHO_Region__c,Assay: Company/Institution Name: WHO Region,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,AMR,AMR
-permalink,Website,FALSE,FALSE,assay_permalink,Assay_Account_Website,Assay: Company/Institution Name: Website,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-submission_title,Performance submission title,FALSE,FALSE,performance_submission_title,Performance_Perf_Submission_Title__c,Perf Submission Title,Neglected Tropical Diseases;Tuberculosis,,
-sensitivity,Sensitivity,FALSE,FALSE,performance_sensitivity,Performance_Clinical_Sensitivity_Percentage__c,Sensitivity (%),COVID;Neglected Tropical Diseases;Tuberculosis,,
-specificity,Specificity,FALSE,FALSE,performance_specificity,Performance_Clinical_Specificity_Percentage__c,Specificity (%),COVID;Neglected Tropical Diseases;Tuberculosis,,
-sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE,FALSE,performance_sensitivity_ci_low,Performance_X95_CI_for_Clinical_Sensitivity_Lower__c,95% CI for Clinical Sensitivity (Lower),Neglected Tropical Diseases;Tuberculosis,,
-sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,FALSE,performance_sensitivity_ci_up,Performance_X95_CI_for_Clinical_Sensitivity_Upper__c,95% CI for Clinical Sensitivity (Upper),Neglected Tropical Diseases;Tuberculosis,,
-specificity_ci_low,95% CI Specificity (Lower),FALSE,FALSE,performance_specificity_ci_low,Performance_X95_CI_for_Clinical_Specificity_Lower__c,95% CI for Clinical Specificity (Lower),Neglected Tropical Diseases;Tuberculosis,,
-specificity_ci_up,95% CI Specificity (Upper),FALSE,FALSE,performance_specificity_ci_up,Performance_X95_CI_for_Clinical_Specificity_Upper__c,95% CI for Clinical Specificity (Upper),Neglected Tropical Diseases;Tuberculosis,,
-find_evaluation,FIND evaluation,TRUE,FALSE,performance_find_evaluation,Performance_FIND_Evaluation__c,FIND Evaluation,COVID;Neglected Tropical Diseases,,
-study_type,Study type,TRUE,FALSE,performance_study_type,Performance_Study_Type__c,Study Type,COVID;Neglected Tropical Diseases;Tuberculosis,,
-number_of_positive_samples,Number of positive samples,FALSE,FALSE,performance_number_of_positive_samples,Performance_Number_of_positive_samples__c,Number of positive samples,COVID;Neglected Tropical Diseases;Tuberculosis,,
-number_of_negative_samples,Number of negative samples,FALSE,FALSE,performance_number_of_negative_samples,Performance_Number_of_negative_samples__c,Number of negative samples,COVID;Neglected Tropical Diseases;Tuberculosis,,
-total_number_of_samples,Total number of samples,FALSE,FALSE,performance_total_number_of_samples,Performance_Total_number_of_samples_clinical__c,Total number of samples,COVID;Neglected Tropical Diseases;Tuberculosis,,
-type_data_source,Type of data source,TRUE,FALSE,performance_type_data_source,Performance_Type_of_data_source__c,Type of data source,Neglected Tropical Diseases;Tuberculosis,,
-target_patient_group,Target patient group,TRUE,FALSE,performance_target_patient_group,Performance_Target_Patient_Group__c,Target Patient Group,Neglected Tropical Diseases;Tuberculosis,,
-sample_type,Sample type,TRUE,FALSE,performance_sample_type,Performance_Sample_Type__c,Sample Type,Neglected Tropical Diseases;Tuberculosis,,
-data_to_be_published_on_finds_web_page,Data published,FALSE,FALSE,performance_data_to_be_published_on_finds_web_page,Performance_Data_to_be_published_on_FIND_s_web_page__c,Data to be published on FIND's web page,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-country_tmp,Country tmp,FALSE,FALSE,assay_country_tmp,Country tmp,,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,,
-city2,City2,FALSE,FALSE,assay_city2,City2,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-lat,Latitude,FALSE,FALSE,assay_lat,Latitude,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
-lng,Longitude,FALSE,FALSE,assay_lng,Longitude,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,
+id,description,filterable,include_in_table,raw_id,salesforce_name,salesforce_name_report,area_group,plots_type,default_plot_amr,default_filter_amr
+id,ID,FALSE,FALSE,id,Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+package_id,Package ID,FALSE,FALSE,package_id,Package_Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+performance_id,Performance ID,FALSE,FALSE,performance_id,Performance_Id,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+assay_id,Assay ID,FALSE,FALSE,assay_id,Package_Assay__c,Assay: Assay ID,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+instrument_id,Instrument ID,FALSE,FALSE,instrument_id,Package_Instrument__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+software_id,Software ID,FALSE,FALSE,software_id,Package_Software__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+technology_submission_id,Technology submission ID,FALSE,FALSE,technology_submission_id,Package_Technology_Submission__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+directory,Directory,FALSE,FALSE,directory,directory,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+name,Name,FALSE,FALSE,name,Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+assay_name,Assay name,TRUE,TRUE,assay_name,Assay_Name,Assay: Assay Name,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,2
+instrument_name,Instrument name,FALSE,FALSE,instrument_name,Instrument_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+software_name,Software name,FALSE,FALSE,software_name,Software_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+package_name,Package name,FALSE,FALSE,package_name,Package_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+performance_name,Performance name,FALSE,FALSE,performance_name,Performance_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+find_website_area,Area,FALSE,FALSE,assay_find_website_area,Assay_FIND_Website_Area__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,assay_test_to_be_listed_on_finds_web_page,Assay_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,,
+date_of_submission,Date,FALSE,FALSE,assay_date_of_submission,Assay_CreatedDate,Assay: Created Date,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,bar;pie,,
+stage_of_development,Stage of development,TRUE,FALSE,assay_stage_of_development,Assay_Stage_of_Development__c,Assay: Stage of Development,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,8,5
+regulatory_status,Regulatory body,TRUE,TRUE,assay_regulatory_status,Assay_Regulatory_Approval__c,Assay: Regulatory Approval,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,,6
+type_of_technology,Type of technology,TRUE,TRUE,assay_type_of_technology,Assay_Type_of_Technology__c,Assay: Type of Technology,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,pie;bar,7,7
+assay_aim,Assay aim,TRUE,TRUE,assay_assay_aim,Assay_Assay_Aim__c,Assay: Assay Aim,AMR;Tuberculosis,bar;pie,3,8
+syndromes,Syndrome,TRUE,TRUE,assay_syndromes,Assay_Syndromes__c,Assay: Syndromes,AMR,bar;pie,4,9
+planned_market_entry,Planned market entry,TRUE,FALSE,assay_planned_market_entry,Assay_Planned_Market_Entry__c,Assay: Planned Market Entry,AMR;Tuberculosis,bar;pie,,
+primary_use_case,Primary use case,TRUE,FALSE,assay_primary_use_case,Assay_Primary_Use_Case__c,Assay: Primary Use Case,AMR;Neglected Tropical Diseases;Tuberculosis,bar;pie,,
+ID_type,Type of ID,FALSE,FALSE,assay_ID_type,Assay_ID_type__c,Assay: ID type,AMR,bar;pie,,
+disease_target,Disease target,TRUE,FALSE,assay_disease_target,Assay_Disease_Target__c,Assay: Disease Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,,
+organism_classes,Organism class,TRUE,FALSE,assay_organism_classes,Assay_Assay_Target_Organism_Classes__c,Assay: Target Organism Classes,AMR,bar;pie,5,10
+target_pathogen,Target pathogen,TRUE,TRUE,assay_target_pathogen,Assay_Target_Pathogen__c,Assay: Target Pathogen,AMR;Outbreak;Tuberculosis;COVID,bar;pie,,11
+target_analyte,Target analyte,TRUE,TRUE,assay_target_analyte,Assay_Target_Analytes__c,Assay: Target Analyte(s),AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,,12
+technology_principle,Technology principle,TRUE,FALSE,assay_technology_principle,Assay_Technology_principle__c,Assay: Technology principle,AMR;COVID;Neglected Tropical Diseases;Tuberculosis,bar;pie,,
+readout_technology,Readout technology,TRUE,FALSE,assay_readout_technology,Assay_Readout_Technology__c,Assay: Readout Technology,AMR;Tuberculosis,bar;pie,,
+qualitative_or_quantitative,Quantitative or qualitative,TRUE,FALSE,assay_qualitative_or_quantitative,Assay_Qualitative_or_Quantitative__c,Assay: Qualitative or Quantitative,AMR,bar;pie,,
+antimicrobial_resistance_class,Antimicrobial resistance class,TRUE,TRUE,assay_antimicrobial_resistance_class,Assay_Antimicrobial_Resistance_Class__c,Assay: Antimicrobial Resistance Class,AMR,bar;pie,6,13
+resistance_marker,Resistance marker,TRUE,TRUE,assay_resistance_marker,Assay_Resistance_Marker__c,Assay: Resistance Marker,AMR;Tuberculosis,bar;pie,,14
+Drug_resistance_target,Antimicrobial agent,TRUE,TRUE,assay_Drug_resistance_target,Assay_Drug_Resistance_Target__c,Assay: Drug Resistance Target,AMR;Tuberculosis,bar;pie,,
+AST_output,AST output,TRUE,FALSE,assay_AST_output,Assay_AST_Output__c,Assay: AST Output,AMR,bar;pie,,
+test_format,Test format,TRUE,FALSE,assay_test_format,Assay_Test_Format__c,Assay: Test Format,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,bar;pie,,
+instrument_requirement,Instrument requirement,TRUE,FALSE,assay_instrument_requirement,Assay_Instrument_requirement__c,Assay: Instrument requirement,AMR;Neglected Tropical Diseases;COVID;Tuberculosis,bar;pie,,
+level_of_automation,Level of automation,TRUE,FALSE,assay_level_of_automation,Assay_Level_of_automation__c,Assay: Level of automation,AMR;Neglected Tropical Diseases;COVID;Tuberculosis,bar;pie,,
+lab_vs_poc,Laboratory/point of care,TRUE,TRUE,assay_lab_vs_poc,Assay_Lab_vs_POC__c,Assay: Lab vs. POC,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,,15
+self_testing_self_collection,Self-testing or professional use,TRUE,FALSE,assay_self_testing_self_collection,Assay_SelftestingSelfCollection__c,Assay: Self-testing/Self-Collection,AMR;Neglected Tropical Diseases;COVID;Tuberculosis,bar;pie,,
+validated_sample_types,Sample types,TRUE,TRUE,assay_validated_sample_types,Assay_Validated_Sample_Types__c,Assay: Validated Sample Types,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,,16
+time_to_results_excl_prep,Time to result excl sample prep,FALSE,FALSE,assay_time_to_results_excl_prep,Assay_Time_to_results_mins__c,Assay: Time to results (mins),AMR;Neglected Tropical Diseases;Tuberculosis,bar;pie,,
+serovar_subtype,Serovar subtype,TRUE,FALSE,assay_serovar_subtype,Assay_Serovar_subtype__c,Assay: Serovar subtype,Outbreak,bar;pie,,
+disease_target_phase,Disease spectrum,TRUE,FALSE,assay_disease_target_phase,Assay_Disease_Target_Phase__c,Assay: Disease Target Phase,Tuberculosis,bar;pie,,
+is_this_a_variant_detection_test,Are multiple variants included?,FALSE,TRUE,assay_is_this_a_variant_detection_test,Assay_Is_this_a_variant_detection_test__c,Is this a variant detection test?,COVID,bar;pie,,
+s_gene_dropout,S gene dropout,TRUE,FALSE,assay_s_gene_dropout,Assay_S_gene_dropout__c,Assay: S gene dropout,COVID,bar;pie,,
+scov2_variants,Variant detection,TRUE,FALSE,assay_scov2_variants,Assay_SARSCoV2_variant_s__c,Assay: SARS-CoV-2 variant(s),COVID,bar;pie,,
+no_expected_impact,No expected impact,FALSE,FALSE,assay_no_expected_impact,Assay_No_expected_impact_in_silico_analyses__c,Assay: No expected impact (in silico analyses),COVID,,,
+potential_impact,Potential impact,FALSE,FALSE,assay_potential_impact,Assay_Potential_impact_in_silico_analyses__c,Assay: Potential impact (in silico analyses),COVID,,,
+no_impact,No impact,FALSE,FALSE,assay_no_impact,Assay_No_impact_analytical_clinical_studies__c,Assay: No impact (analytical/clinical studies),COVID,,,
+impact,Impact,FALSE,FALSE,assay_impact,Assay_Impact_analytical_clinical_studies__c,Assay: Impact (analytical/clinical studies),COVID,,,
+impact_alpha,Alpha variant,TRUE,FALSE,assay_impact_alpha,Alpha,Alpha,COVID,,,
+impact_beta,Beta variant,TRUE,FALSE,assay_impact_beta,Beta,Beta,COVID,,,
+impact_delta,Delta variant,TRUE,FALSE,assay_impact_delta,Delta,Delta,COVID,,,
+impact_delta_plus,Delta+ variant,TRUE,FALSE,assay_impact_delta_plus,Delta+,Delta+,COVID,,,
+impact_gamma,Gamma variant,TRUE,FALSE,assay_impact_gamma,Gamma,Gamma,COVID,,,
+impact_omicron,Omicron variant,TRUE,FALSE,assay_impact_omicron,Omicron,Omicron,COVID,,,
+impact_omicron_ba4,Omicron (BA.4) variant,TRUE,FALSE,assay_impact_omicron_ba4,Omicron (BA.4),Omicron (BA.4),COVID,,,
+impact_omicron_ba5,Omicron (BA.5) variant,TRUE,FALSE,assay_impact_omicron_ba5,Omicron (BA.5),Omicron (BA.5),COVID,,,
+who_technology_class,WHO technology class,TRUE,FALSE,assay_who_technology_class,WHO Technology Class,WHO Technology Class,Tuberculosis,,,
+manufacturer_id,Manufacturer ID,FALSE,FALSE,assay_manufacturer_id,Assay_Company_Institution_Name__c,Assay: Company/Institution Name: Organisation Name,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,,,
+manufacturer,Manufacturer,TRUE,TRUE,assay_manufacturer,Assay_Account_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,1
+city,City,FALSE,FALSE,assay_city,Assay_Account_BillingCity,Assay: Company/Institution Name: City,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+country,Country of manufacturer HQ,TRUE,TRUE,assay_country,Assay_Account_BillingCountry,Assay: Company/Institution Name: Country,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,map;bar,1,3
+region,Region of manufacturer HQ,TRUE,TRUE,assay_region,Assay_Account_WHO_Region__c,Assay: Company/Institution Name: WHO Region,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,map;pie;bar,2,4
+permalink,Website,FALSE,FALSE,assay_permalink,Assay_Account_Website,Assay: Company/Institution Name: Website,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+submission_title,Performance submission title,FALSE,FALSE,performance_submission_title,Performance_Perf_Submission_Title__c,Perf Submission Title,Neglected Tropical Diseases;Tuberculosis,,,
+sensitivity,Sensitivity,FALSE,FALSE,performance_sensitivity,Performance_Clinical_Sensitivity_Percentage__c,Sensitivity (%),COVID;Neglected Tropical Diseases;Tuberculosis,,,
+specificity,Specificity,FALSE,FALSE,performance_specificity,Performance_Clinical_Specificity_Percentage__c,Specificity (%),COVID;Neglected Tropical Diseases;Tuberculosis,,,
+sensitivity_ci_low,95% CI Sensitivity (Lower),FALSE,FALSE,performance_sensitivity_ci_low,Performance_X95_CI_for_Clinical_Sensitivity_Lower__c,95% CI for Clinical Sensitivity (Lower),Neglected Tropical Diseases;Tuberculosis,,,
+sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,FALSE,performance_sensitivity_ci_up,Performance_X95_CI_for_Clinical_Sensitivity_Upper__c,95% CI for Clinical Sensitivity (Upper),Neglected Tropical Diseases;Tuberculosis,,,
+specificity_ci_low,95% CI Specificity (Lower),FALSE,FALSE,performance_specificity_ci_low,Performance_X95_CI_for_Clinical_Specificity_Lower__c,95% CI for Clinical Specificity (Lower),Neglected Tropical Diseases;Tuberculosis,,,
+specificity_ci_up,95% CI Specificity (Upper),FALSE,FALSE,performance_specificity_ci_up,Performance_X95_CI_for_Clinical_Specificity_Upper__c,95% CI for Clinical Specificity (Upper),Neglected Tropical Diseases;Tuberculosis,,,
+find_evaluation,FIND evaluation,TRUE,FALSE,performance_find_evaluation,Performance_FIND_Evaluation__c,FIND Evaluation,COVID;Neglected Tropical Diseases,bar;pie,,
+study_type,Study type,TRUE,FALSE,performance_study_type,Performance_Study_Type__c,Study Type,COVID;Neglected Tropical Diseases;Tuberculosis,bar;pie,,
+number_of_positive_samples,Number of positive samples,FALSE,FALSE,performance_number_of_positive_samples,Performance_Number_of_positive_samples__c,Number of positive samples,COVID;Neglected Tropical Diseases;Tuberculosis,,,
+number_of_negative_samples,Number of negative samples,FALSE,FALSE,performance_number_of_negative_samples,Performance_Number_of_negative_samples__c,Number of negative samples,COVID;Neglected Tropical Diseases;Tuberculosis,,,
+total_number_of_samples,Total number of samples,FALSE,FALSE,performance_total_number_of_samples,Performance_Total_number_of_samples_clinical__c,Total number of samples,COVID;Neglected Tropical Diseases;Tuberculosis,,,
+type_data_source,Type of data source,TRUE,FALSE,performance_type_data_source,Performance_Type_of_data_source__c,Type of data source,Neglected Tropical Diseases;Tuberculosis,bar;pie,,
+target_patient_group,Target patient group,TRUE,FALSE,performance_target_patient_group,Performance_Target_Patient_Group__c,Target Patient Group,Neglected Tropical Diseases;Tuberculosis,bar;pie,,
+sample_type,Sample type,TRUE,FALSE,performance_sample_type,Performance_Sample_Type__c,Sample Type,Neglected Tropical Diseases;Tuberculosis,bar;pie,,
+data_to_be_published_on_finds_web_page,Data published,FALSE,FALSE,performance_data_to_be_published_on_finds_web_page,Performance_Data_to_be_published_on_FIND_s_web_page__c,Data to be published on FIND's web page,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+country_tmp,Country tmp,FALSE,FALSE,assay_country_tmp,Country tmp,,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,,,
+city2,City2,FALSE,FALSE,assay_city2,City2,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+lat,Latitude,FALSE,FALSE,assay_lat,Latitude,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
+lng,Longitude,FALSE,FALSE,assay_lng,Longitude,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,
