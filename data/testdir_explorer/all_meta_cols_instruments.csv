@@ -1,45 +1,45 @@
-id,description,filterable,include_in_table,raw_id,salesforce_name,salesforce_name_report,area_group,default_plot,default_filter
-id,ID,FALSE,FALSE,id,Id,,MPOC,,
-package_id,Package ID,FALSE,FALSE,package_id,Package_Id,,MPOC,,
-performance_id,Performance ID,FALSE,FALSE,performance_id,Performance_Id,,MPOC,,
-assay_id,Assay ID,FALSE,FALSE,assay_id,Package_Assay__c,Assay: Assay ID,MPOC,,
-instrument_id,Instrument ID,FALSE,FALSE,instrument_id,Package_Instrument__c,,MPOC,,
-software_id,Software ID,FALSE,FALSE,software_id,Package_Software__c,,MPOC,,
-technology_submission_id,Technology submission ID,FALSE,FALSE,technology_submission_id,Package_Technology_Submission__c,,MPOC,,
-directory,Directory,FALSE,FALSE,directory,directory,,MPOC,,
-name,Name,FALSE,FALSE,name,Name,,MPOC,,
-assay_name,Assay name,FALSE,TRUE,assay_name,Assay_Name,Assay: Assay Name,MPOC,,
-instrument_name,Instrument name,TRUE,FALSE,instrument_name,Instrument_Name,,MPOC,,MPOC
-software_name,Software name,FALSE,FALSE,software_name,Software_Name,,MPOC,,
-package_name,Package name,FALSE,FALSE,package_name,Package_Name,,MPOC,,
-performance_name,Performance name,FALSE,FALSE,performance_name,Performance_Name,,MPOC,,
-find_website_area,Area,FALSE,FALSE,instrument_find_website_area,Instrument_FIND_Website_Area__c,,MPOC,,
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,instrument_test_to_be_listed_on_finds_web_page,Instrument_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,MPOC,,
-disease_target,Disease target,TRUE,FALSE,instrument_disease_target,Instrument_Disease_Target__c,Assay: Disease Target,MPOC,,
-assay_menu,Assay menu,TRUE,FALSE,instrument_assay_menu,Instrument_Assay_menu_Commercial__c,Instrument: Assay menu (Commercial),MPOC,,
-connectivity_companion,Connectivity companion,TRUE,FALSE,instrument_connectivity_companion,Instrument_Companion_solutions__c,Instrument: Companion solutions,MPOC,,MPOC
-connectivity_options,Connectivity options,TRUE,FALSE,instrument_connectivity_options,Instrument_Connectivity_options__c,Instrument: Connectivity options,MPOC,,
-instrument_size,Instrument size (cm),FALSE,FALSE,instrument_instrument_size,Instrument_Size_L_W_H_in_cm__c,Instrument: Size (LxWxH) in cm,MPOC,,
-instrument_type,Instrument type,TRUE,FALSE,instrument_instrument_type,Instrument_Type_of_instrument__c,Instrument: Type of instrument,MPOC,MPOC,MPOC
-instrument_weight,Instrument weight (kg),FALSE,FALSE,instrument_instrument_weight,Instrument_Weight_in_Kg__c,Instrument: Weight (in Kg),MPOC,,
-max_operating_temp,Operating Temp. - Max (°C),FALSE,FALSE,instrument_max_operating_temp,Instrument_Maximum_Operating_Temperature__c,Instrument: Maximum Operating Temperature,MPOC,,
-min_operating_temp,Operating Temp. - Min (°C),FALSE,FALSE,instrument_min_operating_temp,Instrument_Minimum_Operating_Temperature__c,Instrument: Minimum Operating Temperature,MPOC,,
-multiplexing_capacity,Multiplexing capacity,FALSE,FALSE,instrument_multiplexing_capacity,Instrument_Multiplexing_capacity__c,Instrument: Multiplexing capacity,MPOC,,MPOC
-power_supply,Power supply,TRUE,FALSE,instrument_power_supply,Instrument_Instrument_power_supply__c,Instrument: Instrument power supply,MPOC,MPOC,MPOC
-date_of_submission,Date,FALSE,FALSE,instrument_date_of_submission,Instrument_CreatedDate,Intrument: Created Date,MPOC,,
-stage_of_development,Stage of development,TRUE,FALSE,instrument_stage_of_development,Instrument_Stage_of_Development__c,,MPOC,MPOC,MPOC
-regulatory_status,Regulatory body,TRUE,TRUE,instrument_regulatory_status,Instrument_Regulatory_Approval__c,,MPOC,,MPOC
-technology_principle,Technology principle,TRUE,FALSE,instrument_technology_principle,Instrument_Technology_principle__c,,MPOC,MPOC,MPOC
-readout_technology,Readout technology,TRUE,FALSE,instrument_readout_technology,Instrument_Readout_Technology__c,,MPOC,,
-test_format,Test format,TRUE,FALSE,instrument_test_format,Instrument_Test_Format__c,,MPOC,MPOC,MPOC
-lab_vs_poc,Laboratory/point of care,TRUE,TRUE,instrument_lab_vs_poc,Instrument_Lab_vs_POC__c,,MPOC,MPOC,
-time_to_results_excl_prep,Time to result excl sample prep,FALSE,FALSE,instrument_time_to_results_excl_prep,Instrument_Time_to_results_mins__c,,MPOC,,MPOC
-manufacturer,Manufacturer,TRUE,TRUE,instrument_manufacturer,Instrument_Account_Name,,MPOC,,MPOC
-city,City,FALSE,FALSE,instrument_city,Instrument_Account_BillingCity,,MPOC,,
-country, Country of manufacturer HQ,TRUE,TRUE,instrument_country,Instrument_Account_BillingCountry,,MPOC,MPOC,MPOC
-region,Region of manufacturer HQ,TRUE,TRUE,instrument_region,Instrument_Account_WHO_Region__c,,MPOC,MPOC,MPOC
-permalink,Website,FALSE,FALSE,instrument_permalink,Instrument_Account_Website,,MPOC,,
-country_tmp,Country tmp,FALSE,FALSE,instrument_country_tmp,Country tmp,,MPOC,,
-city2,City2,FALSE,FALSE,instrument_city2,City2,,MPOC,,
-lat,Latitude,FALSE,FALSE,instrument_lat,Latitude,,MPOC,,
-lng,Longitude,FALSE,FALSE,instrument_lng,Longitude,,MPOC,,
+id,description,filterable,include_in_table,raw_id,salesforce_name,salesforce_name_report,area_group,plots_type,default_plot_mpoc,default_filter_mpoc
+id,ID,FALSE,FALSE,id,Id,,MPOC,,,
+package_id,Package ID,FALSE,FALSE,package_id,Package_Id,,MPOC,,,
+performance_id,Performance ID,FALSE,FALSE,performance_id,Performance_Id,,MPOC,,,
+assay_id,Assay ID,FALSE,FALSE,assay_id,Package_Assay__c,Assay: Assay ID,MPOC,,,
+instrument_id,Instrument ID,FALSE,FALSE,instrument_id,Package_Instrument__c,,MPOC,,,
+software_id,Software ID,FALSE,FALSE,software_id,Package_Software__c,,MPOC,,,
+technology_submission_id,Technology submission ID,FALSE,FALSE,technology_submission_id,Package_Technology_Submission__c,,MPOC,,,
+directory,Directory,FALSE,FALSE,directory,directory,,MPOC,,,
+name,Name,FALSE,FALSE,name,Name,,MPOC,,,
+assay_name,Assay name,FALSE,TRUE,assay_name,Assay_Name,Assay: Assay Name,MPOC,,,
+instrument_name,Instrument name,TRUE,FALSE,instrument_name,Instrument_Name,,MPOC,,,3
+software_name,Software name,FALSE,FALSE,software_name,Software_Name,,MPOC,,,
+package_name,Package name,FALSE,FALSE,package_name,Package_Name,,MPOC,,,
+performance_name,Performance name,FALSE,FALSE,performance_name,Performance_Name,,MPOC,,,
+find_website_area,Area,FALSE,FALSE,instrument_find_website_area,Instrument_FIND_Website_Area__c,,MPOC,,,
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,instrument_test_to_be_listed_on_finds_web_page,Instrument_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,MPOC,,,
+disease_target,Disease target,TRUE,FALSE,instrument_disease_target,Instrument_Disease_Target__c,Assay: Disease Target,MPOC,bar;pie,,
+assay_menu,Assay menu,TRUE,FALSE,instrument_assay_menu,Instrument_Assay_menu_Commercial__c,Instrument: Assay menu (Commercial),MPOC,bar;pie,,
+connectivity_companion,Connectivity companion,TRUE,FALSE,instrument_connectivity_companion,Instrument_Companion_solutions__c,Instrument: Companion solutions,MPOC,bar;pie,,13
+connectivity_options,Connectivity options,TRUE,FALSE,instrument_connectivity_options,Instrument_Connectivity_options__c,Instrument: Connectivity options,MPOC,,,
+instrument_size,Instrument size (cm),FALSE,FALSE,instrument_instrument_size,Instrument_Size_L_W_H_in_cm__c,Instrument: Size (LxWxH) in cm,MPOC,,,
+instrument_type,Instrument type,TRUE,FALSE,instrument_instrument_type,Instrument_Type_of_instrument__c,Instrument: Type of instrument,MPOC,bar;pie,9,1
+instrument_weight,Instrument weight (kg),FALSE,FALSE,instrument_instrument_weight,Instrument_Weight_in_Kg__c,Instrument: Weight (in Kg),MPOC,,,
+max_operating_temp,Operating Temp. - Max (°C),FALSE,FALSE,instrument_max_operating_temp,Instrument_Maximum_Operating_Temperature__c,Instrument: Maximum Operating Temperature,MPOC,,,
+min_operating_temp,Operating Temp. - Min (°C),FALSE,FALSE,instrument_min_operating_temp,Instrument_Minimum_Operating_Temperature__c,Instrument: Minimum Operating Temperature,MPOC,,,
+multiplexing_capacity,Multiplexing capacity,FALSE,FALSE,instrument_multiplexing_capacity,Instrument_Multiplexing_capacity__c,Instrument: Multiplexing capacity,MPOC,bar;pie,,10
+power_supply,Power supply,TRUE,FALSE,instrument_power_supply,Instrument_Instrument_power_supply__c,Instrument: Instrument power supply,MPOC,bar;pie,7,12
+date_of_submission,Date,FALSE,FALSE,instrument_date_of_submission,Instrument_CreatedDate,Intrument: Created Date,MPOC,,,
+stage_of_development,Stage of development,TRUE,FALSE,instrument_stage_of_development,Instrument_Stage_of_Development__c,,MPOC,bar;pie,6,6
+regulatory_status,Regulatory body,TRUE,TRUE,instrument_regulatory_status,Instrument_Regulatory_Approval__c,,MPOC,bar;pie,,7
+technology_principle,Technology principle,TRUE,FALSE,instrument_technology_principle,Instrument_Technology_principle__c,,MPOC,pie;bar,8,8
+readout_technology,Readout technology,TRUE,FALSE,instrument_readout_technology,Instrument_Readout_Technology__c,,MPOC,bar;pie,,
+test_format,Test format,TRUE,FALSE,instrument_test_format,Instrument_Test_Format__c,,MPOC,bar;pie,4,9
+lab_vs_poc,Laboratory/point of care,TRUE,TRUE,instrument_lab_vs_poc,Instrument_Lab_vs_POC__c,,MPOC,bar;pie,3,
+time_to_results_excl_prep,Time to result excl sample prep,FALSE,FALSE,instrument_time_to_results_excl_prep,Instrument_Time_to_results_mins__c,,MPOC,bar;pie,,11
+manufacturer,Manufacturer,TRUE,TRUE,instrument_manufacturer,Instrument_Account_Name,,MPOC,,,2
+city,City,FALSE,FALSE,instrument_city,Instrument_Account_BillingCity,,MPOC,,,
+country,Country of manufacturer HQ,TRUE,TRUE,instrument_country,Instrument_Account_BillingCountry,,MPOC,map,,4
+region,Region of manufacturer HQ,TRUE,TRUE,instrument_region,Instrument_Account_WHO_Region__c,,MPOC,map;pie;bar,2,5
+permalink,Website,FALSE,FALSE,instrument_permalink,Instrument_Account_Website,,MPOC,,,
+country_tmp,Country tmp,FALSE,FALSE,instrument_country_tmp,Country tmp,,MPOC,,,
+city2,City2,FALSE,FALSE,instrument_city2,City2,,MPOC,map,1,
+lat,Latitude,FALSE,FALSE,instrument_lat,Latitude,,MPOC,,,
+lng,Longitude,FALSE,FALSE,instrument_lng,Longitude,,MPOC,,,
