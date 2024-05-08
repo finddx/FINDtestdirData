@@ -91,13 +91,18 @@ df_all <- bind_rows(df_all_assays, df_all_instruments)
 
 
 #Read metacols data and filter for listed variables
-meta_cols <-
-  readr::read_csv("data/testdir_explorer/all_meta_cols.csv", show_col_types = FALSE) |>
-  filter(salesforce_name %in% names(df_all))
+meta_cols_assays <-readr::read_csv("data/testdir_explorer/all_meta_cols_assays.csv", show_col_types = FALSE)
+meta_cols_instruments <-  readr::read_csv("data/testdir_explorer/all_meta_cols_instruments.csv", show_col_types = FALSE)
+meta_cols <- bind_rows(meta_cols_assays, meta_cols_instruments)
+meta_cols <- meta_cols |>
+  # readr::read_csv("data/testdir_explorer/all_meta_cols.csv", show_col_types = FALSE) |>
+  filter(salesforce_name %in% names(df_all)) |>
+  select(id, description, raw_id,salesforce_name, salesforce_name_report) |>
+  distinct()
 
 df_all <- df_all |>
   select({ meta_cols$salesforce_name }) |>
-  rename_with(~ meta_cols$id, meta_cols$salesforce_name)
+  rename_with(~ meta_cols$raw_id, meta_cols$salesforce_name)
 
 #Add COVID in Website area
 df_all <- df_all |>
@@ -131,10 +136,15 @@ data <-
   mutate_at(vars(ends_with("permalink")),  ~if_else(startsWith(., "http"), ., paste0("https://", .))) |>
   relocate(assay_id, .before = assay_name)
 
-
+#Filter conditions
 data <- data |>
   #filter(test_to_be_listed_on_finds_web_page=="Yes")
-  filter_at(vars(ends_with("test_to_be_listed_on_finds_web_page")), all_vars(. == "Yes" | is.na(.)))
+  filter_at(vars(ends_with("test_to_be_listed_on_finds_web_page")), all_vars(. == "Yes" | is.na(.))) |>
+  filter_at(vars(ends_with("stage_of_development")), all_vars(. != "Decommissioned" | is.na(.))) |>
+  filter_at(vars(ends_with("planned_market_entry")), all_vars(. != "Discontinued" | is.na(.))) |>
+  filter_at(vars(ends_with("confidentiality_level")), all_vars(. != "Level 2" & . != "Level 3" | is.na(.))) |>
+  filter_at(vars(ends_with("primary_use_case")), all_vars(. != "EQA" & . != "Quality control/ValidationA" |is.na(.))) |>
+  filter_at(vars(ends_with("type_of_technology")), all_vars(. != "Sample Collection" | is.na(.)))
 
 d <-
   data |>
@@ -157,7 +167,6 @@ geo_data <-
   # mutate(assay_city2 = gsub("South Korea", "Korea, Republic of", assay_city2))
   mutate(across(ends_with("_city2"), ~gsub("Korea, Republic of", "South Korea", .)))
 
-
 raw <-
   geo_data |>
   # filter(!is.na(manufacturer)) |>
@@ -172,8 +181,7 @@ raw <-
 #Split data by objects
 raw_assays <- raw |>
   filter(directory=="Assays")
-meta_cols_assays <-
-  readr::read_csv("data/testdir_explorer/all_meta_cols_assays.csv", show_col_types = FALSE) |>
+meta_cols_assays <-  meta_cols_assays |>
   filter(raw_id %in% names(raw_assays))
 raw_assays <- raw_assays |>
   select({ meta_cols_assays$raw_id }) |>
@@ -182,8 +190,7 @@ raw_assays <- raw_assays |>
 
 raw_instruments <- raw |>
   filter(directory=="Instruments")
-meta_cols_instruments <-
-  readr::read_csv("data/testdir_explorer/all_meta_cols_instruments.csv", show_col_types = FALSE) |>
+meta_cols_instruments <- meta_cols_instruments |>
   filter(raw_id %in% names(raw_instruments))
 raw_instruments <- raw_instruments |>
   select({ meta_cols_instruments$raw_id }) |>
@@ -197,7 +204,7 @@ saveRDS(raw_assays, "data/testdir_explorer/data_all_testdir_assays.rds")
 saveRDS(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.rds")
 
 
-#
+
 # raw_unnested_assays <-
 #   raw_assays |>
 #   separate_rows(assay_regulatory_status, sep = ";") |>

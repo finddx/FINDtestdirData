@@ -15,6 +15,7 @@ package_name,Package name,FALSE,FALSE,package_name,Package_Name,,AMR;Neglected T
 performance_name,Performance name,FALSE,FALSE,performance_name,Performance_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,,,,,,,,,
 find_website_area,Area,FALSE,FALSE,assay_find_website_area,Assay_FIND_Website_Area__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,,,,,,,,,
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,assay_test_to_be_listed_on_finds_web_page,Assay_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,,,,,,,,,
+confidentiality_level,Confidentiality level,FALSE,FALSE,assay_confidentiality_level,Assay_nx_ConfidentialityLevel__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,,,,,,,,,,,
 assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,,,1,7,,8,3,11,,4
 date_of_submission,Date,FALSE,FALSE,assay_date_of_submission,Assay_CreatedDate,Assay: Created Date,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID,bar;pie,,,,,,,,,,
 stage_of_development,Stage of development,TRUE,FALSE,assay_stage_of_development,Assay_Stage_of_Development__c,Assay: Stage of Development,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID,bar;pie,8,5,,,3,16,9,7,,12
