@@ -4,7 +4,7 @@ library(tidyr)
 library(stringr)
 library(janitor)
 library(purrr)
-
+library(readr)
 
 #Define Salesforce credentials
 sf_auth(username = Sys.getenv("SF_USER"),
