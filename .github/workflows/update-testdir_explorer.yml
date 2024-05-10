@@ -64,10 +64,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull origin main
-          git add data/testdir_explorer/data_all_testdir_assays.csv
-          git add data/testdir_explorer/data_all_testdir_instruments.csv
-          git commit -m "update testdir explorer: data_all_testdir_assays.csv" || echo "Nothing to update"
-          git commit -m "update testdir explorer: data_all_testdir_instruments.csv" || echo "Nothing to update"
+          git add data/testdir_explorer/data_all_testdir_assays.csv data/testdir_explorer/data_all_testdir_instruments.csv
+          git commit -m "update testdir explorer: data_all_testdir_assays.csv / data_all_testdir_instruments.csv" || echo "Nothing to update"
       - name: Reset preview branch
         run: |
           git checkout main
