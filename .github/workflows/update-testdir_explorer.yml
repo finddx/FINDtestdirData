@@ -20,8 +20,8 @@ env:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "update-amr"
-  update-amr:
+  # This workflow contains a single job called "update-testdir_explorer"
+  update-testdir_explorer:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -55,7 +55,7 @@ jobs:
         run: |
           Rscript -e "install.packages(c('remotes', 'stringi'), type = 'source')"
           Rscript -e "remotes::install_github('finddx/shinyfind')"
-          Rscript -e 'install.packages(c("salesforcer", "dplyr", "tidyr", "stringr", "janitor", "purrr", "tidygeocoder", "countrycode"), repos = "https://packagemanager.rstudio.com/cran/__linux__/focal/latest")'
+          Rscript -e 'install.packages(c("salesforcer", "dplyr", "tidyr", "stringr", "janitor", "readr","purrr", "tidygeocoder", "countrycode"), repos = "https://packagemanager.rstudio.com/cran/__linux__/focal/latest")'
       - name: Running update scripts
         run: |
          Rscript -e "source('script/update-objects.R')"
