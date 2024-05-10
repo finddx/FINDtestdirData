@@ -4,13 +4,12 @@ library(tidyr)
 library(stringr)
 library(janitor)
 library(purrr)
-library(openxlsx)
-library(readr)
+
 
 #Define Salesforce credentials
-sf_auth(username = Sys.getenv("user"),
-        password = Sys.getenv("pass"),
-        security_token = Sys.getenv("token"))
+sf_auth(username = Sys.getenv("SF_USER"),
+        password = Sys.getenv("SF_PASS"),
+        security_token = Sys.getenv("SF_TOKEN"))
 
 sf_objects <- sf_list_metadata(list(type='CustomObject'))
 
@@ -199,10 +198,9 @@ raw_instruments <- raw_instruments |>
 # write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
 write_csv(raw_assays, "data/testdir_explorer/data_all_testdir_assays.csv")
 write_csv(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.csv")
-saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
-saveRDS(raw_assays, "data/testdir_explorer/data_all_testdir_assays.rds")
-saveRDS(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.rds")
-
+# saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
+# saveRDS(raw_assays, "data/testdir_explorer/data_all_testdir_assays.rds")
+# saveRDS(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.rds")
 
 
 # raw_unnested_assays <-
@@ -232,8 +230,5 @@ saveRDS(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.rds
 #
 # saveRDS(raw_unnested_assays, "data/testdir_explorer/data_all_testdir_unnested_assays.rds")
 # saveRDS(raw_unnested_instruments, "data/testdir_explorer/data_all_testdir_unnested_instruments.rds")
-
-
-#
 # saveRDS(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.rds")
 # write_csv(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.csv")
