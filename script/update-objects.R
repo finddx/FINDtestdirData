@@ -104,8 +104,8 @@ df_all <- df_all |>
   rename_with(~ meta_cols$raw_id, meta_cols$salesforce_name)
 
 #Add COVID in Website area
-df_all <- df_all |>
-  mutate(assay_find_website_area = ifelse(grepl("Covid-19", assay_disease_target), paste0(assay_find_website_area, ";COVID"), assay_find_website_area))
+# df_all <- df_all |>
+#   mutate(assay_find_website_area = ifelse(grepl("Covid-19", assay_disease_target), paste0(assay_find_website_area, ";COVID"), assay_find_website_area))
 
 
 # meta_cols <- readr::read_csv("data/testdir_explorer/all_meta_cols.csv", show_col_types=FALSE)
@@ -136,14 +136,15 @@ data <-
   relocate(assay_id, .before = assay_name)
 
 #Filter conditions
-data <- data |>
-  #filter(test_to_be_listed_on_finds_web_page=="Yes")
-  filter_at(vars(ends_with("test_to_be_listed_on_finds_web_page")), all_vars(. == "Yes" | is.na(.))) |>
-  filter_at(vars(ends_with("stage_of_development")), all_vars(. != "Decommissioned" | is.na(.))) |>
-  filter_at(vars(ends_with("planned_market_entry")), all_vars(. != "Discontinued" | is.na(.))) |>
-  filter_at(vars(ends_with("confidentiality_level")), all_vars(. != "Level 2" & . != "Level 3" | is.na(.))) |>
-  filter_at(vars(ends_with("primary_use_case")), all_vars(. != "EQA" & . != "Quality control/ValidationA" |is.na(.))) |>
-  filter_at(vars(ends_with("type_of_technology")), all_vars(. != "Sample Collection" | is.na(.)))
+# data <- data |>
+#   # filter(assay_test_to_be_listed_on_finds_web_page=="Yes") |>
+#   # filter(instrument_test_to_be_listed_on_finds_web_page=="Yes") |>
+#   filter_at(vars(ends_with("test_to_be_listed_on_finds_web_page")), all_vars(. == "Yes" | is.na(.))) |>
+#   filter_at(vars(ends_with("stage_of_development")), all_vars(. != "Decommissioned" | is.na(.))) |>
+#   filter_at(vars(ends_with("planned_market_entry")), all_vars(. != "Discontinued" | is.na(.))) |>
+#   filter_at(vars(ends_with("confidentiality_level")), all_vars(. != "Level 2" & . != "Level 3" | is.na(.))) |>
+#   filter_at(vars(ends_with("primary_use_case")), all_vars(. != "EQA" & . != "Quality Control/Validation" |is.na(.))) |>
+#   filter_at(vars(ends_with("type_of_technology")), all_vars(. != "Sample Collection" | is.na(.)))
 
 d <-
   data |>
@@ -185,6 +186,13 @@ meta_cols_assays <-  meta_cols_assays |>
 raw_assays <- raw_assays |>
   select({ meta_cols_assays$raw_id }) |>
   rename_with(~ meta_cols_assays$id, meta_cols_assays$raw_id)
+raw_assays <- raw_assays |>
+  filter(test_to_be_listed_on_finds_web_page == "Yes") |>
+  filter(!(stage_of_development %in% c("Decommissioned"))) |>
+  filter(!(planned_market_entry %in% c("Discontinued"))) |>
+  filter(!(confidentiality_level %in% c("Level 2", "Level 3"))) |>
+  filter(!(primary_use_case %in% c("EQA", "Quality Control/Validation"))) |>
+  filter(!(type_of_technology %in% c("Sample Collection")))
 
 
 raw_instruments <- raw |>
@@ -194,6 +202,11 @@ meta_cols_instruments <- meta_cols_instruments |>
 raw_instruments <- raw_instruments |>
   select({ meta_cols_instruments$raw_id }) |>
   rename_with(~ meta_cols_instruments$id, meta_cols_instruments$raw_id)
+raw_instruments <- raw_instruments |>
+  filter(test_to_be_listed_on_finds_web_page == "Yes") |>
+  filter(!(stage_of_development %in% c("Decommissioned"))) |>
+  filter(!(confidentiality_level %in% c("Level 2", "Level 3")))
+
 
 # write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
 write_csv(raw_assays, "data/testdir_explorer/data_all_testdir_assays.csv")
