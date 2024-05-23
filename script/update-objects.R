@@ -49,11 +49,9 @@ map(sf_names, ~ assign(.x, sf_list_dfs[[.x]], envir = .GlobalEnv))
 
 #Add prefix to objects
 names(Account) <- paste0("Account_", names(Account))
-
+#Select necessary manufacturer data
 Account <- Account |>
   select(Account_Id,Account_Name,Account_BillingCity,Account_BillingCountry,Account_WHO_Region__c,Account_Website)
-
-
 
 #Join account objects
 Assay__c <- Assay__c |>
@@ -69,7 +67,6 @@ names(Instrument__c) <- paste0("Instrument_", names(Instrument__c))
 names(Software__c) <- paste0("Software_", names(Software__c))
 names(Performance_Detail_Submission__c) <- paste0("Performance_", names(Performance_Detail_Submission__c))
 names(Test_Directory_Package__c) <- paste0("Package_", names(Test_Directory_Package__c))
-
 
 
 df_all_assays <- Test_Directory_Package__c |>
@@ -192,7 +189,10 @@ raw_assays <- raw_assays |>
   filter(!(planned_market_entry %in% c("Discontinued"))) |>
   filter(!(confidentiality_level %in% c("Level 2", "Level 3"))) |>
   filter(!(primary_use_case %in% c("EQA", "Quality Control/Validation"))) |>
-  filter(!(type_of_technology %in% c("Sample Collection")))
+  filter(!(type_of_technology %in% c("Sample Collection")))|>
+  filter(!(lab_vs_poc %in% c("Laboratory-developed test"))) |>
+  filter(purpose_of_submission =="Test Directory")
+
 
 
 raw_instruments <- raw |>
@@ -205,7 +205,16 @@ raw_instruments <- raw_instruments |>
 raw_instruments <- raw_instruments |>
   filter(test_to_be_listed_on_finds_web_page == "Yes") |>
   filter(!(stage_of_development %in% c("Decommissioned"))) |>
-  filter(!(confidentiality_level %in% c("Level 2", "Level 3")))
+  filter(!(planned_market_entry %in% c("Discontinued"))) |>
+  filter(!(confidentiality_level %in% c("Level 2", "Level 3"))) |>
+  # filter(!(primary_use_case %in% c("EQA", "Quality Control/Validation"))) |>
+  filter(!(type_of_technology %in% c("Sample Collection")))|>
+  filter(!(lab_vs_poc %in% c("Laboratory-developed test"))) |>
+  filter(purpose_of_submission =="Test Directory")
+
+#Filter for MPOC and Lab vs POC
+raw_instruments <- raw_instruments |>
+  filter((find_website_area != "Molecular POC Instrument") | (find_website_area=="Molecular POC Instrument" & lab_vs_poc=="True Point of Care"))
 
 
 # write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")

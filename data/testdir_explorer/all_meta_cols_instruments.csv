@@ -14,9 +14,10 @@ software_name,Software name,FALSE,FALSE,software_name,Software_Name,,Molecular P
 package_name,Package name,FALSE,FALSE,package_name,Package_Name,,Molecular POC Instrument;Blood Culture Instrument,,,,,
 performance_name,Performance name,FALSE,FALSE,performance_name,Performance_Name,,Molecular POC Instrument;Blood Culture Instrument,,,,,
 find_website_area,Area,FALSE,FALSE,instrument_find_website_area,Instrument_FIND_Website_Area__c,,Molecular POC Instrument;Blood Culture Instrument,,,,,
-test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,instrument_test_to_be_listed_on_finds_web_page,Instrument_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,Molecular POC Instrument;Blood Culture Instrument,,,,,
+test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,instrument_test_to_be_listed_on_finds_web_page,Instrument_Test_to_be_listed_on_find_s_web_page__c,Instrument: Test to be listed on FIND's web page?,Molecular POC Instrument;Blood Culture Instrument,,,,,
+purpose_of_submission,Purpose of submission,FALSE,FALSE,instrument_purpose_of_submission,Instrument_Purpose_of_submission__c,,Molecular POC Instrument;Blood Culture Instrument,,,,,
 confidentiality_level,Confidentiality level,FALSE,FALSE,instrument_confidentiality_level,Instrument_nx_ConfidentialityLevel__c,,Molecular POC Instrument;Blood Culture Instrument,,,,,
-disease_target,Disease target,TRUE,FALSE,instrument_disease_target,Instrument_Disease_Target__c,Assay: Disease Target,Molecular POC Instrument;Blood Culture Instrument,bar;pie,,,,
+disease_target,Disease target,TRUE,FALSE,instrument_disease_target,Instrument_Disease_Target__c,Instrument: Disease Target,Molecular POC Instrument;Blood Culture Instrument,bar;pie,,,,
 assay_menu,Assay menu,TRUE,FALSE,instrument_assay_menu,Instrument_Assay_menu_Commercial__c,Instrument: Assay menu (Commercial),Molecular POC Instrument,bar;pie,,,,
 connectivity_companion,Connectivity companion,TRUE,FALSE,instrument_connectivity_companion,Instrument_Companion_solutions__c,Instrument: Companion solutions,Molecular POC Instrument,bar;pie,,15,,
 connectivity_options,Connectivity options,TRUE,FALSE,instrument_connectivity_options,Instrument_Connectivity_options__c,Instrument: Connectivity options,Molecular POC Instrument,,,,,
@@ -29,6 +30,8 @@ multiplexing_range,Multiplexing range,FALSE,FALSE,instrument_multiplexing_range,
 power_supply,Power supply,TRUE,FALSE,instrument_power_supply,Instrument_Instrument_power_supply__c,Instrument: Instrument power supply,Molecular POC Instrument,bar;pie,7,14,,
 date_of_submission,Date,FALSE,FALSE,instrument_date_of_submission,Instrument_CreatedDate,Intrument: Created Date,Molecular POC Instrument;Blood Culture Instrument,,,,,
 stage_of_development,Stage of development,TRUE,FALSE,instrument_stage_of_development,Instrument_Stage_of_Development__c,,Molecular POC Instrument;Blood Culture Instrument,bar;pie,6,6,2,5
+planned_market_entry,Planned market entry,TRUE,FALSE,instrument_planned_market_entry,Instrument_Planned_Market_Entry__c,Instrument: Planned Market Entry,Molecular POC Instrument;Blood Culture Instrument,bar;pie,,,,
+type_of_technology,Type of technology,TRUE,TRUE,instrument_type_of_technology,Instrument_Type_of_Technology__c,Instrument: Type of Technology,Molecular POC Instrument;Blood Culture Instrument,pie;bar,,,,
 regulatory_status,Regulatory body,TRUE,TRUE,instrument_regulatory_status,Instrument_Regulatory_Approval__c,,Molecular POC Instrument;Blood Culture Instrument,bar;pie,,7,,6
 technology_principle,Technology principle,TRUE,FALSE,instrument_technology_principle,Instrument_Technology_principle__c,,Molecular POC Instrument;Blood Culture Instrument,pie;bar,8,8,,
 readout_technology,Readout signal,TRUE,FALSE,instrument_readout_technology,Instrument_Readout_Technology__c,,Molecular POC Instrument,bar;pie,,10,,
@@ -37,7 +40,6 @@ lab_vs_poc,Laboratory/point of care,TRUE,TRUE,instrument_lab_vs_poc,Instrument_L
 instrument_footprint,Instrument footprint,TRUE,TRUE,instrument_instrument_footprint,Instrument_Instrument_footprint__c,,Molecular POC Instrument;Blood Culture Instrument,,,13,3,9
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,FALSE,instrument_time_to_results_excl_prep,Instrument_Time_to_results_mins__c,,Molecular POC Instrument,bar;pie,,12,,
 assay_in_development,Assay in development,FALSE,FALSE,instrument_assay_in_development,Instrument_Assay_in_development__c,,Molecular POC Instrument,bar;pie,,,,
-pleanned_market_entry,Planned market entry,TRUE,TRUE,instrument_planned_market_entry,Instrument_Planned_Market_Entry__c,,Blood Culture Instrument,bar;pie,,,,
 assay_target_organism_classes,Target organism class,TRUE,TRUE,instrument_assay_target_organism_classes,Instrument_Assay_Target_Organism_Classes__c,,Blood Culture Instrument,bar;pie,,,,7
 parallel_processing_capacity,Parallel processing capacity,TRUE,TRUE,instrument_parallel_processing_capacity,Instrument_Parallel_processing_capacity__c,,Blood Culture Instrument,bar;pie,,,,8
 manufacturer_id,Manufacturer ID,FALSE,FALSE,instrument_manufacturer_id,Instrument_Company_Institution_Name__c,,Molecular POC Instrument;Blood Culture Instrument,,,,,
