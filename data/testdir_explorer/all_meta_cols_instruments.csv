@@ -24,8 +24,8 @@ connectivity_options,Connectivity options,TRUE,TRUE,instrument_connectivity_opti
 instrument_size,Instrument size (cm),FALSE,TRUE,instrument_instrument_size,Instrument_Size_L_W_H_in_cm__c,Instrument: Size (LxWxH) in cm,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
 instrument_type,Instrument type,TRUE,TRUE,instrument_instrument_type,Instrument_Type_of_instrument__c,Instrument: Type of instrument,Molecular POC Instrument;Blood Culture Instrument,bar;pie,9,1,6,,,6
 instrument_weight,Instrument weight (kg),FALSE,TRUE,instrument_instrument_weight,Instrument_Weight_in_Kg__c,Instrument: Weight (in Kg),Molecular POC Instrument;Blood Culture Instrument,,,,,,,
-max_operating_temp,Operating Temp. - Max (°C),FALSE,TRUE,instrument_max_operating_temp,Instrument_Maximum_Operating_Temperature__c,Instrument: Maximum Operating Temperature,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
-min_operating_temp,Operating Temp. - Min (°C),FALSE,TRUE,instrument_min_operating_temp,Instrument_Minimum_Operating_Temperature__c,Instrument: Minimum Operating Temperature,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
+max_operating_temp,Operating Temp. - Max (Â°C),FALSE,TRUE,instrument_max_operating_temp,Instrument_Maximum_Operating_Temperature__c,Instrument: Maximum Operating Temperature,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
+min_operating_temp,Operating Temp. - Min (Â°C),FALSE,TRUE,instrument_min_operating_temp,Instrument_Minimum_Operating_Temperature__c,Instrument: Minimum Operating Temperature,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
 multiplexing_range,Multiplexing range,TRUE,TRUE,instrument_multiplexing_range,Instrument_Multiplexing_Range__c,,Molecular POC Instrument,bar;pie,,11,12,,,12
 power_supply,Power supply,TRUE,TRUE,instrument_power_supply,Instrument_Instrument_power_supply__c,Instrument: Instrument power supply,Molecular POC Instrument,bar;pie,7,13,15,,,15
 date_of_submission,Date,FALSE,FALSE,instrument_date_of_submission,Instrument_CreatedDate,Intrument: Created Date,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
@@ -37,7 +37,7 @@ technology_principle,Technology principle,TRUE,TRUE,instrument_technology_princi
 readout_technology,Readout signal,TRUE,TRUE,instrument_readout_technology,Instrument_Readout_Technology__c,,Molecular POC Instrument,bar;pie,,10,11,,,11
 test_format,Test format,TRUE,TRUE,instrument_test_format,Instrument_Test_Format__c,,Molecular POC Instrument;Blood Culture Instrument,bar;pie,4,9,10,,,10
 lab_vs_poc,Laboratory/point of care,TRUE,TRUE,instrument_lab_vs_poc,Instrument_Lab_vs_POC__c,,Molecular POC Instrument,bar;pie,3,,,,,
-instrument_footprint,Instrument footprint,TRUE,TRUE,instrument_instrument_footprint,Instrument_Instrument_footprint__c,,Molecular POC Instrument;Blood Culture Instrument,,,12,14,3,9,14
+instrument_footprint,Instrument footprint,TRUE,TRUE,instrument_instrument_footprint,Instrument_Instrument_footprint__c,,Molecular POC Instrument;Blood Culture Instrument,bar;pie,,12,14,3,9,14
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,TRUE,instrument_time_to_results_excl_prep,Instrument_Time_to_results_mins__c,,Molecular POC Instrument,bar;pie,,,13,,,13
 assay_in_development,Assay in development,TRUE,TRUE,instrument_assay_in_development,Instrument_Assay_in_development__c,,Molecular POC Instrument,bar;pie,,,17,,,17
 assay_target_organism_classes,Target organism class,TRUE,TRUE,instrument_assay_target_organism_classes,Instrument_Assay_Target_Organism_Classes__c,,Blood Culture Instrument,bar;pie,,,,,7,
