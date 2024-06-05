@@ -66,7 +66,7 @@ who_technology_class,WHO technology class,FALSE,FALSE,assay_who_technology_class
 manufacturer_id,Manufacturer ID,FALSE,FALSE,assay_manufacturer_id,Assay_Company_Institution_Name__c,Assay: Company/Institution Name: Organisation Name,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID-19,,,,,,,,,,,,,,,,
 manufacturer,Manufacturer,TRUE,TRUE,assay_manufacturer,Assay_Account_Name,,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID-19,,,1,2,,1,2,,3,2,,2,2,,9,2
 city,City,FALSE,FALSE,assay_city,Assay_Account_BillingCity,Assay: Company/Institution Name: City,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID-19,,,,,,,,,,,,,,,,
-country,Country of manufacturer HQ,TRUE,TRUE,assay_country,Assay_Account_BillingCountry,Assay: Company/Institution Name: Country,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID-19,map,,3,3,,3,3,,5,3,,4,3,,10,3
+country,Country of manufacturer HQ,TRUE,TRUE,assay_country,Assay_Account_BillingCountry,Assay: Company/Institution Name: Country,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID-19,map,1,3,3,,3,3,,5,3,1,4,3,,10,3
 region,Region of manufacturer HQ,TRUE,TRUE,assay_region,Assay_Account_WHO_Region__c,Assay: Company/Institution Name: WHO Region,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID-19,pie;bar,2,4,4,2,4,4,9,4,4,2,5,4,6,11,4
 permalink,Website,FALSE,FALSE,assay_permalink,Assay_Account_Website,Assay: Company/Institution Name: Website,AMR;Neglected Tropical DiseasesOutbreak;Tuberculosis;COVID-19,,,,,,,,,,,,,,,,
 submission_title,Performance submission title,TRUE,TRUE,performance_submission_title,Performance_Perf_Submission_Title__c,Perf Submission Title,Neglected Tropical Diseases;Tuberculosis,,,,,,,,,,,,,,,,
@@ -86,6 +86,6 @@ target_patient_group,Target patient group,TRUE,TRUE,performance_target_patient_g
 sample_type,Sample type,TRUE,TRUE,performance_sample_type,Performance_Sample_Type__c,Sample Type,Neglected Tropical Diseases;Tuberculosis,bar;pie,,,,,,,,,,,,,,,
 data_to_be_published_on_finds_web_page,Data published,FALSE,FALSE,performance_data_to_be_published_on_finds_web_page,Performance_Data_to_be_published_on_FIND_s_web_page__c,Data to be published on FIND's web page,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID-19,,,,,,,,,,,,,,,,
 country_tmp,Country tmp,FALSE,FALSE,assay_country_tmp,Country tmp,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID-19,,,,,,,,,,,,,,,,
-city2,City2,FALSE,FALSE,assay_city2,City2,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID-19,map,1,,,,,,,,,1,,,,,
+city2,City2,FALSE,FALSE,assay_city2,City2,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID-19,,,,,,,,,,,,,,,,
 lat,Latitude,FALSE,FALSE,assay_lat,Latitude,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID-19,,,,,,,,,,,,,,,,
 lng,Longitude,FALSE,FALSE,assay_lng,Longitude,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis;COVID-19,,,,,,,,,,,,,,,,
