@@ -4,8 +4,9 @@ AMR," FIND maintains a searchable directory of AMR tests. The AMR test directory
 The following are not included in the directory: PCR kits (not on proprietary platform), serological tests (except for fungal pathogens) , blood culture system (not providing pathogen identification), parasites (except Trichomonas vaginalis ) and viruses (except viruses causing meningitis), and urinary tract infection (UTI) rapid screening tests. 
 
 NOTE: Escherichia coli (E. coli): The test directory includes tests for both E coli without further specifications and E. coli for which the pathotype/serotype is specified (such as EHEC, ETEC in assays for gastro-intestinal Infections). For further details on the target pathogen in specific assays, please consult the website of the manufacturer and the instructions for use of the assay. "
+Blood Culture Instrument,Pending…
 COVID-19,FIND maintains a searchable directory of COVID-19 tests through the ACT-Accelerator Diagnostics Pillar. 
-MPOC," FIND maintains a searchable directory for Molecular Point of Care (MDxPOC) platforms. The current version of the directory focuses on True POC platforms that enable molecular testing at the lowest level healthcare settings such as primary care, as well as community and at-home testing.
+Molecular POC Instrument," FIND maintains a searchable directory for Molecular Point of Care (MDxPOC) platforms. The current version of the directory focuses on True POC platforms that enable molecular testing at the lowest level healthcare settings such as primary care, as well as community and at-home testing.
 
 The instruments and devices listed in this directory may be commercialized or still in development, as indicated.
 
@@ -17,7 +18,7 @@ The main features of these True POC molecular platforms are listed below:
     4. May include both hub/consumable and fully disposable form factors
 
 Note: The next version of this directory will also showcase Near POC molecular platforms which include medium-sized (benchtop, not portable) sample-to-answer instruments that can support rapid molecular testing in small clinics and hospitals. "
-NTD,FIND maintains a searchable directory of Neglected Tropical Diseases (NTDs) tests. The test directory includes a comprehensive landscape of tests of relevance for Chagas as well as tests for other NTDs submitted by manufacturers. The following are not included in the directory: tests developed by academic groups that are not commercially available or lacking a development partner. 
+Neglected Tropical Diseases,FIND maintains a searchable directory of Neglected Tropical Diseases (NTDs) tests. The test directory includes a comprehensive landscape of tests of relevance for Chagas as well as tests for other NTDs submitted by manufacturers. The following are not included in the directory: tests developed by academic groups that are not commercially available or lacking a development partner. 
 Outbreak," FIND maintains a searchable directory of diagnostic tests for select outbreak-prone pathogens. The Outbreaks Test Directory includes commercialized tests for identification, detection and/or surveillance for the following diseases:
 
     Cholera
@@ -33,7 +34,7 @@ Outbreak," FIND maintains a searchable directory of diagnostic tests for select 
     Yellow fever
 
 Please note that new pathogens will be added to the test directory over time. FIND is also currently conducting test evaluations for Ebola virus disease, mpox and dengue fever, and will provide the evaluation data when completed in the published test directory. "
-TB," FIND maintains a searchable directory of Tuberculosis (TB) tests. The test directory includes WHO-endorsed tests (WHO recommended), tests available in the market that have not yet been evaluated by WHO, and tests currently in development or undergoing WHO evaluation, specifically within the TB pipeline.
+Tuberculosis," FIND maintains a searchable directory of Tuberculosis (TB) tests. The test directory includes WHO-endorsed tests (WHO recommended), tests available in the market that have not yet been evaluated by WHO, and tests currently in development or undergoing WHO evaluation, specifically within the TB pipeline.
 
 The current version of this directory does not include the following: open PCR kits that are not operated on proprietary platforms, culture-based tests, sequencing solutions, sample collection/capture technologies, and digital tools such as computer-aided detection (CAD) devices, cough applications, digital stethoscopes, and tests primarily developed by academic groups, which are not commercially available or lack a development partner.
 
