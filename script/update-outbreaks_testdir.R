@@ -96,7 +96,7 @@ raw <-
          disease_target = gsub("Ebola fever", "Ebola virus disease", disease_target),
          disease_target = gsub("Hookworm", "Hookworm infection", disease_target),
          disease_target = gsub("Marburg", "Marburg virus disease", disease_target),
-         disease_target = gsub("Nipah", "Nipah virus infection", disease_target),
+         disease_target = gsub("Nipah", "Nipah virus disease", disease_target),
          disease_target = gsub("Whipworm", "Trichuriasis", disease_target),
          disease_target = gsub("Zika fever", "Zika virus disease", disease_target),
          disease_target = gsub("Lassa fever", "Lassa", disease_target),
