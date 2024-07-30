@@ -1,7 +1,7 @@
 Identification,"The assay provides the list of pathogen(s) identified by the assay according to taxonomical categories such as species, genus, a group of closely related bacteria (like Acinetobacter baumanii group), and even family or order such as Enterobacterales.",ID
 Presumptive Identification,"The assay provides a broader category of the identified pathogens , e.g., Gram+ bacteria, fungi.",ID
 Detection,The assay provides the information that pathogens are present in the sample without naming them.,ID
-Resistance,"Detection tests for the presence of resistance genes or expressed gene products (e.g., enzymes, antimicrobial agent binding proteins).",Resistance / AST
+AMR,"Detection tests for the presence of resistance genes or expressed gene products (e.g., enzymes, antimicrobial agent binding proteins).",Resistance / AST
 Phenotypic AST,"A biological, phenotypic assay involving the growth of the pathogen in the presence of varying concentrations of an antimicrobial agent. The results reported are susceptibility categories (such as susceptible, intermediate, resistant) or a quantitative measure of anti-microorganism activity, the minimal inhibitory concentration (MICs).",Resistance / AST
 Prediction AST,"Prediction of antibiotic resistance and/or susceptibility using an AI-based algorithm e.g., sequencing and AI-tool leveraging reference genome database.",Resistance / AST
 Host Response,"Tests for presumptive sepsis (including neonatal sepsis) and inflammation syndrome. These tests usually target host response markers (e.g., C-reactive protein, procalcitonin, mRNA...) linked to bacterial infections. These tests are often used to discriminate between viral and bacterial infections, to inform on antibiotic use.",Host Response
