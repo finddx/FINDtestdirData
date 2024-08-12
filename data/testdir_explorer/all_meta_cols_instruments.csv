@@ -31,12 +31,12 @@ power_supply,Power supply,TRUE,TRUE,instrument_power_supply,Instrument_Instrumen
 date_of_submission,Date,FALSE,FALSE,instrument_date_of_submission,Instrument_CreatedDate,Intrument: Created Date,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
 stage_of_development,Stage of development,TRUE,TRUE,instrument_stage_of_development,Instrument_Stage_of_Development__c,,Molecular POC Instrument;Blood Culture Instrument,bar;pie,6,6,7,3,5,7
 planned_market_entry,Planned market entry,TRUE,TRUE,instrument_planned_market_entry,Instrument_Planned_Market_Entry__c,Instrument: Planned Market Entry,Molecular POC Instrument;Blood Culture Instrument,bar;pie,,,,,,
-type_of_technology,Type of technology,TRUE,TRUE,instrument_type_of_technology,Instrument_Type_of_Technology__c,Instrument: Type of Technology,Molecular POC Instrument;Blood Culture Instrument,pie;bar,,,,,,
+type_of_technology,Type of technology,TRUE,TRUE,instrument_type_of_technology,Instrument_Type_of_Technology__c,Instrument: Type of Technology,Molecular POC Instrument;Blood Culture Instrument,pie;bar,10,,,5,,
 regulatory_status,Regulatory body,TRUE,TRUE,instrument_regulatory_status,Instrument_Regulatory_Approval__c,,Molecular POC Instrument;Blood Culture Instrument,bar;pie,,7,8,,6,8
 technology_principle,Technology principle,TRUE,TRUE,instrument_technology_principle,Instrument_Technology_principle__c,,Molecular POC Instrument;Blood Culture Instrument,pie;bar,8,8,9,,,9
 readout_technology,Readout signal,TRUE,TRUE,instrument_readout_technology,Instrument_Readout_Technology__c,,Molecular POC Instrument,bar;pie,,10,11,,,11
 test_format,Test format,TRUE,TRUE,instrument_test_format,Instrument_Test_Format__c,,Molecular POC Instrument;Blood Culture Instrument,bar;pie,4,9,10,,,10
-lab_vs_poc,Laboratory/point of care,TRUE,TRUE,instrument_lab_vs_poc,Instrument_Lab_vs_POC__c,,Molecular POC Instrument,bar;pie,3,,,,,
+lab_vs_poc,Laboratory/point of care,TRUE,TRUE,instrument_lab_vs_poc,Instrument_Lab_vs_POC__c,,Molecular POC Instrument,bar;pie,3,,,6,,
 instrument_footprint,Instrument footprint,TRUE,TRUE,instrument_instrument_footprint,Instrument_Instrument_footprint__c,,Molecular POC Instrument;Blood Culture Instrument,bar;pie,,12,14,4,9,14
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,TRUE,instrument_time_to_results_excl_prep,Instrument_Time_to_results_mins__c,,Molecular POC Instrument,bar;pie,,,13,,,13
 assay_in_development,Assay in development,TRUE,TRUE,instrument_assay_in_development,Instrument_Assay_in_development__c,,Molecular POC Instrument,bar;pie,,,17,,,17
