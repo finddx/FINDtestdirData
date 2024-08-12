@@ -48,7 +48,7 @@ time_to_results_excl_prep,Time to result excl sample prep,FALSE,TRUE,assay_time_
 serovar_subtype,Serovar subtype,TRUE,TRUE,assay_serovar_subtype,Assay_Serovar_subtype__c,Assay: Serovar subtype,Outbreak,bar;pie,,,,,,,,,,7,10,9,,,
 disease_target_phase,Disease spectrum,TRUE,TRUE,assay_disease_target_phase,Assay_Disease_Target_Phase__c,Assay: Disease Target Phase,Tuberculosis,bar;pie,,,,,,,,,,,,,,1,8
 is_this_a_variant_detection_test,Are multiple variants included?,TRUE,TRUE,assay_is_this_a_variant_detection_test,Assay_Is_this_a_variant_detection_test__c,Is this a variant detection test?,COVID-19,bar;pie,,,,,,,,,,,,,,,
-s_gene_dropout,S gene dropout,TRUE,TRUE,assay_s_gene_dropout,Assay_S_gene_dropout__c,Assay: S gene dropout,COVID-19,bar;pie,,,,,15,,,,,,,,,,
+s_gene_dropout,S gene dropout,FALSE,FALSE,assay_s_gene_dropout,Assay_S_gene_dropout__c,Assay: S gene dropout,COVID-19,bar;pie,,,,,15,,,,,,,,,,
 scov2_variants,Variant detection,TRUE,TRUE,assay_scov2_variants,Assay_SARSCoV2_variant_s__c,Assay: SARS-CoV-2 variant(s),COVID-19,bar;pie,,,,,16,,,,,,,,,,
 no_expected_impact,No expected impact,FALSE,FALSE,assay_no_expected_impact,Assay_No_expected_impact_in_silico_analyses__c,Assay: No expected impact (in silico analyses),COVID-19,,,,,,,,,,,,,,,,
 potential_impact,Potential impact,FALSE,FALSE,assay_potential_impact,Assay_Potential_impact_in_silico_analyses__c,Assay: Potential impact (in silico analyses),COVID-19,,,,,,,,,,,,,,,,
