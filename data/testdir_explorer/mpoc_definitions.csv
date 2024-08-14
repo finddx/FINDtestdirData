@@ -1,3 +1,4 @@
+﻿Column1,Column2,Column3
 NAT platform,Reusable platform for nucleic acid testing,Instrument type
 NAT instrument-free,"All-in-one, single-use, and disposable device for nucleic acid testing",Instrument type
 Multimodal platform,"Platform that can detect more than 1 category of analytes, such as DNA and proteins",Instrument type
@@ -23,4 +24,6 @@ Power free,"Platforms that create its own energy, for example through a chemical
 Handheld,Palm-size instrument. All dimensions below or equal to 15 cm,Instrument footprint
 Small,Instrument of the size of a shoebox / toaster. All dimensions below or equal to 30 cm,Instrument footprint
 Intermediate,Instrument of the size of a standard printer. All dimensions below or equal top 55 cm,Instrument footprint
-Large,Instrument of the size of a fridge. At least 1 dimension equal or above 56 cm,Instrument footprint
+Large,Instrument of the size of a fridge. All dimensions below or equal to 75 cm ,Instrument footprint
+Extra large,nstrument of the size of an extra-large fridge. At least 1 dimension equal or above 76 cm ,Instrument footprint
+Parallel processing capacity,The maximum number of blood culture bottles that can be processed by the instrument in parallel,Parallel processing capacity
