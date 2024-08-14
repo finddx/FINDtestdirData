@@ -25,5 +25,5 @@ Handheld,Palm-size instrument. All dimensions below or equal to 15 cm,Instrument
 Small,Instrument of the size of a shoebox / toaster. All dimensions below or equal to 30 cm,Instrument footprint
 Intermediate,Instrument of the size of a standard printer. All dimensions below or equal top 55 cm,Instrument footprint
 Large,Instrument of the size of a fridge. All dimensions below or equal to 75 cm ,Instrument footprint
-Extra large,nstrument of the size of an extra-large fridge. At least 1 dimension equal or above 76 cm ,Instrument footprint
+Extra large,Instrument of the size of an extra-large fridge. At least 1 dimension equal or above 76 cm ,Instrument footprint
 Parallel processing capacity,The maximum number of blood culture bottles that can be processed by the instrument in parallel,Parallel processing capacity
