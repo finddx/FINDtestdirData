@@ -174,6 +174,15 @@ raw <-
   filter(assay_find_website_area!="Pending" | is.na(assay_find_website_area)) |>
   filter(instrument_find_website_area!="Pending" | is.na(instrument_find_website_area) )
 
+raw <-
+  raw |>
+  mutate(
+         assay_disease_target = gsub("Dengue fever", "Dengue", assay_disease_target),
+         assay_disease_target = gsub("Ebola fever", "Ebola virus disease", assay_disease_target),
+         assay_disease_target = gsub("Marburg", "Marburg virus disease", assay_disease_target),
+         assay_disease_target = gsub("Nipah", "Nipah virus disease", assay_disease_target),
+         assay_disease_target = gsub("Lassa fever", "Lassa", assay_disease_target)
+  )
 
 #Split data by objects
 raw_assays <- raw |>
