@@ -103,6 +103,9 @@ df_all <- df_all |>
 #Add COVID in Website area
 # df_all <- df_all |>
 #   mutate(assay_find_website_area = ifelse(grepl("Covid-19", assay_disease_target), paste0(assay_find_website_area, ";COVID"), assay_find_website_area))
+#Remove COVID-19
+df_all <- df_all |>
+  mutate(assay_find_website_area = str_replace(assay_find_website_area, ";COVID-19", ""))
 
 
 # meta_cols <- readr::read_csv("data/testdir_explorer/all_meta_cols.csv", show_col_types=FALSE)
