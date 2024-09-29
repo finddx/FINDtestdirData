@@ -1,0 +1,28 @@
+﻿NAT platform,Reusable platform for nucleic acid testing,Instrument type
+NAT instrument-free,"All-in-one, single-use, and disposable device for nucleic acid testing",Instrument type
+Multimodal platform,"Platform that can detect more than 1 category of analytes, such as DNA and proteins",Instrument type
+Early Stage Development (partial prototype),An experimental proof-of-concept is developed​,Stage of development
+Late Stage Development (fully functional prototype),A functional prototype is validated in laboratory conditions​,Stage of development
+Research Use Only (RUO),The product is commercially available and for research use only (not regulatory approved and cannot be used for IVD applications),Stage of development
+Regulatory Achieved​,The product has been cleared/approved by one or more regulatory bodies​,Stage of development
+Regulatory Status Unknown,The product is commercialized or made available but the regulatory status is unknown,Stage of development
+Multiplexing capacity,"The maximum number of targets (pathogens + internal controls) that can be simultaneously reported in a single sample through a common process of sample preparation, amplification and collective interpretation. Example: An instrument that splits a sample into 3 independent reaction wells (i.e. spatial multiplexing) and a 4-color read-out technology (i.i. spectral multiplexing) has a theoretical multiplexing capacity of 3x4=12.",Multiplexing capacity
+Single pathogen,2 targets (e.g. 1 pathogen + 1 internal control),Multiplexing range
+Low,4 targets or lower (e.g. 3 pathogens + 1 internal control),Multiplexing range
+Medium,9 targets or lower (e.g. 8 pathogens + 1 internal control),Multiplexing range
+High,15 targets or lower (e.g. 14 pathogens + 1 internal control),Multiplexing range
+Very high,16 targets or above (e.g. 15 pathogens + 1 internal control),Multiplexing range
+NAT reagent kit (open source),"A kit containing reagents for a nucleic acid amplification test that can be run on standard laboratory equipment such as thermocyclers. Not restrained to a specific instrument. Requires a laboratory technician, as several mixing, manual liquid transfers are required. Examples: PCR kits for conventional thermocyclers",Test format
+NAT reagent kit (proprietary platform),"A kit containing reagents for a nucleic acid amplification test that can be run only on a specific instrument, for example developed by the same developer of the NAT reagent kit. Requires a laboratory technician, as several mixing, manual liquid transfers are required. Example: PCR kits designed for a single instrument (often developed by the same company)",Test format
+Cartridge-based processing,"An assay in which the process is performed within a cartridge, therefore allowing some level of automation. The cartridge has in-built reagents and can perform tasks like sample preparation, extraction, amplification and detection frequently through microfluidics and microengineering. A minimally trained user inserts the sample in the cartridge and the result is obtained in usually less than 60 minutes. Example: Automated cartridge-based molecular technique",Test format
+One-pot,"An assay in which the different steps of the process are performed in a single reactor/container, usually a tube. As opposed to cartridge-based processing that realizes physical isolation, the one-pot assay requires a common reaction buffer that can accommodate all steps. A minimally trained user places the sample in the tube/container and the result is read visually or obtained through the use of a device. Example: One-pot LAMP assay that combines viral RNA lysis with isothermal amplification and colorimetric read-out in a single Eppendorf tube",Test format
+Mains power,Platforms with high power consumption that require Alternating Current (AC) from the mains/wall socket,Power supply
+Battery-operated,"Platforms that come with a battery, either integrated (e.g. Li-ion), disposable (e.g. AA cell) or removable (plug and play)",Power supply
+Portable charger compatible,Platforms that do not come up with a battery (i.e. not part of the standard kit) but have a low power consumption that allows operations for a few hours with a portable charger / power bank (that needs to be purchased separately),Power supply
+Power free,"Platforms that create its own energy, for example through a chemical reaction that provides such energy or heat",Power supply
+Handheld,Palm-size instrument. All dimensions below or equal to 15 cm,Instrument footprint
+Small,Instrument of the size of a shoebox / toaster. All dimensions below or equal to 30 cm,Instrument footprint
+Intermediate,Instrument of the size of a standard printer. All dimensions below or equal top 55 cm,Instrument footprint
+Large,Instrument of the size of a fridge. All dimensions below or equal to 75 cm ,Instrument footprint
+Extra large,Instrument of the size of an extra-large fridge. At least 1 dimension equal or above 76 cm ,Instrument footprint
+Parallel processing capacity,The maximum number of blood culture bottles that can be processed by the instrument in parallel,Parallel processing capacity
