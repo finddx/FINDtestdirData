@@ -48,6 +48,7 @@ city,City,FALSE,FALSE,instrument_city,Instrument_Account_BillingCity,,Molecular 
 country,Country of manufacturer HQ,TRUE,TRUE,instrument_country,Instrument_Account_BillingCountry,,Molecular POC Instrument;Blood Culture Instrument,map,1,4,3,1,3,3
 region,Region of manufacturer HQ,TRUE,TRUE,instrument_region,Instrument_Account_WHO_Region__c,,Molecular POC Instrument;Blood Culture Instrument,pie;bar,2,5,4,2,4,4
 permalink,Website,FALSE,FALSE,instrument_permalink,Instrument_Account_Website,,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
+manufacturer_qms,Type of Manufacturer QMS,FALSE,FALSE,instrument_manufacturer_qms,Instrument_Account_Type_of_Certified_QMS__c,,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
 country_tmp,Country tmp,FALSE,FALSE,instrument_country_tmp,Country tmp,,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
 city2,City2,FALSE,FALSE,instrument_city2,City2,,Molecular POC Instrument;Blood Culture Instrument,,,,,,,
 lat,Latitude,FALSE,FALSE,instrument_lat,Latitude,,Molecular POC Instrument;Blood Culture Instrument,,,,,,,

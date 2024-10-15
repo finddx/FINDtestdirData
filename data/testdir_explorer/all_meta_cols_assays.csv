@@ -54,6 +54,7 @@ city,City,FALSE,FALSE,assay_city,Assay_Account_BillingCity,Assay: Company/Instit
 country,Country of manufacturer HQ,TRUE,TRUE,assay_country,Assay_Account_BillingCountry,Assay: Company/Institution Name: Country,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,map,1,3,3,1,5,3,1,4,3,1,10,3
 region,Region of manufacturer HQ,TRUE,TRUE,assay_region,Assay_Account_WHO_Region__c,Assay: Company/Institution Name: WHO Region,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,pie;bar,2,4,4,2,4,4,2,5,4,2,11,4
 permalink,Website,FALSE,FALSE,assay_permalink,Assay_Account_Website,Assay: Company/Institution Name: Website,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
+manufacturer_qms,Type of Manufacturer QMS,FALSE,FALSE,assay_manufacturer_qms,Assay_Account_Type_of_Certified_QMS__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 submission_title,Performance submission title,FALSE,FALSE,performance_submission_title,Performance_Perf_Submission_Title__c,Perf Submission Title,Outbreak;Tuberculosis,,,,,,,,,,,,,
 sensitivity,Sensitivity,FALSE,FALSE,performance_sensitivity,Performance_Clinical_Sensitivity_Percentage__c,Sensitivity (%),Outbreak;Tuberculosis,,,,,,,,,,,,,
 specificity,Specificity,FALSE,FALSE,performance_specificity,Performance_Clinical_Specificity_Percentage__c,Specificity (%),Outbreak;Tuberculosis,,,,,,,,,,,,,
