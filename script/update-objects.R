@@ -51,7 +51,7 @@ map(sf_names, ~ assign(.x, sf_list_dfs[[.x]], envir = .GlobalEnv))
 names(Account) <- paste0("Account_", names(Account))
 #Select necessary manufacturer data
 Account <- Account |>
-  select(Account_Id,Account_Name,Account_BillingCity,Account_BillingCountry,Account_WHO_Region__c,Account_Website)
+  select(Account_Id,Account_Name,Account_BillingCity,Account_BillingCountry,Account_WHO_Region__c,Account_Website, Account_Type_of_Certified_QMS__c)
 
 #Join account objects
 Assay__c <- Assay__c |>
@@ -199,12 +199,20 @@ raw_assays <- raw_assays |>
   filter(test_to_be_listed_on_finds_web_page == "Yes") |>
   filter(!(stage_of_development %in% c("Decommissioned"))) |>
   filter(!(planned_market_entry %in% c("Discontinued"))) |>
-  filter(!(confidentiality_level %in% c("Level 2", "Level 3"))) |>
+  # filter(!(confidentiality_level %in% c("Level 2", "Level 3"))) |>
   filter(!(primary_use_case %in% c("EQA", "Quality Control/Validation"))) |>
   filter(!(type_of_technology %in% c("Sample Collection")))|>
   filter(!(lab_vs_poc %in% c("Laboratory-developed test"))) |>
-  filter(purpose_of_submission =="Test Directory")
+  filter(purpose_of_submission =="Test Directory") |>
+  mutate_all(as.character) |>
+  mutate(across(-c(package_id, performance_id, instrument_id, software_id, technology_submission_id, directory, assay_id, manufacturer_id, test_to_be_listed_on_finds_web_page, data_to_be_published_on_finds_web_page, find_website_area, lab_vs_poc, type_of_technology, stage_of_development, region, confidentiality_level), ~ ifelse(confidentiality_level  %in% c("Level 2", "Level 3"), "Private Information", .))) |>
+  mutate(lat=ifelse(lat=="Private Information", NA, lat),
+         lng=ifelse(lng=="Private Information", NA, lng))
 
+# d <-
+#   d |>
+#   mutate_all(as.character) |>
+#   mutate(across(-c(package_id, performance_id, instrument_id, software_id, technology_submission_id, directory, assay_id, assay_manufacturer_id, instrument_manufacturer_id, assay_test_to_be_listed_on_finds_web_page, instrument_test_to_be_listed_on_finds_web_page, performance_data_to_be_published_on_finds_web_page, assay_find_website_area, instrument_find_website_area, assay_lab_vs_poc, assay_type_of_technology, assay_stage_of_development, assay_region, assay_confidentiality_level, instrument_lab_vs_poc, instrument_type_of_technology, instrument_stage_of_development, instrument_region, instrument_confidentiality_level,  assay_stage_of_development, assay_planned_market_entry, assay_primary_use_case, assay_type_of_technology, assay_lab_vs_poc, assay_purpose_of_submission, instrument_stage_of_development, instrument_planned_market_entry, instrument_confidentiality_level, instrument_type_of_technology, instrument_lab_vs_poc , instrument_purpose_of_submission), ~ ifelse(assay_confidentiality_level  %in% c("Level 2", "Level 3") | instrument_confidentiality_level  %in% c("Level 2", "Level 3"), "Private Information", .)))
 
 
 raw_instruments <- raw |>
@@ -218,26 +226,24 @@ raw_instruments <- raw_instruments |>
   filter(test_to_be_listed_on_finds_web_page == "Yes") |>
   filter(!(stage_of_development %in% c("Decommissioned"))) |>
   filter(!(planned_market_entry %in% c("Discontinued"))) |>
-  filter(!(confidentiality_level %in% c("Level 2", "Level 3"))) |>
+  # filter(!(confidentiality_level %in% c("Level 2", "Level 3"))) |>
   # filter(!(primary_use_case %in% c("EQA", "Quality Control/Validation"))) |>
   filter(!(type_of_technology %in% c("Sample Collection")))|>
   filter(!(lab_vs_poc %in% c("Laboratory-developed test"))) |>
-  filter(purpose_of_submission =="Test Directory")
+  filter(purpose_of_submission =="Test Directory") |>
+    mutate_all(as.character) |>
+    mutate(across(-c(package_id, performance_id, instrument_id, software_id, technology_submission_id, directory, assay_id, manufacturer_id, test_to_be_listed_on_finds_web_page, find_website_area, lab_vs_poc, type_of_technology, stage_of_development, region, confidentiality_level), ~ ifelse(confidentiality_level  %in% c("Level 2", "Level 3"), "Private Information", .))) |>
+  mutate(lat=ifelse(lat=="Private Information", NA, lat),
+         lng=ifelse(lng=="Private Information", NA, lng))
+
 
 #Filter for MPOC and Lab vs POC
 raw_instruments <- raw_instruments |>
   filter((find_website_area != "Molecular POC Instrument") | (find_website_area=="Molecular POC Instrument" & lab_vs_poc=="True Point of Care"))
 
-####
-#### DATA TO BE PUBLISHED in FIND WEBSITE####
-###
-
 # write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
 write_csv(raw_assays, "data/testdir_explorer/data_all_testdir_assays.csv")
 write_csv(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.csv")
-# saveRDS(raw, "data/testdir_explorer/data_all_testdir.rds")
-# saveRDS(raw_assays, "data/testdir_explorer/data_all_testdir_assays.rds")
-# saveRDS(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.rds")
 
 
 # raw_unnested_assays <-
@@ -264,8 +270,4 @@ write_csv(raw_instruments, "data/testdir_explorer/data_all_testdir_instruments.c
 #   separate_rows(instrument_disease_target, sep = ";") |>
 #   separate_rows(instrument_find_website_area, sep = ";")|>
 #   separate_rows(instrument_assay_menu, sep = ", |,|/")
-#
-# saveRDS(raw_unnested_assays, "data/testdir_explorer/data_all_testdir_unnested_assays.rds")
-# saveRDS(raw_unnested_instruments, "data/testdir_explorer/data_all_testdir_unnested_instruments.rds")
-# saveRDS(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.rds")
-# write_csv(raw_unnested, "data/testdir_explorer/data_all_testdir_unnested.csv")
+
