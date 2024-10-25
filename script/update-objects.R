@@ -158,8 +158,8 @@ d <-
 
 geo_data <-
   d |>
-  tidygeocoder::geocode(assay_city2, method = 'bing', lat = assay_lat , long = assay_lng)|>
-  tidygeocoder::geocode(instrument_city2, method = 'bing', lat = instrument_lat , long = instrument_lng)#|>
+  tidygeocoder::geocode(assay_city2, method = 'arcgis', lat = assay_lat , long = assay_lng)|>
+  tidygeocoder::geocode(instrument_city2, method = 'arcgis', lat = instrument_lat , long = instrument_lng)#|>
   # tidygeocoder::geocode(software_city2, method = 'bing', lat = software_lat , long = software_lng)
 
 geo_data <-
