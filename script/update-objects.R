@@ -205,7 +205,7 @@ raw_assays <- raw_assays |>
   filter(!(lab_vs_poc %in% c("Laboratory-developed test"))) |>
   filter(purpose_of_submission =="Test Directory") |>
   mutate_all(as.character) |>
-  mutate(across(-c(assay_id, directory, test_to_be_listed_on_finds_web_page, data_to_be_published_on_finds_web_page, find_website_area, assay_target, disease_target, lab_vs_poc, type_of_technology, stage_of_development, test_format, validated_sample_types, region, confidentiality_level), ~ ifelse(confidentiality_level  %in% c("Level 2", "Level 3"), "Private Information", .))) |>
+  mutate(across(-c(assay_id, directory, test_to_be_listed_on_finds_web_page, data_to_be_published_on_finds_web_page, find_website_area, assay_target, disease_target, lab_vs_poc, type_of_technology, stage_of_development, test_format, region, confidentiality_level), ~ ifelse(confidentiality_level  %in% c("Level 2", "Level 3"), "Private Information", .))) |>
   mutate(lat=ifelse(lat=="Private Information", NA, lat),
          lng=ifelse(lng=="Private Information", NA, lng))
 #package_id, performance_id, instrument_id, software_id, technology_submission_id, manufacturer_id,
