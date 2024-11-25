@@ -240,7 +240,7 @@ raw_instruments <- raw_instruments |>
 
 #Filter for MPOC and Lab vs POC
 raw_instruments <- raw_instruments |>
-  filter((find_website_area != "Molecular POC Instrument") | (find_website_area=="Molecular POC Instrument" & lab_vs_poc=="True Point of Care"))
+  filter((find_website_area != "Molecular POC Instrument") | (find_website_area=="Molecular POC Instrument" & lab_vs_poc %in% c("True Point of Care", "near Point of Care")))
 
 # write_csv(raw, "data/testdir_explorer/data_all_testdir.csv")
 write_csv(raw_assays, "data/testdir_explorer/data_all_testdir_assays.csv")
