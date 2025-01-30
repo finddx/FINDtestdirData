@@ -6,6 +6,7 @@ Late Stage Development (fully functional prototype),A functional prototype is va
 Research Use Only (RUO),The product is commercially available and for research use only (not regulatory approved and cannot be used for IVD applications),Stage of development
 Regulatory Achieved​,The product has been cleared/approved by one or more regulatory bodies​,Stage of development
 Regulatory Status Unknown,The product is commercialized or made available but the regulatory status is unknown,Stage of development
+Multiplexing,"A diagnostics platform or instrument is considered ‘multiplex’ if it allows for the test of several targets (pathogens or variants) simultaneously, using only one sample",Multiplexing
 Multiplexing capacity,"The maximum number of targets (pathogens + internal controls) that can be simultaneously reported in a single sample through a common process of sample preparation, amplification and collective interpretation. Example: An instrument that splits a sample into 3 independent reaction wells (i.e. spatial multiplexing) and a 4-color read-out technology (i.i. spectral multiplexing) has a theoretical multiplexing capacity of 3x4=12.",Multiplexing capacity
 Single pathogen,2 targets (e.g. 1 pathogen + 1 internal control),Multiplexing range
 Low,4 targets or lower (e.g. 3 pathogens + 1 internal control),Multiplexing range
