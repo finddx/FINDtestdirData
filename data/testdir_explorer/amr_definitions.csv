@@ -6,7 +6,7 @@ Phenotypic AST,"A biological, phenotypic assay involving the growth of the patho
 Prediction AST,"Prediction of antibiotic resistance and/or susceptibility using an AI-based algorithm e.g., sequencing and AI-tool leveraging reference genome database.",Resistance / AST
 Host Response,"Tests for presumptive sepsis (including neonatal sepsis) and inflammation syndrome. These tests usually target host response markers (e.g., C-reactive protein, procalcitonin, mRNA...) linked to bacterial infections. These tests are often used to discriminate between viral and bacterial infections, to inform on antibiotic use.",Host Response
 Molecular,"Detect the presence of a limited number of genetic targets (DNA and RNA) in body fluids based on amplification techniques. 
-Technology examples: PCR, LAMP, CRISPR, ...",Type of technology
+Technology examples: PCR, LAMP, CRISPR, …",Type of technology
 Immunoassay,"Detect the presence of antibodies, antigens, proteins or small molecules in body fluids through the use of antibodies or antigens.  
 Technology examples: ELISA, Lateral flow assays, CLIA, …",Type of technology
 Sequencing,"Detect the presence and determine the nucleic sequence of a large number of genetic targets (DNA and RNA) simultaneously in body fluids.  
@@ -20,7 +20,7 @@ Technology examples: Ultrasonography, X-ray, Mammography, Nuclear medicine like 
 Microscopy,"The technique of magnifying a biospecimen for clinical analysis and medical intervention. 
 Technology examples: Optical microscopy, FISH or IHC kits, …",Type of technology
 Biophysics,"Measure the levels of different analytes in blood and other body fluids based on acquiring spectra or using physical principles. 
-Technology examples: Infrared or Raman spectroscopy, Mass Spectrometry, Nuclear magnetic resonance, Nanophotonics, Graphene-based sensors, ....",Type of technology
+Technology examples: Infrared or Raman spectroscopy, Mass Spectrometry, Nuclear magnetic resonance, Nanophotonics, Graphene-based sensors, ...",Type of technology
 Chemical/Biochemical,"Measure the levels of different analytes, usually electrolytes and metabolites, in body fluids based on a chemical/biochemical/enzymatic reaction.  
 Technology examples: Clinical chemistry analyzer for Iron, blood glucose monitor (BGM), …",Type of technology
 Hematology,"Count and measure the different types of cells in blood, such as red blood cells, white blood cells, and platelets. 
