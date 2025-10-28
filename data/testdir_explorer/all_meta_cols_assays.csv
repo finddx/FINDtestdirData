@@ -17,7 +17,7 @@ find_website_area,Area,FALSE,FALSE,assay_find_website_area,Assay_FIND_Website_Ar
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,assay_test_to_be_listed_on_finds_web_page,Assay_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 purpose_of_submission,Purpose of submission,FALSE,FALSE,assay_purpose_of_submission,Assay_Purpose_of_submission__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 confidentiality_level,Confidentiality level,FALSE,FALSE,assay_confidentiality_level,Assay_nx_ConfidentialityLevel__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
-assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,,9,,8,6,3,11,10,,4,13
+assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,,9,12,8,6,3,11,10,,4,13
 date_of_submission,Date,FALSE,FALSE,assay_date_of_submission,Assay_CreatedDate,Assay: Created Date,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 stage_of_development,Stage of development,TRUE,TRUE,assay_stage_of_development,Assay_Stage_of_Development__c,Assay: Stage of Development,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,8,5,6,5,16,9,9,7,,,12,6
 regulatory_status,Regulatory body,TRUE,TRUE,assay_regulatory_status,Assay_Regulatory_Approval__c,Assay: Regulatory Approval,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,6,7,,15,10,,8,7,,13,7
@@ -43,7 +43,7 @@ instrument_requirement,Instrument requirement,TRUE,TRUE,assay_instrument_require
 level_of_automation,Level of automation,TRUE,TRUE,assay_level_of_automation,Assay_Level_of_automation__c,Assay: Level of automation,AMR;Neglected Tropical Diseases;Tuberculosis,bar;pie,,,,,13,,,,,,,
 lab_vs_poc,Laboratory/point of care,TRUE,TRUE,assay_lab_vs_poc,Assay_Lab_vs_POC__c,Assay: Lab vs. POC,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar;pie,9,15,19,6,14,,10,14,13,8,18,18
 self_testing_self_collection,Self-testing or professional use,TRUE,TRUE,assay_self_testing_self_collection,Assay_SelftestingSelfCollection__c,Assay: Self-testing/Self-Collection,AMR;Neglected Tropical Diseases;Tuberculosis,bar;pie,,,,,7,,,,,,,
-validated_sample_types,Validated sample types,TRUE,TRUE,assay_validated_sample_types,Assay_Validated_Sample_Types__c,Assay: Validated Sample Types,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,16,20,,11,11,8,15,14,6,7,19
+validated_sample_types,Validated sample types,TRUE,TRUE,assay_validated_sample_types,Assay_Validated_Sample_Types__c,Assay: Validated Sample Types,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,16,20,11,11,11,8,15,14,6,7,19
 time_to_results_excl_prep,Time to result excl sample prep,FALSE,TRUE,assay_time_to_results_excl_prep,Assay_Time_to_results_mins__c,Assay: Time to results (mins),AMR;Neglected Tropical Diseases;Tuberculosis,bar,,,,,,,,,,,,
 serovar_subtype,Serovar subtype,TRUE,TRUE,assay_serovar_subtype,Assay_Serovar_subtype__c,Assay: Serovar subtype,Outbreak,bar,,,,,,,7,10,9,,,
 disease_target_phase,Disease spectrum,TRUE,TRUE,assay_disease_target_phase,Assay_Disease_Target_Phase__c,Assay: Disease Target Phase,Tuberculosis,bar;pie,,,,,,,,,,,1,8
