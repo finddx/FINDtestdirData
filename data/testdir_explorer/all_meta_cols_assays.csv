@@ -17,7 +17,7 @@ find_website_area,Area,FALSE,FALSE,assay_find_website_area,Assay_FIND_Website_Ar
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,assay_test_to_be_listed_on_finds_web_page,Assay_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 purpose_of_submission,Purpose of submission,FALSE,FALSE,assay_purpose_of_submission,Assay_Purpose_of_submission__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 confidentiality_level,Confidentiality level,FALSE,FALSE,assay_confidentiality_level,Assay_nx_ConfidentialityLevel__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
-assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,,9,11,8,6,3,11,10,,4,13
+assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,,9,12,8,6,3,11,10,,4,13
 date_of_submission,Date,FALSE,FALSE,assay_date_of_submission,Assay_CreatedDate,Assay: Created Date,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 stage_of_development,Stage of development,TRUE,TRUE,assay_stage_of_development,Assay_Stage_of_Development__c,Assay: Stage of Development,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,8,5,6,5,16,9,9,7,,,12,6
 regulatory_status,Regulatory body,TRUE,TRUE,assay_regulatory_status,Assay_Regulatory_Approval__c,Assay: Regulatory Approval,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,6,7,,15,10,,8,7,,13,7
@@ -49,7 +49,7 @@ serovar_subtype,Serovar subtype,TRUE,TRUE,assay_serovar_subtype,Assay_Serovar_su
 disease_target_phase,Disease spectrum,TRUE,TRUE,assay_disease_target_phase,Assay_Disease_Target_Phase__c,Assay: Disease Target Phase,Tuberculosis,bar;pie,,,,,,,,,,,1,8
 who_technology_class,WHO technology class,FALSE,FALSE,assay_who_technology_class,WHO Technology Class,WHO Technology Class,Tuberculosis,,,,,,,,,,,,,
 manufacturer_id,Manufacturer ID,FALSE,FALSE,assay_manufacturer_id,Assay_Company_Institution_Name__c,Assay: Company/Institution Name: Organisation Name,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
-manufacturer,Manufacturer,TRUE,TRUE,assay_manufacturer,Assay_Account_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,1,2,,3,2,,2,2,,9,2
+manufacturer,Manufacturer,TRUE,TRUE,assay_manufacturer,Assay_Account_Name,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,1,2,11,3,2,,2,2,,9,2
 city,City,FALSE,FALSE,assay_city,Assay_Account_BillingCity,Assay: Company/Institution Name: City,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 country,Country of manufacturer HQ,TRUE,TRUE,assay_country,Assay_Account_BillingCountry,Assay: Company/Institution Name: Country,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,map,1,3,3,1,5,3,1,4,3,1,10,3
 region,Region of manufacturer HQ,TRUE,TRUE,assay_region,Assay_Account_WHO_Region__c,Assay: Company/Institution Name: WHO Region,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,pie;bar,2,4,4,2,4,4,2,5,4,2,11,4
