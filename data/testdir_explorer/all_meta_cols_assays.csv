@@ -17,7 +17,7 @@ find_website_area,Area,FALSE,FALSE,assay_find_website_area,Assay_FIND_Website_Ar
 test_to_be_listed_on_finds_web_page,Test listed,FALSE,FALSE,assay_test_to_be_listed_on_finds_web_page,Assay_Test_to_be_listed_on_find_s_web_page__c,Assay: Test to be listed on FIND's web page?,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 purpose_of_submission,Purpose of submission,FALSE,FALSE,assay_purpose_of_submission,Assay_Purpose_of_submission__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 confidentiality_level,Confidentiality level,FALSE,FALSE,assay_confidentiality_level,Assay_nx_ConfidentialityLevel__c,,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
-assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,,9,,8,6,3,11,10,,4,13
+assay_target,Assay target,TRUE,TRUE,assay_assay_target,Assay_Assay_Target__c,Assay: Assay Target,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,,9,12,8,6,3,11,10,,4,13
 date_of_submission,Date,FALSE,FALSE,assay_date_of_submission,Assay_CreatedDate,Assay: Created Date,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 stage_of_development,Stage of development,TRUE,TRUE,assay_stage_of_development,Assay_Stage_of_Development__c,Assay: Stage of Development,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,8,5,6,5,16,9,9,7,,,12,6
 regulatory_status,Regulatory body,TRUE,TRUE,assay_regulatory_status,Assay_Regulatory_Approval__c,Assay: Regulatory Approval,AMR;Neglected Tropical Diseases;Outbreak;Tuberculosis,bar,,6,7,,15,10,,8,7,,13,7
@@ -63,7 +63,7 @@ sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,FALSE,performance_sensitivity
 specificity_ci_low,95% CI Specificity (Lower),FALSE,FALSE,performance_specificity_ci_low,Performance_X95_CI_for_Clinical_Specificity_Lower__c,95% CI for Clinical Specificity (Lower),Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 specificity_ci_up,95% CI Specificity (Upper),FALSE,FALSE,performance_specificity_ci_up,Performance_X95_CI_for_Clinical_Specificity_Upper__c,95% CI for Clinical Specificity (Upper),Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 find_evaluation,FIND evaluation,FALSE,FALSE,performance_find_evaluation,Performance_FIND_Evaluation__c,FIND Evaluation,Outbreak;Tuberculosis,,,,,,,,,,,,,
-study_type,Study type,FALSE,FALSE,performance_study_type,Performance_Study_Type__c,Study Type,Neglected Tropical Diseases;Outbreak;Tuberculosis,pie,,,,12,,,,,,,,
+study_type,Study type,FALSE,FALSE,performance_study_type,Performance_Study_Type__c,Study Type,Neglected Tropical Diseases;Outbreak;Tuberculosis,pie,,,,,,,,,,,,
 number_of_positive_samples,Number of positive samples,FALSE,FALSE,performance_number_of_positive_samples,Performance_Number_of_positive_samples__c,Number of positive samples,Outbreak;Tuberculosis,,,,,,,,,,,,,
 number_of_negative_samples,Number of negative samples,FALSE,FALSE,performance_number_of_negative_samples,Performance_Number_of_negative_samples__c,Number of negative samples,Outbreak;Tuberculosis,,,,,,,,,,,,,
 total_number_of_samples,Total number of samples,FALSE,FALSE,performance_total_number_of_samples,Performance_Total_number_of_samples_clinical__c,Total number of samples,Outbreak;Tuberculosis,,,,,,,,,,,,,
