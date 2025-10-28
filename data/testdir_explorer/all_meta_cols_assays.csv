@@ -63,7 +63,7 @@ sensitivity_ci_up,95% CI Sensitivity (Upper),FALSE,FALSE,performance_sensitivity
 specificity_ci_low,95% CI Specificity (Lower),FALSE,FALSE,performance_specificity_ci_low,Performance_X95_CI_for_Clinical_Specificity_Lower__c,95% CI for Clinical Specificity (Lower),Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 specificity_ci_up,95% CI Specificity (Upper),FALSE,FALSE,performance_specificity_ci_up,Performance_X95_CI_for_Clinical_Specificity_Upper__c,95% CI for Clinical Specificity (Upper),Neglected Tropical Diseases;Outbreak;Tuberculosis,,,,,,,,,,,,,
 find_evaluation,FIND evaluation,FALSE,FALSE,performance_find_evaluation,Performance_FIND_Evaluation__c,FIND Evaluation,Outbreak;Tuberculosis,,,,,,,,,,,,,
-study_type,Study type,FALSE,FALSE,performance_study_type,Performance_Study_Type__c,Study Type,Outbreak;Tuberculosis,,,,,,,,,,,,,
+study_type,Study type,FALSE,FALSE,performance_study_type,Performance_Study_Type__c,Study Type,Neglected Tropical Diseases;Outbreak;Tuberculosis,pie,,,,14,,,,,,,,
 number_of_positive_samples,Number of positive samples,FALSE,FALSE,performance_number_of_positive_samples,Performance_Number_of_positive_samples__c,Number of positive samples,Outbreak;Tuberculosis,,,,,,,,,,,,,
 number_of_negative_samples,Number of negative samples,FALSE,FALSE,performance_number_of_negative_samples,Performance_Number_of_negative_samples__c,Number of negative samples,Outbreak;Tuberculosis,,,,,,,,,,,,,
 total_number_of_samples,Total number of samples,FALSE,FALSE,performance_total_number_of_samples,Performance_Total_number_of_samples_clinical__c,Total number of samples,Outbreak;Tuberculosis,,,,,,,,,,,,,
