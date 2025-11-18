@@ -1,0 +1,4 @@
+﻿TPP,target_pathogen,type_of_technology,lab_vs_poc,sensitivity,specificity
+TPP test 1,Trypanosoma cruzi,Immunoassay,near Point of Care;True Point of Care,91,94
+TPP test2,Trypanosoma cruzi,Immunoassay,True Point of Care,88,94
+TPP test2.1,Trypanosoma cruzi,Immunoassay,True Point of Care,91,98
