@@ -1,4 +1,4 @@
-﻿TPP,target_pathogen,type_of_technology,lab_vs_poc,sensitivity,specificity
-TPP test 1,Trypanosoma cruzi,Immunoassay,near Point of Care;True Point of Care,91,94
-TPP test2,Trypanosoma cruzi,Immunoassay,True Point of Care;Lab-based,88,95
-TPP test2.1,Trypanosoma cruzi,Immunoassay,True Point of Care,92,98
+﻿TPP,find_website_area,disease_target,sensitivity,specificity,url
+TPP test 1,Neglected Tropical Diseases,Chagas Disease,91,94,https://www.finddx.org/
+TPP test2,Neglected Tropical Diseases,Chagas Disease,88,95,https://www.finddx.org/
+TPP test2.1,Neglected Tropical Diseases,Chagas Disease,92,98,https://www.finddx.org/
