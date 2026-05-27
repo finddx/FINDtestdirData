@@ -13,7 +13,8 @@ name: Update Test directory explorer
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 3 * * 0'
+   # - cron:  '0 3 * * 0'
+    - cron:  '0 7 * * *'
 
 env:
     GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
