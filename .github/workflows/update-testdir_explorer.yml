@@ -76,6 +76,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: "[GHA] update from salesforce"
-          assignees: findanna
+          assignees: JuanVallarta
           delete-branch: true
           branch: preview-testdir_explorer
